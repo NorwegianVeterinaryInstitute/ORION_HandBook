@@ -7,7 +7,7 @@ Welcome to ORION-NGS HandBook's documentation!
 ==============================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
    :About OneHealth -ORION
 
