@@ -1,7 +1,7 @@
-.. ORION-NGS HandBook documentation master file, created by
-   sphinx-quickstart on Tue Jan 15 13:43:56 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Hello ORION::
+
+
+Hello ORION-NGS$
 
 Welcome to ORION-NGS HandBook's documentation!
 ==============================================
@@ -9,6 +9,7 @@ Welcome to ORION-NGS HandBook's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :About OneHealth -ORION
 
 
 
