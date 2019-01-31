@@ -1,6 +1,6 @@
 ::
 
-Welcome to OneHealth ORION WP2-NGS HandBook
+OneHealth ORION WP2-NGS HandBook
 ==============================================
 This page will document the delivereables from OneHealth ORION WP2-NGS.
 
@@ -13,6 +13,12 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
 
 Other related reports  
 ==================
+* Expert Opinion on the introduction of next-generation typing methods for food- and waterborne diseases in the EU and EEA
+* Expert opinion on whole genome sequencing for public health surveillance - Strategy to harness whole genome sequencing to strengthen EU outbreak investigations and public health surveillance
+* ECDC roadmap for integration of molecular typing and genomic typing into European-level surveillance and epidemic preparedness – Version 2.1, 2016-19
+
+
+*  :ref:´´
    :caption: Contents:
    :About OneHealth -ORION
    
