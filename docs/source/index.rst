@@ -17,10 +17,6 @@ Other related reports
 * `Expert opinion on whole genome sequencing for public health surveillance - Strategy to harness whole genome sequencing to strengthen EU outbreak investigations and public health surveillance <https://ecdc.europa.eu/sites/portal/files/media/en/publications/Publications/whole-genome-sequencing-for-public-health-surveillance.pdf>`_.
 * `ECDC roadmap for integration of molecular typing and genomic typing into European-level surveillance and epidemic preparedness – Version 2.1, 2016-19 <https://ecdc.europa.eu/sites/portal/files/media/en/publications/Publications/molecular-typing-EU-surveillance-epidemic-preparedness-2016-19-roadmap.pdf>`_.
 
-
-
-   :caption: Contents:
-   :About OneHealth -ORION
    
 * :ref:`genindex`
 * :ref:`modindex`
