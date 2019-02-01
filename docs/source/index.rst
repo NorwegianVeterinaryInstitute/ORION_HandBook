@@ -22,7 +22,7 @@ Other related reports
 * :ref:`modindex`
 * :ref:`search`
 
-::
+
 Test page 1
 ==================
 * `Expert Opinion on the introduction of next-generation typing methods for food- and waterborne diseases in the EU and EEA <https://ecdc.europa.eu/sites/portal/files/media/en/publications/Publications/food-and-waterborne-diseases-next-generation-typing-methods.pdf>`_. 
