@@ -25,3 +25,7 @@ Other related reports
 
 New page 1
 ==================
+
+{% if next %}
+<a href="{{ next.link|e }}">{{ next.title }}</a>
+{% endif %}
