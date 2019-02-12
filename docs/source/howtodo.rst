@@ -13,13 +13,14 @@ If you want add new page:
 create the new file new-file.rst inside docs/source/ 
 Add "new-file" under
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Main page
-   
-   about
-   howtodo
-   new-file
+.. code:: bash
+    .. toctree::
+       :maxdepth: 2
+       :caption: Main page
+       
+       about
+       howtodo
+       new-file
    
 Step 3
 ================
