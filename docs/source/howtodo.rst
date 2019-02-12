@@ -14,6 +14,7 @@ create the new file new-file.rst inside docs/source/
 Add "new-file" under ".. toctree::"
 
 .. code:: bash   
+       
        about
        howtodo
        new-file
@@ -24,6 +25,7 @@ Step 3
 Commit the changes to GitHub
 
 .. code:: bash
+    
     git add -A
     git commit -m "Why why why"
     git push
