@@ -11,13 +11,9 @@ File index.rst is main file
 If you want add new page:
 
 create the new file new-file.rst inside docs/source/ 
-Add "new-file" under
+Add "new-file" under ".. toctree::"
 
-.. code:: bash
-    .. toctree::
-       :maxdepth: 2
-       :caption: Main page
-       
+.. code:: bash   
        about
        howtodo
        new-file
