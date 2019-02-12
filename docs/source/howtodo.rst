@@ -31,3 +31,9 @@ Commit the changes to GitHub
     git push
 
 
+Step 4
+================
+
+Rebuild the "redthedocs"
+
+Go to "https://readthedocs.org/"
