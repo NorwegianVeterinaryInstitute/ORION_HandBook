@@ -36,4 +36,8 @@ Step 4
 
 Rebuild the "redthedocs"
 
-Go to "https://readthedocs.org/"
+1. Go to "https://readthedocs.org/"
+2. Create login
+3. Connect the GitHub ORION_HandBook repository
+4. BUILD
+5. Refresh "https://orion-ngs-handbook.readthedocs.io/en/latest/index.html"
