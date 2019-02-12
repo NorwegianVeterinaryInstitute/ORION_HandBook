@@ -5,7 +5,7 @@ OneHealth ORION WP2-NGS HandBook
 This page will document the delivereables from OneHealth ORION WP2-NGS.
 
 .. toctree::
-   :maxdepth: 0
+   :maxdepth: 3
    :caption: Main page
    
    content/about
