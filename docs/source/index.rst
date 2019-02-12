@@ -11,7 +11,7 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    content/about
    content/ecdc_documents
 
-`About ORION <content/about.rst>`
+`About ORION <content/about.rst>`_.
 ============
 
 Related reports from ECDC  
