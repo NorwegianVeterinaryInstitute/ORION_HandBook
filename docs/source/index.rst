@@ -6,16 +6,10 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
 
 Contents:
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    about
    ecdc_documents
-
-About
-==================
-* OneHealth
-* OneHealth ORION
-
 
 Related reports from ECDC  
 ==================
