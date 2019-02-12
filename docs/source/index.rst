@@ -4,11 +4,17 @@ OneHealth ORION WP2-NGS HandBook
 ==============================================
 This page will document the delivereables from OneHealth ORION WP2-NGS.
 
+Contents:
 .. toctree::
-   :maxdepth: 
-   :caption: Contents:
-   :About OneHealth -ORION
+   :maxdepth:
+   
+   about
+   ecdc_documents
 
+About
+==================
+* OneHealth
+* OneHealth ORION
 
 
 Related reports from ECDC  
