@@ -23,6 +23,7 @@ Related reports from ECDC
 Linking Pages
 =============
 
+:ref:`linking-pages` 
    
 :ref:`genindex`
 ==================
