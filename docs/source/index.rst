@@ -9,6 +9,7 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    :caption: Main page
    
    about
+   howtodo
 
 
 About OneHealth
