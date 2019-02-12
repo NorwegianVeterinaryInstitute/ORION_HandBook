@@ -11,6 +11,9 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    content/about
    content/ecdc_documents
 
+`About ORION <content/about.rst>`
+============
+
 Related reports from ECDC  
 ==================
 * `Expert Opinion on the introduction of next-generation typing methods for food- and waterborne diseases in the EU and EEA <https://ecdc.europa.eu/sites/portal/files/media/en/publications/Publications/food-and-waterborne-diseases-next-generation-typing-methods.pdf>`_. 
@@ -23,7 +26,6 @@ Related reports from ECDC
 Linking Pages
 =============
 
-:ref:`linking-pages` 
    
 :ref:`genindex`
 ==================
