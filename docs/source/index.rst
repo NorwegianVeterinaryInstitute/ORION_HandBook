@@ -11,7 +11,7 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    about
    howtodo
    componentX
-   Pipelines/Pilelines.rst
+   Pipelines/pipelines.rst
 
 
 About OneHealth
