@@ -8,9 +8,9 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    :maxdepth: 2
    :caption: Main page
    
-   about
+   about.rst
    howtodo.rst
-   componentX
+   componentX.rst
    Pipelines/pipelines.rst
    Pipelines/Test.rst
    infrastructure/LIMS.rst
