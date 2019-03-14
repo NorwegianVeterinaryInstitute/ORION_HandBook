@@ -10,13 +10,8 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    
    about.rst
    howtodo.rst
-   componentX.rst
    Pipelines/pipelines.rst
-   Pipelines/Test.rst
-   infrastructure/LIMS.rst
-   infrastructure/sequencing.rst
-   infrastructure/storage_compute.rst
-   infrastructure/data_management_analysis.rst
+   infrastructure/infrastructure.rst
 
 Related reports from ECDC  
 ==================
