@@ -1,26 +1,18 @@
 **How To Do**
 =============
-
-
+Please refer the link below for restructured language
+```
+http://docutils.sourceforge.net/docs/user/rst/quickref.html#paragraphs
+```
 **Step 1**
 .. code:: bash
 
-        git clone https://github.com/NorwegianVeterinaryInstitute/ORION_HandBook.git
+Fork the ORION-Dev-Branch 
+    
+    https://github.com/NorwegianVeterinaryInstitute/ORION_HandBook/tree/Orion-Dev-Branch
 
 **Step 2**
-File index.rst is main file
-If you want add new page:
-
-create the new file "new-file.rst" inside docs/source/
-
-Add "new-file" under ".. toctree::" in docs/source/index.rst
-
-.. code:: bash   
-       
-       about
-       howtodo
-       new-file
-   
+Add/modify new file   
 **Step 3**
 Commit the changes to GitHub
 
