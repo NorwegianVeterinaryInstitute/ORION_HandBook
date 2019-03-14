@@ -17,18 +17,6 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    infrastructure/sequencing.rst
    infrastructure/storage_compute.rst
    infrastructure/data_management_analysis.rst
-   
-   
-
-
-About OneHealth
-============
-
-About ORION
-------------
-
-About ORION-NGS
-~~~~~~~~~~~~~~~~
 
 Related reports from ECDC  
 ==================
