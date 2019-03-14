@@ -1,12 +1,8 @@
 About
 =====
 
-OneHealth Project
-=====================
+**OneHealth Project**
 
-OneHealth ORION
-=====================
+**OneHealth ORION**
 
-
-OneHealth ORION WP2-NGS
-=====================
+**OneHealth ORION WP2-NGS**
