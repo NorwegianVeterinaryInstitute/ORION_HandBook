@@ -1,12 +1,13 @@
+**How To Do**
+=============
 
-Step 1
-================
+
+**Step 1**
 .. code:: bash
 
         git clone https://github.com/NorwegianVeterinaryInstitute/ORION_HandBook.git
 
-Step 2
-================
+**Step 2**
 File index.rst is main file
 If you want add new page:
 
@@ -20,9 +21,7 @@ Add "new-file" under ".. toctree::" in docs/source/index.rst
        howtodo
        new-file
    
-Step 3
-================
-
+**Step 3**
 Commit the changes to GitHub
 
 .. code:: bash
@@ -32,9 +31,7 @@ Commit the changes to GitHub
     git push
 
 
-Step 4
-================
-
+**Step 4**
 Rebuild the "redthedocs"
 
 1. Go to "https://readthedocs.org/"
