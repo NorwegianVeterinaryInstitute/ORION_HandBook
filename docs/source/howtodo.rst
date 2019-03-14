@@ -1,41 +1,33 @@
-**How To Do**
-=============
+**Contributing**
+===============
+The ORION NGS surveillance handbook project is an open documentation project, and we welcome all contributions to this handbook.
 
+**Contributor Agreement**
 
-**Step 1**
-.. code:: bash
+By contributing, you agree that we may redistribute your work under the license that this project uses. In return, you will be recognized as a contributor to this project, which will be reflected in the AUTHORS document in this repo. We expect all contributors to abide by the project’s code of conduct. 
 
-        git clone https://github.com/NorwegianVeterinaryInstitute/ORION_HandBook.git
+**How to contribute**
+The easiest way to get started is to file an issue to tell us about a spelling mistake, some awkward wording, or a factual error.
+ - If you do not have a GitHub account, you can send us comments by email. However, we will be able to respond more quickly if   - you use one of the other methods described below.
+ - If you have a GitHub account, or are willing to create one, but do not know how to use Git, you can report problems or suggest improvements by creating an issue. This allows us to assign the item to someone and to respond to it in a threaded discussion.
+- If you are comfortable with Git, and would like to add or change material, you can submit a pull request (PR). Instructions for doing this are included below.
 
-**Step 2**
-File index.rst is main file
-If you want add new page:
+**What to contribute**
 
-create the new file "new-file.rst" inside docs/source/
+Please note, we are very happy to receive any and all contributions regarding the subject matter of this handbook in whichever manner you are able to submit them. There are many ways to contribute, from submitting an issue informing about an error you found, or a new paper or report, to submitting a pull request contributing text on a new method or a procedure. 
 
-Add "new-file" under ".. toctree::" in docs/source/index.rst
+If you would like to contribute, and don’t know quite where to start or what to do, please check the “Handbook Roadmap” document, as well as the list of current issues for the repository. 
 
-.. code:: bash   
-       
-       about
-       howtodo
-       new-file
-   
-**Step 3**
-Commit the changes to GitHub
+**Using Github** 
+If you choose to contribute via GitHub, you may want to look at How to Contribute to an Open Source Project on GitHub. 
 
-.. code:: bash
-    
-    git add -A
-    git commit -m "Why why why"
-    git push
+**In brief:**
+The published copy of the lesson is in the gh-pages branch of the repository (so that GitHub will regenerate it automatically). Please create all branches from that, and merge the master repository's gh-pages branch into your gh-pages branch before starting work. Please do not work directly in your gh-pages branch, since that will make it difficult for you to work on other contributions.
+We use GitHub flow to manage changes:
+Create a new branch in your desktop copy of this repository for each significant change.
+Commit the change in that branch.
+Push that branch to your fork of this repository on GitHub.
+Submit a pull request from that branch to the master repository.
+If you receive feedback, make changes on your desktop and push to your branch on GitHub: the pull request will update automatically.
+Each lesson has two maintainers who review issues and pull requests or encourage others to do so. The maintainers are community volunteers, and have final say over what gets merged into the lesson.
 
-
-**Step 4**
-Rebuild the "redthedocs"
-
-1. Go to "https://readthedocs.org/"
-2. Create login - Once you have created you dont need to create everytime.
-3. Connect the GitHub ORION_HandBook repository - Once you have connected you dont need to do everytime
-4. BUILD - You should rebuild every time you make changes in GitHub
-5. Refresh "https://orion-ngs-handbook.readthedocs.io/en/latest/index.html"
