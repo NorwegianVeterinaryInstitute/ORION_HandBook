@@ -1,9 +1,10 @@
+
 **Contributing**
 ===============
 The ORION NGS surveillance handbook project is an open documentation project, and we welcome all contributions to this handbook.
 
 **Contributor Agreement**
-
+=======
 By contributing, you agree that we may redistribute your work under the license that this project uses. In return, you will be recognized as a contributor to this project, which will be reflected in the AUTHORS document in this repo. We expect all contributors to abide by the project’s code of conduct. 
 
 **How to contribute**
@@ -30,4 +31,3 @@ The published copy of the lesson is in the gh-pages branch of the repository (so
      4. Submit a pull request from that branch to the master repository.
      5. If you receive feedback, make changes on your desktop and push to your branch on GitHub: the pull request will update   automatically.
 Each lesson has two maintainers who review issues and pull requests or encourage others to do so. The maintainers are community volunteers, and have final say over what gets merged into the lesson.
-
