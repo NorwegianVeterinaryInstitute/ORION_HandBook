@@ -23,11 +23,3 @@ If you would like to contribute, and don’t know quite where to start or what t
 If you choose to contribute via GitHub, you may want to look at How to Contribute to an Open Source Project on GitHub. 
 
 **In brief:**
-The published copy of the lesson is in the gh-pages branch of the repository (so that GitHub will regenerate it automatically). Please create all branches from that, and merge the master repository's gh-pages branch into your gh-pages branch before starting work. Please do not work directly in your gh-pages branch, since that will make it difficult for you to work on other contributions.
- - We use GitHub flow to manage changes:
-     1. Create a new branch in your desktop copy of this repository for each significant change.
-     2. Commit the change in that branch.
-     3. Push that branch to your fork of this repository on GitHub.
-     4. Submit a pull request from that branch to the master repository.
-     5. If you receive feedback, make changes on your desktop and push to your branch on GitHub: the pull request will update   automatically.
-Each lesson has two maintainers who review issues and pull requests or encourage others to do so. The maintainers are community volunteers, and have final say over what gets merged into the lesson.
