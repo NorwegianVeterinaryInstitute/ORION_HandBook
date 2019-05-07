@@ -1,10 +1,10 @@
 
 **Contributing**
-===============
+----------------
 The ORION NGS surveillance handbook project is an open documentation project, and we welcome all contributions to this handbook.
 
 **Contributor Agreement**
-=======
+--------------------------
 By contributing, you agree that we may redistribute your work under the license that this project uses. In return, you will be recognized as a contributor to this project, which will be reflected in the AUTHORS document in this repo. We expect all contributors to abide by the project’s code of conduct. 
 
 **How to contribute**
