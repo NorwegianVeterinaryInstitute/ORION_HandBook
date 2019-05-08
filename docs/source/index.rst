@@ -38,6 +38,10 @@ ORION WP2-NGS
 The goal for this project is to create an OH Knowledge Base - a cross-domain inventory of currently available resources for performing integrated OH surveillance generation, data analysis and interpretation. The focus for the WP2NGS work package is on NextGen analytical data, methods, analyses and systems. The inventory generated from this work package will include best practices for data management and handling approaches for bacterial identification techniques. It should also include current experiences on practical issues such as data storage and exchange capacity, data exchange platforms, harmonised terminology, as well as the need for bioinformatics expertise. 
 To better organize the work in this work package, we have further divided it into four focus areas, illustrated in Figure 1 below. This will also form the framework for the inventory.
 
+!||
+
+**Figure 1:** The components that this WP consists of. Blue boxes describe species-agnostic processes, while the purple ones depend on which biological agent is being analysed.
+
 **C1: Infrastructure**
 The focus for this component is on exploring, testing and evaluating options and requirements for establishing possible infrastructures for using NGS methods for surveillance purposes. This component spans from sequencers, to compute systems, storage and databases, user interaction systems, data management and data transfer, as well as discussions regarding needed expertise. 
 The goal for the component is to document the trials and tribulations that come with implementing NextGen technologies for surveillance purposes, and to suggest possible practical solutions depending on results needed and available resources.
@@ -57,8 +61,8 @@ We will in this component examine how the results from various methods from comp
 During 2019, a pilot will be run within this WP to help explore and develop the knowledge needed to fill the inventory in a satisfactory manner. Based on preliminary analyses, we have discovered that there is quite a bit done already regarding components 2 and 3, thus we will for the main part focus on components 1 and 4. To accomplish this, we will proceed along three different tracks:
 Infrastructure track: we will explore what is needed with regards to infrastructure for using sequencing for bacterial typing as well as virulence and AMR detection by literature reviews, interviewing other institutions, and by setting up a joint infrastructure between the NIPH and the NVI in Oslo.
 
-***Pipeline track:*** we will explore a subset of available workflow systems and pipelines by implementing them on the aforementioned infrastructure.
-***Surveillance track:*** we will explore and test out various analyses that are available for doing surveillance based on NextGen data. 
+**Pipeline track:** we will explore a subset of available workflow systems and pipelines by implementing them on the aforementioned infrastructure.
+**Surveillance track:** we will explore and test out various analyses that are available for doing surveillance based on NextGen data. 
 
 **Inventory**
 The results of the work done in the pilot, as well as work done otherwise in the work package, will be available in a “Surveillance NextGen Handbook” which will be made available throughout this project. We will make several draft versions of this handbook available throughout the work, to get community input and to ensure community support.
