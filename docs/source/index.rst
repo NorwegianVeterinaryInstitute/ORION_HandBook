@@ -12,7 +12,7 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    howtodo.rst
    policies.rst
    Pipelines/pipelines.rst
-   infrastructure/infrastructure.rst
+   Infrastructure/infrastructure.rst
    typing.rst
    surveillance.rst 
 
