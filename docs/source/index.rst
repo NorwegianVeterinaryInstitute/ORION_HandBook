@@ -1,5 +1,3 @@
-::
-
 OneHealth ORION WP2-NGS HandBook
 ==============================================
 This page will document the delivereables from OneHealth ORION WP2-NGS.
