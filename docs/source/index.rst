@@ -4,6 +4,7 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Main page
    
    about.rst
