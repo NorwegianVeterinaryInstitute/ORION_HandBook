@@ -9,8 +9,6 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    
    about.rst
    policies.rst
-   Pipelines/pipelines.rst
-   Infrastructure/infrastructure.rst
    typing.rst
    surveillance.rst 
 
@@ -20,6 +18,11 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    :caption: Infrastruture
    
    Infrastructure/infrastructure.rst
+   Infrastructure/lims.rst
+   Infrastructure/sequencing_tech.rst
+   Infrastructure/storage_compute.rst
+   Infrastructure/db_management_analysis_platforms.rst
+   
 
 .. toctree::
    :maxdepth: 2
