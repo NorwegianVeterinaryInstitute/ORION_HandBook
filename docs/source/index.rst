@@ -79,9 +79,3 @@ Infrastructure track: we will explore what is needed with regards to infrastruct
 **Inventory**
 The results of the work done in the pilot, as well as work done otherwise in the work package, will be available in a “Surveillance NextGen Handbook” which will be made available throughout this project. We will make several draft versions of this handbook available throughout the work, to get community input and to ensure community support.
 
-
-:ref:`genindex`
-==================
-
-* :ref:`modindex`
-* :ref:`search`
