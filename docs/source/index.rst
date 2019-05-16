@@ -52,7 +52,6 @@ To better organize the work in this work package, we have further divided it int
 .. image:: Components.PNG
    :width: 462
    :height: 290
-
 **Figure 1:** The components that this WP consists of. Blue boxes describe species-agnostic processes, while the purple ones depend on which biological agent is being analysed.
 
 **C1: Infrastructure**
