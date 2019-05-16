@@ -14,12 +14,24 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    typing.rst
    surveillance.rst 
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Infrastruture
+   
+   Infrastructure/infrastructure.rst
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Pipelines
+   
+   Pipelines/pipelines.rst
 
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Contributing 
-
    
    Contributing/contributing.rst
    Contributing/code_of_conduct.rst
