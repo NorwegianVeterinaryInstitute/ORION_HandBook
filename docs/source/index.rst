@@ -49,7 +49,7 @@ ORION WP2-NGS
 The goal for this project is to create an OH Knowledge Base - a cross-domain inventory of currently available resources for performing integrated OH surveillance generation, data analysis and interpretation. The focus for the WP2NGS work package is on NextGen analytical data, methods, analyses and systems. The inventory generated from this work package will include best practices for data management and handling approaches for bacterial identification techniques. It should also include current experiences on practical issues such as data storage and exchange capacity, data exchange platforms, harmonised terminology, as well as the need for bioinformatics expertise. 
 To better organize the work in this work package, we have further divided it into four focus areas, illustrated in Figure 1 below. This will also form the framework for the inventory.
 
-.. image:: Components.png
+.. image:: Components.PNG
    :width: 462
    :height: 290
 
