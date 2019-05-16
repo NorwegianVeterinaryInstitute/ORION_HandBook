@@ -30,7 +30,11 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    :caption: Pipelines
    
    Pipelines/pipelines.rst
-
+   Pipelines/quality_control.rst
+   Pipelines/data_production.rst
+   Pipelines/insilico_WGS_methods.rst
+   Pipelines/virulance_amr.rst
+   
 .. toctree::
    :maxdepth: 2
    :hidden:
