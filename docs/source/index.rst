@@ -8,14 +8,22 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    :caption: Main page
    
    about.rst
-   Contributing/contributing.rst
-   Contributing/code_of_conduct.rst
    policies.rst
    Pipelines/pipelines.rst
    Infrastructure/infrastructure.rst
    typing.rst
    surveillance.rst 
 
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Contributing 
+
+   
+   Contributing/contributing.rst
+   Contributing/code_of_conduct.rst
+    
 One health surRveillance Initiative On harmonization of data collection and interpretatioN (ORION)
 ================================================================================================
 
