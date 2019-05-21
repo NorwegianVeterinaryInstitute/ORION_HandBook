@@ -39,12 +39,14 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    :caption: Typing
    
    Typing/typing.rst
-
+   Typing/species_strain_typing_methods.rst
+   
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Surveillance 
    Surveillance/surveillance.rst
+   Surveillance/ngs_cluster_outbreak.rst
    
 .. toctree::
    :maxdepth: 2
