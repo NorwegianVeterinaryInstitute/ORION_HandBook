@@ -46,8 +46,7 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    :maxdepth: 2
    :hidden:
    :caption: Surveillance 
-   
-   Surveillance/surveillace.rst
+   Surveillance/surveillance.rst
    
 .. toctree::
    :maxdepth: 2
