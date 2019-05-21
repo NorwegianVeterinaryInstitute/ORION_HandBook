@@ -1,12 +1,7 @@
 =======================
 License
 =======================
----
-layout: page
-title: "Licenses"
-root: .
----
-## Instructional Material
+##### Instructional Material
 
 All XXXXXXXXXXXXXXXXXXXXX material is
 made available under the [Creative Commons Attribution
@@ -47,7 +42,7 @@ Notices:
   rights such as publicity, privacy, or moral rights may limit how you
   use the material.
 
-## Software
+##### Software
 
 Except where otherwise noted, the example programs and other software
 provided by XXXXXXXXXXXXXXX are made available under the
@@ -73,7 +68,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## Trademark
+##### Trademark
 
 XXXXXXXXXXXXXXXXXXXX and their respective logos
 are registered trademarks of [Community Initiatives][CI].
