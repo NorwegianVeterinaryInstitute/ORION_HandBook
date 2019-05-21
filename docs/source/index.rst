@@ -9,8 +9,6 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    
    about.rst
    policies.rst
-   typing.rst
-   surveillance.rst 
 
 .. toctree::
    :maxdepth: 2
