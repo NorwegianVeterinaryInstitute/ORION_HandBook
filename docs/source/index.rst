@@ -8,9 +8,15 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    :caption: Main page
    
    about.rst
-   policies.rst
    license.rst
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Policies
+   
+   Policies/policies.rst
+   
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -56,7 +62,7 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    
    Contributing/contributing.rst
    Contributing/code_of_conduct.rst
-    
+   
 One health surRveillance Initiative On harmonization of data collection and interpretatioN (ORION)
 ================================================================================================
 
