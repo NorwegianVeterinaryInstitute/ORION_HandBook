@@ -38,6 +38,20 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
 .. toctree::
    :maxdepth: 2
    :hidden:
+   :caption: Typing
+   
+   Typing/typing.rst
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Surveillance 
+   
+   Surveillance/surveillace.rst
+   
+.. toctree::
+   :maxdepth: 2
+   :hidden:
    :caption: Contributing 
    
    Contributing/contributing.rst
