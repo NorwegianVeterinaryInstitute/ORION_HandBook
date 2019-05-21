@@ -21,7 +21,6 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    Infrastructure/storage_compute.rst
    Infrastructure/db_management_analysis_platforms.rst
    
-
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -44,7 +43,8 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Surveillance 
+   :caption: Surveillance
+  
    Surveillance/surveillance.rst
    Surveillance/ngs_cluster_outbreak.rst
    
