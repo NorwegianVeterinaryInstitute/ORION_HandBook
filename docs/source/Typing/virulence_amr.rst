@@ -1,3 +1,2 @@
-===================================
-Virulance and AMR Detection Methods
+Virulence and AMR Detection Methods
 ===================================
