@@ -1,7 +1,7 @@
-OneHealth ORION WP2-NGS HandBook
+The ORION NGS HandBook
 ==============================================
 One health surRveillance Initiative On harmonization of data collection and interpretatioN (ORION)
-================================================================================================
+----------------------------------------------------------------------------------------------------
 
 The ORION project, launched in 2018, aims at establishing and strengthening inter-institutional collaboration and transdisciplinary knowledge transfer in the area of surveillance data integration and interpretation, along the One Health (OH) objective of improving health and well-being.
 
@@ -17,7 +17,7 @@ Trainings and workshops will be offered (WP4) to support and integrate with othe
 
 
 ORION WP2-NGS
-=============
+-----------------
 ***Lead: Karin Lagesen (NVI-NORWAY)***
 ***Deputy: Umaer Naseer (NIPH-NORWAY)***
 
