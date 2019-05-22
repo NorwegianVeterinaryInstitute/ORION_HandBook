@@ -1,6 +1,5 @@
 OneHealth ORION WP2-NGS HandBook
 ==============================================
-This page will document the delivereables from OneHealth ORION WP2-NGS.
 
 .. toctree::
    :maxdepth: 2
@@ -85,3 +84,10 @@ Through three main work packages (WP), ORION’s specific goals can be summarize
 
 The work presented on these webpages stems from the WP2-NGS workpackage.
 The focus for this workpackage is on NextGen analytical data, methods, analyses and systems. The inventory generated from this work package will include best practices for data management and handling approaches for bacterial identification techniques. It will also include current experiences on practical issues such as data storage and exchange capacity, data exchange platforms, harmonised terminology, as well as the need for bioinformatics expertise.
+
+Participants
+=============
+Within this workpackage, we have had participants from eight institutions. These
+are:
+
+Karin Lagesen (NVI) (WP lead), Mohammed Umaer Naseer (NIPH) (WP deputy), Thomas Haverkamp (NVI), Jeevan Karloss (NVI), Wonhee Cha (SVA), Olov Svartström (FOHM), Mia Torphdahl (SSI),  Eva Litrup (SSI), Katrine Grimstrup Joensen (SSI), Lesley Larkin (PHE), Taran Skjerdal (NVI), Tim Dallman (PHE), Eelco Franz (RIVM), Tasja Buschhardt (BfR), Matthias Filter (BfR)

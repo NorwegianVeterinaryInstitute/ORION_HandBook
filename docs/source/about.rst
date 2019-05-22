@@ -1,70 +1,5 @@
 OneHealth ORION WP2-NGS HandBook
 ==============================================
-This page will document the delivereables from OneHealth ORION WP2-NGS.
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Main page
-
-   about.rst
-   license.rst
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Guidelines
-
-   Policies/efsa_ecdc.rst
-   Policies/intl.rst
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Infraststructure
-
-   Infrastructure/infrastructure.rst
-   Infrastructure/lims.rst
-   Infrastructure/sequencing_tech.rst
-   Infrastructure/storage_compute.rst
-   Infrastructure/DMAPs.rst
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Pipelines
-
-   Pipelines/pipelines.rst
-   Pipelines/quality_control.rst
-   Pipelines/data_production.rst
-   Pipelines/insilico_WGS_methods.rst
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Typing
-
-   Typing/typing.rst
-   Typing/species_strain_typing_methods.rst
-   Typing/amr_virulence.rst
-   Typing/data_sources.rst
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Surveillance
-
-   Surveillance/surveillance.rst
-   Surveillance/ngs_cluster_outbreak.rst
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Contributing
-
-   Contributing/contributing.rst
-   Contributing/code_of_conduct.rst
-
 One health surRveillance Initiative On harmonization of data collection and interpretatioN (ORION)
 ================================================================================================
 
@@ -109,13 +44,6 @@ This component focuses on the various typing schemas that exist for bacterial ty
 
 **C4: Surveillance**
 We will in this component examine how the results from various methods from components 2 and 3 can be used for surveillance purposes. Included here is how the various outcomes from component 3 will affect the surveillance process, and the conclusions drawn on the basis of such data. A major factor here is how the different levels of resolution provided by the various methods can affect the results. We will also explore and evaluate various similarity measures, as well as clustering methods based on such measures.
-
-**Pilot work**
-During 2019, a pilot will be run within this WP to help explore and develop the knowledge needed to fill the inventory in a satisfactory manner. Based on preliminary analyses, we have discovered that there is quite a bit done already regarding components 2 and 3, thus we will for the main part focus on components 1 and 4. To accomplish this, we will proceed along three different tracks:
-Infrastructure track: we will explore what is needed with regards to infrastructure for using sequencing for bacterial typing as well as virulence and AMR detection by literature reviews, interviewing other institutions, and by setting up a joint infrastructure between the NIPH and the NVI in Oslo.
-
-**Pipeline track:** we will explore a subset of available workflow systems and pipelines by implementing them on the aforementioned infrastructure.
-**Surveillance track:** we will explore and test out various analyses that are available for doing surveillance based on NextGen data.
 
 **Inventory**
 The results of the work done in the pilot, as well as work done otherwise in the work package, will be available in a “Surveillance NextGen Handbook” which will be made available throughout this project. We will make several draft versions of this handbook available throughout the work, to get community input and to ensure community support.
