@@ -27,7 +27,7 @@ This page will document the delivereables from OneHealth ORION WP2-NGS.
    Infrastructure/lims.rst
    Infrastructure/sequencing_tech.rst
    Infrastructure/storage_compute.rst
-   Infrastructure/db_management_analysis_platforms.rst
+   Infrastructure/DMAPs.rst
 
 .. toctree::
    :maxdepth: 2
