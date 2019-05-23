@@ -20,7 +20,7 @@ OneHealth ORION WP2-NGS HandBook
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Infraststructure
+   :caption: Infrastructure
 
    Infrastructure/infrastructure.rst
    Infrastructure/lims.rst
@@ -68,8 +68,8 @@ OneHealth ORION WP2-NGS HandBook
 
 The ORION sequencing for surveillance handbook
 ==================================================================================================
-This website aims to be a handbook that can help build national and local labs
-to build capacity and competence within the use of NGS methods fur surveillance
+This website aims to be a handbook that can help national and local labs
+to build capacity and competence on the use of NGS methods for surveillance
 purposes. This work is part of the "One health surRveillance Initiative On
 harmonization of data collection and interpretatioN (ORION)" One Health EJP
 project.
