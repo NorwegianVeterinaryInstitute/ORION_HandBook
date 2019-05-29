@@ -1,2 +1,2 @@
-Species and strain typing methods
+Virulence and AMR Detection Methods
 ===================================
