@@ -61,6 +61,7 @@ OneHealth ORION WP2-NGS HandBook
    :hidden:
    :caption: Evaluation Reports
 
+   Reports/glossary.rst
    Reports/irida.rst
    Reports/innuendo.rst
 
