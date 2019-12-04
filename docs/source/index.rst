@@ -59,6 +59,14 @@ OneHealth ORION WP2-NGS HandBook
 .. toctree::
    :maxdepth: 2
    :hidden:
+   :caption: Evaluation Reports
+
+   Reports/irida.rst
+   Reports/innuendo.rst
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
    :caption: Contributing
 
    Contributing/contributing.rst
