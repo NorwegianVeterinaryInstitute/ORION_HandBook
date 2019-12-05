@@ -5,7 +5,7 @@ data and analyses. This page will detail those considerations.
 
 
 Concept List
-==========
+---------------
 Short definition for the echnical and practical words used in the report.
 
 
@@ -35,12 +35,13 @@ In general, personal (name, sex, age, address, etc,.) information of a patient i
 
 
 IRIDA
-========
+-----------
 
 IRIDA - Integrated Rapid Infectious Disease Analysis Project 
 
 Background:
-------------
+============
+
 IRIDA is a web-based, secure and end-to-end analysis platform for surveillance and molecular data analysis. IRIDA is primarily developed by IRIDA consortium supported multiple funding agencies in Canada and otaher countries. Here we report the details from our evaluation.
 
 **1. User friendliness:** 
@@ -132,12 +133,13 @@ We have got a good feedback from the existing users of IRIDA.
 IRIDA releases two or more updates every year with new features and bug fixes. One of the important features in the future development pipeline is the integration of Ontologies into IRIDA. 
 
 INNUENDO
-=========
+---------
 
 INNUENDO: A novel cross-sectorial platform for the integration of genomics in surveillance of foodborne pathogens
 
 Background:
------------
+===========
+
 INNUENDO is a light-weight browser based end-to-end analysis surveillance platform. INNUENDO is species dependent. INNUENDO can be installed in a laptop, PC and high-performance computing clusters. 
 
 **1. User friendliness:** 
