@@ -152,23 +152,23 @@ INNUENDO has a simple metadata template for adding meta data. Free text allowed.
 INNUENDO is developed using Java. It has two main parts, frontend and backend server.
 
   * **Technical knowledge needed for administration:** 
-    * Knowledge in Java and NodeJS
-    * Knowledge in NextFlow and FlowCraft
-    * Knowledge in package managers (f. ex. conda) 
-    * Knowledge in REST APIs
-    * Knowledge in RDBMS (PostGres) are needed. 
-    * Knowledge in Nginx web server
-    * SLURM job scheduler knowledge to configure to use high performance computing facility
-    * Knowledge on LDAP and phpldapadmin
-    * Read about Allegrograph 
+   * Knowledge in Java and NodeJS
+   * Knowledge in NextFlow and FlowCraft
+   * Knowledge in package managers (f. ex. conda) 
+   * Knowledge in REST APIs
+   * Knowledge in RDBMS (PostGres) are needed. 
+   * Knowledge in Nginx web server
+   * SLURM job scheduler knowledge to configure to use high performance computing facility
+   * Knowledge on LDAP and phpldapadmin
+   * Read about Allegrograph 
 
   * **Administration details:** 
-    * Users are created by administrator with temporary password
-    * Installing pipelines are automated
-    * INNUENDO has released only one version so far
-    * Recommended to have a test INNUENDO installation beside production environment for testing purposes
-    * **Additional details to Administrators:**
-    * List the samples, data and results based on species, timelines and other parameters for a new analysis or to generate reports. 
+   * Users are created by administrator with temporary password
+   * Installing pipelines are automated
+   * INNUENDO has released only one version so far
+   * Recommended to have a test INNUENDO installation beside production environment for testing purposes
+   * **Additional details to Administrators:**
+   * List the samples, data and results based on species, timelines and other parameters for a new analysis or to generate reports. 
    * Big data can be transferred to INNUENDO instead of uploading them through browsers
 
 **6. Secure login:**
