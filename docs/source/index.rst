@@ -65,14 +65,6 @@ OneHealth ORION WP2-NGS HandBook
    Surveillance/surveillance.rst
    Surveillance/ngs_cluster_outbreak.rst
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Evaluation Reports
-
-   Reports/glossary.rst
-   Reports/irida.rst
-   Reports/innuendo.rst
 
 .. toctree::
    :maxdepth: 2
