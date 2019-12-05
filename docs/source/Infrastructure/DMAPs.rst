@@ -39,8 +39,7 @@ IRIDA
 
 IRIDA - Integrated Rapid Infectious Disease Analysis Project 
 
-Background:
------------
+**Background:**
 
 IRIDA is a web-based, secure and end-to-end analysis platform for surveillance and molecular data analysis. IRIDA is primarily developed by IRIDA consortium supported multiple funding agencies in Canada and otaher countries. Here we report the details from our evaluation.
 
@@ -137,8 +136,7 @@ INNUENDO
 
 INNUENDO: A novel cross-sectorial platform for the integration of genomics in surveillance of foodborne pathogens
 
-Background:
--------------
+**Background:**
 
 INNUENDO is a light-weight browser based end-to-end analysis surveillance platform. INNUENDO is species dependent. INNUENDO can be installed in a laptop, PC and high-performance computing clusters. 
 
