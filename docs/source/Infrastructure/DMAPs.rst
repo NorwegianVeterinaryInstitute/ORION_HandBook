@@ -95,11 +95,7 @@ Read about Liquibase
    * IRIDA uses MySQL to keep the data, analyses, access log details
    * IRIDA maintains an excellent technical support for the administrator questions
    * Recommended to have a test IRIDA installation beside production environment for testing purposes
-
- * Additional details to Administrators:
-List the samples, data and results based on species, timelines and other parameters for a new analysis or to generate reports. 
-Big data can be transferred to IRIDA instead of uploading them through browsers
-
+   * **Additional details to Administrators:** List the samples, data and results based on species, timelines and other parameters for a new analysis or to generate reports. Big data can be transferred to IRIDA instead of uploading them through browsers
 
 **6. Secure login:**
 IRIDA uses Spring Security for authentication, authorization and project role definition(data access control). Spring Security is one of the most powerful security frameworks available. 
@@ -166,13 +162,12 @@ INNUENDO is developed using Java. It has two main parts, frontend and backend se
     * Knowledge on LDAP and phpldapadmin
     * Read about Allegrograph 
 
- * Administration details: 
+ * **Administration details:** 
    * Users are created by administrator with temporary password
    * Installing pipelines are automated
    * INNUENDO has released only one version so far
    * Recommended to have a test INNUENDO installation beside production environment for testing purposes
-
- * Additional details to Administrators:
+   * **Additional details to Administrators:**
    * List the samples, data and results based on species, timelines and other parameters for a new analysis or to generate reports. 
    * Big data can be transferred to INNUENDO instead of uploading them through browsers
 
