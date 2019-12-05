@@ -131,7 +131,7 @@ INNUENDO: A novel cross-sectorial platform for the integration of genomics in su
 INNUENDO is a light-weight browser based end-to-end analysis surveillance platform. INNUENDO is species dependent. INNUENDO can be installed in a laptop, PC and high-performance computing clusters. 
 
 **1. User friendliness:** 
-INNUENDO has a very simple front-end page to login, add data and run analysis pipelines.
+INNUENDO has user friendly front-end page to login, add data and run analysis pipelines.
 
 **2. User data management:** 
 INNUENDO does not have any defined user data management. Everyone those who are using the instance can see all the data and the results. 
