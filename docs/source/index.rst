@@ -18,7 +18,7 @@ OneHealth ORION WP2-NGS HandBook
    Policies/intl.rst
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :hidden:
    :caption: Infrastructure
 
@@ -26,14 +26,16 @@ OneHealth ORION WP2-NGS HandBook
    Infrastructure/lims.rst
    Infrastructure/sequencing_tech.rst
    Infrastructure/storage_compute.rst
-   .. toctree::
-      :maxdepth: 2
-      :hidden:
-      :caption: Database management/Analysis platforms
-      Infrastructure/DMAPs.rst
-      Infrastructure/DMAP/concept_list.rst
-      Infrastructure/DMAP/irida.rst 
-      Infrastructure/DMAP/innuendo.rst
+   
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+    :caption: Database management/Analysis platforms
+     
+    DMAPs.rst
+    DMAP/concept_list.rst
+    DMAP/irida.rst 
+    DMAP/innuendo.rst
 
 .. toctree::
    :maxdepth: 2
