@@ -18,7 +18,7 @@ OneHealth ORION WP2-NGS HandBook
    Policies/intl.rst
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :hidden:
    :caption: Infrastructure
 
