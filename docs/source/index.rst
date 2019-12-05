@@ -26,6 +26,7 @@ OneHealth ORION WP2-NGS HandBook
    Infrastructure/lims.rst
    Infrastructure/sequencing_tech.rst
    Infrastructure/storage_compute.rst
+   :caption: Database management/Analysis platforms
    Infrastructure/DMAPs.rst
    Infrastructure/DMAP/concept_list.rst
    Infrastructure/DMAP/irida.rst 
