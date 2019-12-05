@@ -30,7 +30,7 @@ OneHealth ORION WP2-NGS HandBook
 .. toctree::
     :maxdepth: 2
     :hidden:
-    :caption: Database management/Analysis platforms
+    :caption: DB management/Analysis platforms
      
     DMAPs.rst
     DMAP/concept_list.rst
