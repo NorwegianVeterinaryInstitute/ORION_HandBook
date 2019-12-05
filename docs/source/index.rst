@@ -27,6 +27,9 @@ OneHealth ORION WP2-NGS HandBook
    Infrastructure/sequencing_tech.rst
    Infrastructure/storage_compute.rst
    Infrastructure/DMAPs.rst
+   Infrastructure/DMAP/concept_list.rst
+   Infrastructure/DMAP/irida.rst 
+   Infrastructure/DMAP/innuendo.rst
 
 .. toctree::
    :maxdepth: 2
