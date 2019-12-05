@@ -73,28 +73,28 @@ IRIDA is developed primarily using Java using Galaxy framework as the base. One 
 IRIDA installation documentation has most of the installation steps covered but still one should need a Unix/Linux system administrator and web developer level knowledge to understand, fill the technical gaps and dependencies, install the instance and maintain it. 
 
  * Technical knowledge needed for administration: 
-    * Knowledge in Java 8 and Spring Framework
-    * Knowledge in package managers (f. ex. conda) 
-    * Knowledge in REST APIs
-    * Knowledge in RDBMS (f. ex. MySQL/PostGres) are needed. 
-    * Knowledge in Apache TomCat 
-    * Galaxy installation and configuration experience is a huge advantage
-    * Administrator does not need to configure anything for secure login during installation
-    * Galaxy and IRIDA uses different port numbers if they are installed in the same server (recommended to install them in different servers)
-    * SLURM job scheduler knowledge to configure Galaxy to use high performance computing facility
+   * Knowledge in Java 8 and Spring Framework
+   * Knowledge in package managers (f. ex. conda) 
+   * Knowledge in REST APIs
+   * Knowledge in RDBMS (f. ex. MySQL/PostGres) are needed. 
+   * Knowledge in Apache TomCat 
+   * Galaxy installation and configuration experience is a huge advantage
+   * Administrator does not need to configure anything for secure login during installation
+   * Galaxy and IRIDA uses different port numbers if they are installed in the same server (recommended to install them in different servers)
+   * SLURM job scheduler knowledge to configure Galaxy to use high performance computing facility
 Read about Liquibase 
 
 * Administration details: 
-    * Users are created by administrator with temporary password
-    * IRIDA uses Spring Security for authentication and role based access control
-    * Important to learn Spring Security configuration for administration(and future single sign-on services if needed)
-    * Installing pipelines are partially automated
-    * Some of the tools should be installed manually using galaxy administration portal
-    * Technical-manual configuration is needed for converting Galaxy workflow to IRIDA pipelines
-    * IRIDA releases few updates a year and updating IRIDA is mostly smooth
-    * IRIDA uses MySQL to keep the data, analyses, access log details
-    * IRIDA maintains an excellent technical support for the administrator questions
-    * Recommended to have a test IRIDA installation beside production environment for testing purposes
+   * Users are created by administrator with temporary password
+   * IRIDA uses Spring Security for authentication and role based access control
+   * Important to learn Spring Security configuration for administration(and future single sign-on services if needed)
+   * Installing pipelines are partially automated
+   * Some of the tools should be installed manually using galaxy administration portal
+   * Technical-manual configuration is needed for converting Galaxy workflow to IRIDA pipelines
+   * IRIDA releases few updates a year and updating IRIDA is mostly smooth
+   * IRIDA uses MySQL to keep the data, analyses, access log details
+   * IRIDA maintains an excellent technical support for the administrator questions
+   * Recommended to have a test IRIDA installation beside production environment for testing purposes
 
  * Additional details to Administrators:
 List the samples, data and results based on species, timelines and other parameters for a new analysis or to generate reports. 
@@ -155,7 +155,7 @@ INNUENDO has a simple metadata template for adding meta data. Free text allowed.
 **5. Installation and administration:**
 INNUENDO is developed using Java. It has two main parts, frontend and backend server.
 
-5.1 Technical knowledge needed for administration: 
+ * Technical knowledge needed for administration: 
     * Knowledge in Java and NodeJS
     * Knowledge in NextFlow and FlowCraft
     * Knowledge in package managers (f. ex. conda) 
@@ -166,13 +166,13 @@ INNUENDO is developed using Java. It has two main parts, frontend and backend se
     * Knowledge on LDAP and phpldapadmin
     * Read about Allegrograph 
 
-5.2 Administration details: 
+ * Administration details: 
    * Users are created by administrator with temporary password
    * Installing pipelines are automated
    * INNUENDO has released only one version so far
    * Recommended to have a test INNUENDO installation beside production environment for testing purposes
 
-5.3 Additional details to Administrators:
+ * Additional details to Administrators:
    * List the samples, data and results based on species, timelines and other parameters for a new analysis or to generate reports. 
    * Big data can be transferred to INNUENDO instead of uploading them through browsers
 
