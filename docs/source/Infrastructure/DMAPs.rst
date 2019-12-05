@@ -72,7 +72,7 @@ IRIDA is developed primarily using Java using Galaxy framework as the base. One 
 
 IRIDA installation documentation has most of the installation steps covered but still one should need a Unix/Linux system administrator and web developer level knowledge to understand, fill the technical gaps and dependencies, install the instance and maintain it. 
 
- * Technical knowledge needed for administration: 
+ * **Technical knowledge needed for administration:** 
    * Knowledge in Java 8 and Spring Framework
    * Knowledge in package managers (f. ex. conda) 
    * Knowledge in REST APIs
@@ -84,7 +84,7 @@ IRIDA installation documentation has most of the installation steps covered but 
    * SLURM job scheduler knowledge to configure Galaxy to use high performance computing facility
 Read about Liquibase 
 
-* Administration details: 
+* **Administration details:** 
    * Users are created by administrator with temporary password
    * IRIDA uses Spring Security for authentication and role based access control
    * Important to learn Spring Security configuration for administration(and future single sign-on services if needed)
