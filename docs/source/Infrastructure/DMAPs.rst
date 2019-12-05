@@ -53,25 +53,19 @@ User has to create a project with few details before adding sample data (WGS, me
 IRIDA comes with basic metadata template for each sample to add important/basic details. Also, user can add as many as metadata columns he needs for his data. But free texts are allowed. That’s a problem.    
 
 **4. Functionalities** 
- * Individual tools: IRIDA is based on Galaxy framework. Galaxy is browser based Bioinformatics platform with a possibility of using almost all the Bioinformatics tools and pipelines. Administrators can easily install/implement/remove most of the Bioinformatics tools. And, executing a tool is very easy in Galaxy with a simple training.
+ * **Individual tools:** IRIDA is based on Galaxy framework. Galaxy is browser based Bioinformatics platform with a possibility of using almost all the Bioinformatics tools and pipelines. Administrators can easily install/implement/remove most of the Bioinformatics tools. And, executing a tool is very easy in Galaxy with a simple training.
 
- * Pipelines: IRIDA comes with 7 premade pipelines which can do all the general data analysis (assembly, annotation, typing and Phylogenetics). New pipelines can be easily added based on Galaxy workflows by IRIDA instance administrators. 
+ * **Pipelines:** IRIDA comes with 7 premade pipelines which can do all the general data analysis (assembly, annotation, typing and Phylogenetics). New pipelines can be easily added based on Galaxy workflows by IRIDA instance administrators.  Good microbial Bioinformatics knowledge is needed to choose the pipelines based on your data and the goals. 
 
- * Good microbial Bioinformatics knowledge is needed to choose the pipelines based on your data and the goals. 
+ * **Visualization tools:** IRIDA comes with visualization tools like GenGIS, Islandviewer and Island compare, Phyloviz. More visualization tools can be added in Galaxy framework. Good microbial Bioinformatics knowledge is needed to use the visualization tools due to input file formats and pre-analysis. 
 
- * Visualization tools: IRIDA comes with visualization tools like GenGIS, Islandviewer and Island compare, Phyloviz. More visualization tools can be added in Galaxy framework.
+ * **Automation of data transfer from sequencers:** IRIDA has developed an option to load/transfer the data from sequencers after the sequencing run is over directly to IRIDA platform securely and run pipelines on the data. Choosing a pipeline to analyse the transferred data is done at the manager of the project level inside IRIDA platform.
 
- * Good microbial Bioinformatics knowledge is needed to use the visualization tools due to input file formats and pre-analysis. 
+ * **Technical details:** Secure API keys and other security configurations are needed to facilitate this option. Linux System administration and (windows) networking knowledge and experience is needed.
 
- * Automation of data transfer from sequencers: IRIDA has developed an option to load/transfer the data from sequencers after the sequencing run is over directly to IRIDA platform securely and run pipelines on the data. Choosing a pipeline to analyse the transferred data is done at the manager of the project level inside IRIDA platform.
+ * **Activity Log:** Users’ every activity on any project is logged and the details are available. 
 
- * Technical details: Secure API keys and other security configurations are needed to facilitate this option. Linux System administration and (windows) networking knowledge and experience is needed.
-
- * Activity Log:
-Users’ every activity on any project is logged and the details are available. 
-
- * Data communication between instances and other tools:
-External tools can interact with IRIDA REST API. Communication is authenticated by OAuth2. Standard output formats are XML, JSON, FastQ and Fasta
+ * **Data communication between instances and other tools:** External tools can interact with IRIDA REST API. Communication is authenticated by OAuth2. Standard output formats are XML, JSON, FastQ and Fasta
 
 **5. Installation and administration:**
 IRIDA is developed primarily using Java using Galaxy framework as the base. One should install Galaxy framework (or use an existing one) first before installing IRIDA web interface. Galaxy and IRIDA are configured to communicate with each other. Galaxy uses PostGres (it depends) and IRIDA uses MySQL.
