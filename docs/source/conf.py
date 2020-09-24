@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ORION-NGS HandBook'
-copyright = '2019, Jeevan Karloss'
-author = 'Jeevan Karloss'
+copyright = 'EJP ORION'
+author = 'EJP ORION'
 
 # The short X.Y version
 version = ''
@@ -56,8 +56,8 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
+# source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
@@ -138,7 +138,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'ORION-NGSHandBook.tex', 'ORION-NGS HandBook Documentation',
-     'Jeevan Karloss', 'manual'),
+     'EJP ORION', 'manual'),
 ]
 
 
