@@ -1,2 +1,0 @@
-Sequencing Technologies 
-====================================
