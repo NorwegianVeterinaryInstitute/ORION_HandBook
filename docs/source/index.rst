@@ -84,15 +84,15 @@ Health (OH) objective of improving health and well-being.
 Through three main work packages (WP), ORION’s specific goals can be summarized
 as the delivery of three main resources:
 
-• a “OH Surveillance Codex” (WP1) - a high level framework for harmonised,
-cross-sectional description and categorisation of surveillance data covering
-all surveillance phases and all knowledge types;
-• a “OHS Knowledge Hub” (WP2) - a cross-domain inventory of currently available
-data sources, methods / algorithms / tools, that support OH surveillance data
-generation, data analysis, modelling and decision support; and
-• “OHS Infrastructural Resources” (WP3) – that are practical, infrastructural
-resources forming the basis for successful harmonisation and integration of
-surveillance data and methods.
+- a “OH Surveillance Codex” (WP1) - a high level framework for harmonised,
+  cross-sectional description and categorisation of surveillance data covering
+  all surveillance phases and all knowledge types;
+- a “OHS Knowledge Hub” (WP2) - a cross-domain inventory of currently available
+  data sources, methods / algorithms / tools, that support OH surveillance data
+  generation, data analysis, modelling and decision support; and
+- “OHS Infrastructural Resources” (WP3) – that are practical, infrastructural
+  resources forming the basis for successful harmonisation and integration of
+  surveillance data and methods.
 
 The work presented on these webpages stems from the WP2-NGS workpackage.
 The focus for this workpackage is on NextGen analytical data, methods, analyses
