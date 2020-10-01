@@ -24,7 +24,7 @@ OneHealth ORION WP2-NGS HandBook
 
    Infrastructure/infrastructure.rst
    Infrastructure/lims.rst
-   Infrastructure/sequencing_tech.rst
+   Infrastructure/sequencing_tech.md
    Infrastructure/storage_compute.rst
    Infrastructure/DMAPs.rst
 
@@ -35,7 +35,7 @@ OneHealth ORION WP2-NGS HandBook
    :caption: Pipelines
 
    Pipelines/pipelines.rst
-   Pipelines/quality_control.rst
+   Pipelines/quality_control.md
    Pipelines/data_production.rst
    Pipelines/insilico_WGS_methods.rst
 
@@ -50,7 +50,7 @@ OneHealth ORION WP2-NGS HandBook
    Typing/data_sources.rst
 
 .. toctree::
-   :maxdepth: 3 
+   :maxdepth: 3
    :hidden:
    :caption: Surveillance
 
