@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ORION-NGS HandBook'
+project = 'OH SFS HandBook'
 copyright = 'EJP ORION'
 author = 'EJP ORION'
 
@@ -56,6 +56,12 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
+from recommonmark.parser import CommonMarkParser
+
+source_parsers = {
+    '.md': CommonMarkParser,
+}
+
 source_suffix = ['.rst', '.md']
 # source_suffix = '.rst'
 
