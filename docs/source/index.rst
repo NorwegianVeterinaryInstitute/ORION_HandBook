@@ -37,7 +37,7 @@ One Health Sequencing for Surveillance HandBook
    Pipelines/toolchains.md
    Pipelines/quality_control.md
    Pipelines/data_production.rst
-   Pipelines/insilico_WGS_methods.rst
+   Pipelines/software_list.md
 
 .. toctree::
    :maxdepth: 3
