@@ -83,7 +83,7 @@ This handbook consists of several parts, to understand more about how this
 handbook works, please read more about it in the [About](about.md) chapter.
 
 New contributions to this handbook are very welcome. For instructions on how
-to contribute, please see our :doc:`Contributing <Contributing/contributing.md>`
+to contribute, please see our `Contributing <Contributing/contributing.md>`__
 page.
 
 All the materials in this handbook is under the
