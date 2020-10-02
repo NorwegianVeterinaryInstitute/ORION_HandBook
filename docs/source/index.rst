@@ -42,12 +42,11 @@ One Health Sequencing for Surveillance HandBook
 .. toctree::
    :maxdepth: 3
    :hidden:
-   :caption: Typing
+   :caption: Typing resources
 
-   Typing/typing.rst
-   Typing/species_strain_typing_methods.rst
-   Typing/amr_virulence.rst
-   Typing/data_sources.rst
+   Typing/xMLST.md
+   Typing/virulence_amr.md
+   Typing/phylogeny.md
 
 .. toctree::
    :maxdepth: 3
