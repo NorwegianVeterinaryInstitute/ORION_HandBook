@@ -63,5 +63,10 @@ source_parsers = {
 
 source_suffix = ['.rst', '.md']
 
+# to enable markdown tables
+extensions = [
+    'sphinx_markdown_tables',
+]
+
 # Setting the document root
 master_doc = "index"
