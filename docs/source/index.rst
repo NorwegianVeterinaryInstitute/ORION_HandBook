@@ -47,6 +47,7 @@ One Health Sequencing for Surveillance HandBook
    Typing/xMLST.md
    Typing/virulence_amr.md
    Typing/phylogeny.md
+   Typing/species_toolkits.md
 
 .. toctree::
    :maxdepth: 3
@@ -62,8 +63,9 @@ One Health Sequencing for Surveillance HandBook
    :hidden:
    :caption: Contributing
 
-   Contributing/contributing.rst
-   Contributing/code_of_conduct.rst
+   Contributing/contributing.md
+   Contributing/authors.md
+   Contributing/code_of_conduct.md
 
 
 
