@@ -1,4 +1,4 @@
-# Sequence analysis Pipelines
+# Sequence analysis tool chains
 
 In recent years next generation sequencing has matured and with that a
 solidification on the required methods for WGS projects has occurred.
