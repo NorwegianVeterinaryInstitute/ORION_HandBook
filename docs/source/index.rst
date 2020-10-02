@@ -83,7 +83,8 @@ This handbook consists of several parts, to understand more about how this
 handbook works, please read more about it in the [About](about.md) chapter.
 
 New contributions to this handbook are very welcome. For instructions on how
-to contribute, please see our [Contributing](Contributing/contributing.md) page.
+to contribute, please see our :doc:`Contributing <Contributing/contributing.md>`
+page.
 
 All the materials in this handbook is under the
-[CC-BY license](https://creativecommons.org/licenses/by/2.0/). 
+[CC-BY license](https://creativecommons.org/licenses/by/2.0/).
