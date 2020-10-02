@@ -70,3 +70,13 @@ extensions = [
 
 # Setting the document root
 master_doc = "index"
+
+# to get responsive tables, see https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html
+
+html_static_path = ['_static']
+
+html_context = {
+    'css_files': [
+        '_static/theme_overrides.css',  # override wide tables in RTD theme
+        ],
+     }
