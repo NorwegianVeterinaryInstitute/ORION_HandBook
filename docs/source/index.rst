@@ -32,9 +32,9 @@ One Health Sequencing for Surveillance HandBook
 .. toctree::
    :maxdepth: 3
    :hidden:
-   :caption: Pipelines
+   :caption: Bioinformatic methods
 
-   Pipelines/pipelines.rst
+   Pipelines/toolchains.md
    Pipelines/quality_control.md
    Pipelines/data_production.rst
    Pipelines/insilico_WGS_methods.rst
