@@ -1,10 +1,14 @@
-# ORION_HandBook
-Results from ORION NGS will be documented here using ReadTheDocs
+# OH Sequencing for Surveillance HandBook
+This is the document repository that forms the basis for the One Health
+Sequencing for Surveillance Handbook.
 
-# Building based on Dev-branch
-Its good practice to build the page based on dev-branch before we accept the merge request to master branch. 
-Configure/change the repository(from master branch to dev-branch) in the "readthedocs.org" page after login. And, rebuild the page readthedocs documentation. 
+## license
+The materials available in this handbook is available under CC-BY license.
+For more information about that, please see the
+[License documentation](docs/source/license.md)
 
-# Dev-Branch
-https://github.com/NorwegianVeterinaryInstitute/ORION_HandBook/tree/Orion-Dev-Branch 
-
+## Contributions
+We are very happy to get contributions to this handbook, be it via email,
+issues or pull requests. Please have a look at our
+[Contribution documentation](docs/source/Contributing/contributing.md) for how to
+contribute.
