@@ -10,5 +10,5 @@ For more information about that, please see the
 ## Contributions
 We are very happy to get contributions to this handbook, be it via email,
 issues or pull requests. Please have a look at our
-[Contribution](docs/source/Contributing/contributing.md) for how to
+[Contribution documentation](docs/source/Contributing/contributing.md) for how to
 contribute.
