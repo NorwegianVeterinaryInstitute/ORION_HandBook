@@ -46,7 +46,9 @@ institutions. Some institutions, like EFSA, can under certain circumstances
 allow organizations to submit sequence types, thus avoiding the need for
 uploading the full sequence.  
 
-## Typing/Nomenclature databases
+## MLST resources
+
+### Typing/Nomenclature databases
 
 There are three main MLST nomenclature/database servers.  
 * https://pubmlst.org/
@@ -57,7 +59,7 @@ There are three main MLST nomenclature/database servers.
 It is important to realize that these work independently from each other. A
 sequence type only makes sense provided it is known which system has been used.
 
-## MLST finding methods
+### MLST finding methods
 
 There are two main strategies for finding MLST genes.
 
@@ -71,11 +73,11 @@ the allele typing database. Next, those reads are collected and assembled into
 genes. These are then compared to the alleles in the database, and allele and
 ST numbers are assigned.
 
-## MLST software
+### MLST software
 There are many tools for doing MLST from both reads and assemblies available. It is important to realize that even though they might use the same schema, they might not give the same results. [A review of various MLST tools and their results can be found in this paper.](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000124)
 
 
-## cgMLST
+## cgMLST resource
 
 cgMLST is an extension of the original seven-loci MLST method. Conceptually speaking it works in the same way as MLST. The main difference lies in how the
 schema is established, and how many loci are included. Since cgMLST schemas
@@ -83,10 +85,14 @@ commonly include thousands or more genes, it is more common to use cgMSLT
 more as a way of measuring differences between genomes, than to do typing as
 such. However,  
 
-
-## cgMLST nomenclature servers
+### cgMLST nomenclature servers
 
 * https://pubmlst.org/
 * https://bigsdb.pasteur.fr/
 * https://enterobase.warwick.ac.uk
 * https://chewbbaca.online/
+
+
+### cgMLST tools
+
+TBD
