@@ -1,2 +1,0 @@
-Storage and Compute Infrastructures 
-===================================
