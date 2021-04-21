@@ -25,7 +25,7 @@ One Health Sequencing for Surveillance HandBook
    Infrastructure/infrastructure.rst
    Infrastructure/lims.rst
    Infrastructure/sequencing_tech.md
-   Infrastructure/storage_compute.rst
+   Infrastructure/storage_compute.md
    Infrastructure/DMAPs.rst
 
 
