@@ -7,7 +7,7 @@ One Health Sequencing for Surveillance HandBook
    :caption: Main page
 
    about.md
-   license.rst
+   license.md
 
 .. toctree::
    :maxdepth: 3
@@ -20,19 +20,14 @@ One Health Sequencing for Surveillance HandBook
 .. toctree::
    :maxdepth: 3
    :hidden:
-   :caption: Infrastructure
+   :caption: Sequencing technologies
 
-   Infrastructure/infrastructure.rst
-   Infrastructure/lims.rst
-   Infrastructure/sequencing_tech.md
-   Infrastructure/storage_compute.md
-   Infrastructure/DMAPs.rst
-
+   Seq_tech/sequencing_tech.md
 
 .. toctree::
    :maxdepth: 3
    :hidden:
-   :caption: Bioinformatic methods
+   :caption: Bioinformatics methods
 
    Pipelines/toolchains.md
    Pipelines/quality_control.md
@@ -42,21 +37,37 @@ One Health Sequencing for Surveillance HandBook
 .. toctree::
    :maxdepth: 3
    :hidden:
-   :caption: Typing resources
+   :caption: Single isolate analysis
 
-   Typing/xMLST.md
+   Typing/MLST.md
    Typing/virulence_amr.md
-   Typing/phylogeny.md
-   Typing/species_toolkits.md
 
 .. toctree::
    :maxdepth: 3
    :hidden:
-   :caption: Surveillance
+   :caption: Cluster analysis
 
-   Surveillance/surveillance.rst
-   Surveillance/ngs_cluster_outbreak.rst
+   Clustering/xMLST.md
+   Clustering/phylogeny.md
 
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Compute Infrastructure
+
+   Infrastructure/infrastructure.rst
+   Infrastructure/storage_compute.md
+   Infrastructure/DMAPs.md
+
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Species analysis
+
+   Species/ecoli.md
+   Species/campylobacter.md
+   Species/salmonella.md
+   Species/listeria.md
 
 .. toctree::
    :maxdepth: 2
