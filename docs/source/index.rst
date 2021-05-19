@@ -23,6 +23,7 @@ One Health Sequencing for Surveillance HandBook
    :caption: Sequencing technologies
 
    Seq_tech/sequencing_tech.md
+   Seq_tech/formats.md
 
 .. toctree::
    :maxdepth: 3
@@ -55,9 +56,8 @@ One Health Sequencing for Surveillance HandBook
    :hidden:
    :caption: Compute Infrastructure
 
-   Infrastructure/infrastructure.rst
-   Infrastructure/storage_compute.md
-   Infrastructure/DMAPs.md
+   Compute/storage_compute.md
+   Compute/DMAPs.md
 
 .. toctree::
    :maxdepth: 3
