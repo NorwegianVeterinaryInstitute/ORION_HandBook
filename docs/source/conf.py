@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'OH SFS Handbook'
-copyright = 'ORION OHEJP'
-author = 'ORION OHEJP'
+copyright = 'ORION and BeONE OHEJP'
+author = 'ORION and BeONE OHEJP'
 
 # The full version, including alpha/beta/rc tags
 release = 'v0.0.1'
