@@ -78,18 +78,22 @@ One Health Sequencing for Surveillance HandBook
    Contributing/authors.md
    Contributing/code_of_conduct.md
 
-
-
 This website aims to be a handbook that can help national and local labs to
 build capacity and competence on the use of NGS methods for surveillance
 purposes. This work was started as part of the `"One health surRveillance
 Initiative On harmonization of data collection and interpretatioN
-(ORION)" <https://onehealthejp.eu/jip-orion/>`__ One Health EJP project.
+(ORION)" <https://onehealthejp.eu/jip-orion/>`__ One Health EJP project, and
+continued as part of the `"BeOne: Building Integrative Tools for One Health
+Surveillance"` <https://onehealthejp.eu/jrp-beone/> project.
 
-The ORION project, launched in 2018, aims at establishing and strengthening
+The ORION project, launched in 2018, aimed at establishing and strengthening
 inter-institutional collaboration and transdisciplinary knowledge transfer in
 the area of surveillance data integration and interpretation, along the One
-Health (OH) objective of improving health and well-being.
+Health (OH) objective of improving health and well-being. The BeONE project,
+launched in 2020, aims at developing an integrated surveillance dashboard in
+which molecular and epidemiological data for foodborne pathogens can be
+interactively analysed, visualised and interpreted by the relevant experts
+across disciplines and sectors.
 
 This handbook consists of several parts, to understand more about how this
 handbook works, please read more about it in the `About <about.md>`__ page.
