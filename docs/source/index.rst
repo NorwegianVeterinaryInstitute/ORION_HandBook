@@ -84,7 +84,7 @@ purposes. This work was started as part of the `"One health surRveillance
 Initiative On harmonization of data collection and interpretatioN
 (ORION)" <https://onehealthejp.eu/jip-orion/>`__ One Health EJP project, and
 continued as part of the `"BeOne: Building Integrative Tools for One Health
-Surveillance"` <https://onehealthejp.eu/jrp-beone/> project.
+Surveillance" <https://onehealthejp.eu/jrp-beone/>` project.
 
 The ORION project, launched in 2018, aimed at establishing and strengthening
 inter-institutional collaboration and transdisciplinary knowledge transfer in

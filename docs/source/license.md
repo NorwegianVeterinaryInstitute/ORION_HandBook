@@ -17,8 +17,8 @@ license terms.
 Under the following terms:
 
 **Attribution** - You must give appropriate credit (mentioning that
-  your work is derived from work that is Copyright © ORION OHEJP and, where
-  practical, linking to
+  your work is derived from work that is Copyright © ORION and BeONE OHEJP and,
+  where practical, linking to
   [oh-sfs-handbook.readthedocs.io](https://oh-sfs-handbook.readthedocs.io/)),
   provide a link to the [full legal text of the CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode), and indicate if changes were
   made. You may do so in any reasonable manner, but not in any way that
