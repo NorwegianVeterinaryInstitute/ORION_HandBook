@@ -1,111 +1,21 @@
 # Data preprocessing
 
-Nucleotide sequences in sequencing files can be of low quality. It is thus
-needed that each sequence is processed such that the overall quality in the
-sequence file is improved before it is used in any kind of data-analysis.
-
-## Contamination removal
-
-Sequence data can contain exogenous sequences (generally at low frequency)
-derived from contaminants introduced during either the DNA extraction or the
-library prep phases. This is mostly of serious concern when working with small
-amounts of input material and when using PCR amplification
-([Salter et al., 2014](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-014-0087-z#Sec1);
-[Drengenes et al., 2019](https://bmcmicrobiol.biomedcentral.com/articles/10.1186/s12866-019-1560-1)).
-In all cases, it is advisable to remove contaminating sequences from the
-sequence data.
-
-The origins of the microbial contaminants can be diverse and they are found in
-ultrapure water systems, molecular biology kits or laboratory reagents
-([Salter et al., 2014](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-014-0087-z#Sec1)).
-In addition, some experimental procedures deliberately add control DNA to
-improve throughput or for normalization purposes so different samples can be
-compared. For example, the illumina sequencing platform uses the genome of the
-phage PhiX as a control in the sequencing run and it is also sequenced and
-present in the sequence data ([Mukherjee et al., 2015](https://environmentalmicrobiome.biomedcentral.com/articles/10.1186/1944-3277-10-18)). Additional cases of contaminating data can be human sequences due to laboratory
-contamination, or because the sample was associated with host tissue (as in the
-case of metagenomic experiments). In labs where DNA extraction of other
-species then the target species is performed on a large scale, it is possible
-that DNA fragments of the other species can contaminate the samples when DNA
-extraction is done without measures to prevent such contamination.
-
-Contamination can be removed via mapping or classification of reads to either a
-reference genome (e.g. phix or Homo sapiens) or a dedicated reference database
-(see for instance this publication: [Bush et al., 2020](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000393)).
-Reads that match are then removed and it is assumed that the remaining reads
-are clean from contamination. For single microbial genome sequencing, it is
-also possible to take a general microbial genomes reference database to
-determine if the genome sequence data does not have contamination from other
-co-isolated species.
-
-Assembled microbial genomes can / should also be screened for the presence of
-contaminating sequences, for instance the genome of the Phage phiX readily
-assembles as one contig when the Phix sequences were not removed before
-assembly. This can also be done by screening the contig sequences using blast
-or other approaches (Mukherjee et al., 2015).
+Nucleotide sequences in sequencing files can be of low quality. Thus, the sequences needs to be processed such that the overall quality in the sequence file is improved before it is used in any kind of data analysis. Adapters might be attached to the sequenced fragments, these are also often removed before further processing. Also, while Illumina data these days come already basecalled (i.e. the signal has been translated into DNA letters), this might not be the case for Pacbio and Nanopore data. This step might thus have to be performed before adapter and quality trimming.    
 
 ## Quality and adapter trimming 	
-Before further analysis, it is common to evaluate the quality of the data, and
-to remove any adapters found in the reads. Commonly used tools frequently do
-both of these things.
+Before further analysis, it is common to evaluate the quality of the data, and to remove any adapters found in the reads and also low quality regions. Commonly used tools frequently do both of these things.
 
-Quality is denoted on a per base level, via the PHRED score, which denotes the
-likelihood of the base being wrong. For Illumina data, the quality of a read
-will commonly be quite high in the beginning (Q30-40), but then fall along the
-read, dipping towards the end. Commonly anything below Q15-Q20 is regarded as
-bad, and portions of the reads where the average quality is getting too low are
-generally trimmed or removed from the read.
+Quality is denoted on a per base level, via the [PHRED score](https://en.wikipedia.org/wiki/Phred_quality_score), which denotes the likelihood of the base being wrong. For Illumina data, the quality of a read will commonly be quite high in the beginning (Q30-40), but then fall along the read, dipping towards the end.  Commonly anything below Q15-Q20 is regarded as bad, and portions of the reads where the average quality is getting too low are generally trimmed or removed from the read. The first read (R1) in a pair commonly has better quality than the second (R1) read.
 
-Before Illumina sequencing, short DNA sequences are attached to the fragment
-being sequenced, these are anchor points in the sequencing process. Portions of
-these may be included during sequencing, and may thus be included in the
-sequenced read. The sequencing software is set up to remove these, but may not
-be able to remove them completely. Thus it is common to trim these adapters
-from the reads before further processing.
+### Nanopore basecalling and trimming
+Nanopore sequence data is delivered in the fast5 file format which contains the raw signal data. That data can be translated into fastq files using dedicated basecallers such as Guppy / Bonito. Guppy comes with two different models for basecalling, a fast basecalling model and a high accuracy model. As the names indicate the high accuracy model gives more accurate basecalling and with better detection and binning of barcoded reads than the fast model. The average quality scores of sequences generated by Oxford Nanopore instruments are between 7 and 14 with quality being variable along the reads. Any sequences having a Q-value below 7 are usually discarded. In addition, trimming of the first group of bases (10-50) improves the overall quality score of the reads. Trimming of adapters and low-quality bases at the end of the sequences is also performed.
 
-### Nanopore data
-Nanopore sequence data is delivered in the fast5 file format which contains the
-raw signal data. That data can be translated into fastq files using dedicated
-basecallers such as Guppy / Bonito. Guppy comes with two different models for
-basecalling, a fast basecalling model and a high accuracy model. As the names
-indicate the high accuracy model gives more accurate basecalling and with better
-detection and binning of barcoded reads than the fast model. The average quality
-scores of sequences generated by Oxford Nanopore instruments are between 7 and
-14 with quality being variable along the reads. Any sequences having a Q-value
-below 7 are usually discarded. In addition, trimming of the first group of bases
-(10-50) improves the overall quality score of the reads. Trimming of adapters
-and low-quality bases at the end of the sequences is also performed.
-
+TODO get input from Thomas for the pacbio acrchitecture re CLR and CCs
 ### Pacific biosciences data
-Pacbio sequences are delivered as bam-files, where the bases do not have
-meaningful quality scores. Pacbio sequences do however have highly variable
-qualities for the bases. Depending on the sequencing technique used (Continues
-Long Reads (CLR) or Circular Consensus Sequencing (CCS)) the pacbio reads can
-be corrected or not. The raw pacbio sequences can be converted into fastq or
-fasta files. When converted to fastq, the quality scores are marked with the
-exclamation mark: “!”, which is similar to “0”. CLR reads can easily be
-converted to fastq using the program bam2fastx, but with low quality scores.
-These reads can best be used in combination with Illumina reads to generate
-a Hybrid assembly. CCS reads are demultiplexed and can be filtered using the
-number of passes using the SMRT portal software. More passes gives a better
-sequences afterwards. The CCS reads then can be converted to fastq reads
-with ccs, which uses each of the subreads in an alignment to polish the reads
-and generate high quality bases. It also removes the hairpin sequences from
-the CCS reads.  At that point only limited or no trimming is needed of the
-reads.
+Pacbio sequences are delivered as bam-files, where the bases do not have meaningful quality scores. Pacbio sequences do however have highly variable qualities for the bases. Depending on the sequencing technique used (Continues Long Reads (CLR) or Circular Consensus Sequencing (CCS)) the Pacbio reads can be corrected or not. The raw pacbio sequences can be converted into fastq or fasta files. When converted to fastq, the quality scores are marked with the exclamation mark: “!”, which is similar to “0”. CLR reads can easily be converted to fastq using the program bam2fastx, but with low quality scores. These reads can best be used in combination with Illumina reads to generate a hybrid assembly. CCS reads are demultiplexed and can be filtered using the number of passes using the SMRT portal software. More passes gives a better sequences afterwards. The CCS reads then can be converted to fastq reads with [ccs](https://ccs.how/), which uses each of the subreads in an alignment to polish the reads and generate high quality bases. It also removes the hairpin sequences from the CCS reads.  At that point only limited or no trimming is needed of the reads.
 
 ### Software availability
 There are many tools available for doing QC and adapter trimming.
-[This paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0085024),
-although not quite new, contains a good overview of the process and the effect
-of some commonly used tools for Illumina data
-([Fabro et al., 2013](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0085024)).
-For Nanopore and Pacbio data there is less options available. Good starting
-points are tools such as [NanoPack](https://academic.oup.com/bioinformatics/article/34/15/2666/4934939)
-and [Pauvre](https://github.com/conchoecia/pauvre) that give information about
-the quality of the sequence data.
+[This paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0085024), although not quite new, contains a good overview of the process and the effect of some commonly used tools for Illumina data ([Fabro et al., 2013](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0085024)). Important to note, all these tools can be used for paired-end and mate-pair sequencing data. Nevertheless, they usually do not account for the particularities of mate-pair sequencing protocol, often discarding more data than necessary. [NxTrim](https://academic.oup.com/bioinformatics/article/31/12/2035/213912) is a trimming software optimized for mate-pair sequencing. For Nanopore and Pacbio data there fewer  options available. Good starting points are tools such as [NanoPack](https://academic.oup.com/bioinformatics/article/34/15/2666/4934939) and [Pauvre](https://github.com/conchoecia/pauvre) that give information about the quality of the sequence data.
 
-Note: it might not be necessary to do quality trimming and adaptor removal in
-cases where mapping is the primary approach. The adapters are unlikely to
-match anything in the reference sequence, and mapping tools commonly take the
-quality score of the base into account and may leave low quality regions out.
+Note: it might not be necessary to do quality trimming and adaptor removal in cases where mapping is the primary approach. The adapters are unlikely to match anything in the reference sequence, and mapping tools commonly take the quality score of the base into account and may leave low quality regions out.
