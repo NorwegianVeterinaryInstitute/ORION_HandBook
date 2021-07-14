@@ -39,24 +39,39 @@ long DNA fragments are analyzed individually (reviewed in: [Amarasinghe, S.L. et
 
 True long read sequencing as performed by the Oxford Nanopore machines depend on measuring a change in the ionic current when a base on a DNA strand is pulled through a nanopore (section 8 in: Amarasinghe, S.L. et al. 2020). The Nanopore is a protein that is embedded in an electrically-resistant polymer membrane. The Nanopore and the membrane are together integrated into a microscaffold, which is part of sensorchip. Each microscaffold is connected to its own electrode which is attached to its own channel of the sensory array chip (The ASIC) [https://nanoporetech.com/how-it-works)](https://nanoporetech.com/how-it-works). By measuring the change in ionic current it is possible to determine what kind of a nucleotide is passing the pore. Nucleotides have different properties which causes a specific change in the ionic current, and thus allows for the detection of methylated bases as well. The read length for Nanopore sequencing is dependent on being able to load high molecular weight onto the flowcell.
 
-TODO get input from Thomas for the pacbio acrchitecture re CLR and CCs
 The SMRT technology developed by Pacific Biosciences uses polymerases that are
 attached to the bottom of picoliter-sized wells. Incorporation of a nucleotide
 is detected in real-time via the emission of a fluorescence signal. The read
 length of this technique is limited by the resilience of the polymerase to stay
 active. In addition, the error rate with SMRT sequencing is depending on how
-often a DNA molecule is read by the polymerase. In SMRT sequencing the DNA
-molecules are circularized, so called circular SMRTbell DNA molecules. These
-molecules are read by a polymerase. With every pass of the molecule all bases
-are read, and since errors are randomly introduced, it is possible to identify
-which basecalles are incorrect. Thus the repeated reading of the same molecule
-allows for error correction, and improves the error rate. Nonetheless, indels in homopolymers are still a problem in SMRT sequencing ([Amarasinghe, S.L. et
-al. 2020](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1935-5)).
+often a DNA molecule is read by the polymerase. The SMRT sequencing therefore
+comes as two variants: Continuous Long Read (CLR) sequencing and Circular
+Consensus Sequencing (CCS). For the later the molecules are only sequenced once
+and this allows for very long sequences. With CCS sequencing the DNA molecules
+are circularized, so called circular SMRTbell DNA molecules. These molecules are
+read by a polymerase. With every pass of the molecule all bases are read, and
+since errors are randomly introduced, it is possible to identify which
+basecalles are incorrect. Thus the repeated reading of the same molecule allows
+for error correction, and improves the error rate (see figure 3 in [D’Amore et
+al.,
+2016](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2194-9)).
+Nonetheless, indels in homopolymers are still a problem in SMRT
+sequencing([Amarasinghe, S.L. et al.
+2020](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1935-5)).
 
-TODO check with Thomas re linearity
-The error rate with nanopore sequencing is higher than with SMRT sequencing due to the linearity of fragments sequenced. Indels and substitutions are partly randomly distributed
-but not in a uniform manner ([Amarasinghe, S.L. et al.
-2020](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1935-5)). The error rate in Nanopore sequencing is dependent on a uniform translocation speed along the pore, which can be affected by a variety of factors such as temperature, modified bases, 3D-structure of the DNA, etc. In addition, the structural and chemical characteristics of the pore play a role in error rate. Therefore a lot of development goes into improving this by developing basecalling algorithms that can identify the correct base even though the signal from the nanopore sequencer is very noisy.
+The error rate with nanopore sequencing is higher than with SMRT sequencing due
+to the fact that not one but five bases affect the ionic current over the
+membrane. With SMRT sequencing a single signal is emitted for each base, while
+with Nanopore five bases affect the signal. Indels and substitutions are partly
+randomly distributed but not in a uniform manner ([Amarasinghe, S.L. et al.
+2020](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1935-5)).
+The error rate in Nanopore sequencing is dependent on a uniform translocation
+speed along the pore, which can be affected by a variety of factors such as
+temperature, modified bases, 3D-structure of the DNA, etc. In addition, the
+structural and chemical characteristics of the pore play a role in error rate.
+Therefore a lot of development goes into improving this by developing
+basecalling algorithms that can identify the correct base even though the signal
+from the nanopore sequencer is very noisy.
 
 
 ## Short vs long read sequencing
