@@ -33,6 +33,7 @@ One Health Sequencing for Surveillance HandBook
    Pipelines/toolchains.md
    Pipelines/quality_control.md
    Pipelines/data_preprocessing.md
+   Pipelines/data_production.md
    Pipelines/software_list.md
 
 .. toctree::
