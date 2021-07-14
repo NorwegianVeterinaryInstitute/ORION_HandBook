@@ -158,52 +158,6 @@ For short read data, there are today four tools in common use, three of which in
 
 PacBio was the first of the 3rd generation platforms that came on the market with long single cell reads. With long reads, OLC methods again came to the forefront. The tools that came into common use were frequently modifications and adaptations of previous OLC software, such as [canu](https://github.com/marbl/canu) which is a fork of Celera. Today, for PacBio the most commonly used assemblers are [HGAP](https://github.com/PacificBiosciences/Bioinformatics-Training/wiki/HGAP), which was developed by Pacbio, and also canu. Oxford Nanopore, the most commonly used tools are Unicycler and canu. 
 
-### Some commonly used assembly programs
-The amount of sequencing assembly tools increased drastically with the advent of
-second generation sequencing instruments. The first assemblers that were
-available were primarily Overlap-Layout-Consensus tools, such as
-[Newbler](https://en.wikipedia.org/wiki/Newbler) and
-[Celera](http://wgs-assembler.sourceforge.net/wiki/index.php), both now
-discontinued. These were used for Sanger sequencing and for sequences from 454
-machines, which were generally 400-1000 bp long. With the advent of Illumina
-sequencing, whose first reads were 36 bp long, de Bruijn based methods came to
-the forefront. This development was started by the [velvet software
-package](https://en.wikipedia.org/wiki/Velvet_assembler), which uses a fixed
-k-mer size for assembly. After the release of velvet in 2008, many different
-assemblers were created and got varying levels of use (for an early review, [see
-this
-paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0017915).
-In 2012 the program
-[SPAdes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3342519/)  was released,
-this tool uses different k-mer sizes (and other tricks too), which means that it
-frequently produces more contiguous assemblies than velvet does. This program
-gradually took over as the main assembler for microbial data.
-
-For short read data, there are today four tools in common use, three of which
-involve SPAdes in some way. The first is naturally SPAdes itself. Then there is
-the [software package shovill](https://github.com/tseemann/shovill) that uses
-SPAdes as its assembly component. Shovill does downsampling of the data to avoid
-overloading the assembly graph, and also includes trimming, so it is a good
-choice for a one-stop-shop assembler. It is also known to be fast, which
-increases its usefulness for bulk analysis. [The tool
-Unicycler](https://github.com/rrwick/Unicycler) also uses SPAdes in its
-internals, and works as a SPAdes optimizer when only used on Illumina data.
-Unicycler is also a hybrid assembler, and can thus be used in cases where both
-long and short read data is available. Last but not least, there is
-[SKESA](https://github.com/ncbi/SKESA) which was created by the NCBI. This
-assembler has as its goal to be a bit conservative and rather break up at
-repeats to avoid mis-assemblies, and to be fast. 
-
-PacBio was the first of the 3rd generation platforms that came on the market
-with long single cell reads. With long reads, OLC methods again came to the
-forefront. The tools that came into common use were frequently modifications and
-adaptations of previous OLC software, such as
-[canu](https://github.com/marbl/canu) which is a fork of Celera. Today, for
-PacBio the most commonly used assemblers are
-[HGAP](https://github.com/PacificBiosciences/Bioinformatics-Training/wiki/HGAP),
-which was developed by Pacbio, and also canu. Oxford Nanopore, the most commonly
-used tools are Unicycler and canu. 
-
 For more on what tools are in use, [see this
 paper](https://www.frontiersin.org/articles/10.3389/fcimb.2020.527102/full).
 
