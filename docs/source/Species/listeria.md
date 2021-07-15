@@ -409,10 +409,10 @@ be done outside a platform with software such as
 level of standardization of cgMLST analyses can be obtained through the choice
 of a particular allele scheme, through the standardization of parameters
 employed to define new alleles of the chosen scheme and through synchronisation
-of the allele nomenclature database (eg. SeqSphere, Pasteur db not really
-updated is it?). This lack of standard nomenclature has been a challenge in the
-field, but tools such as [chewie-NS](https://pubmed.ncbi.nlm.nih.gov/33068420/)
-have been developed to solve this historical issue. 
+of the allele nomenclature database (eg. SeqSphere). This lack of standard
+nomenclature has been a challenge in the field, but tools such as
+[chewie-NS](https://pubmed.ncbi.nlm.nih.gov/33068420/) have been developed to
+solve this historical issue. 
 
 ### SNP based typing
 A SNP-based approach relies on the comparison of SNPs in a population. This
