@@ -259,7 +259,7 @@ approaches.
   [CFSAN SNP](https://snp-pipeline.readthedocs.io/en/latest/) is a commonly used
   pipeline which performs both processes (read mapping and variant calling).
   [Snippy](https://github.com/tseemann/snippy) and
-  [SNVPhyl[(https://snvphyl.readthedocs.io/en/latest/user/input/#input) are also
+  [SNVPhyl](https://snvphyl.readthedocs.io/en/latest/user/input/#input) are also
   commonly used alternatives for Salmonella genomes.
 
 - Determine the polymorphic positions in the sample by analyzing the k-mer
