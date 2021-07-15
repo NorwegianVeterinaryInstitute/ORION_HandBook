@@ -303,9 +303,7 @@ analyses (eg. [Chen et al. 2017](https://aem.asm.org/content/83/15/e00633-17)).
 ### Getting SNPs
 How to detect SNPs is described earlier. 
 
-Briefly, there are three different approaches. Briefly, there are three
-different approaches.
-
+Briefly, there are three different approaches. 
 - Perform de novo genome assembly of each sample, and then align
   their genomic sequences. Studies involved in L. monocytogenes analysis use
   very often [SPAdes](https://cab.spbu.ru/software/spades/), [CLC Genomic

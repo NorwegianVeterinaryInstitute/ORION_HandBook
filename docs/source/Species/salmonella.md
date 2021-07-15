@@ -259,7 +259,7 @@ approaches.
   [CFSAN SNP](https://snp-pipeline.readthedocs.io/en/latest/) is a commonly used
   pipeline which performs both processes (read mapping and variant calling).
   [Snippy](https://github.com/tseemann/snippy) and
-  [SNVPhyl[(https://snvphyl.readthedocs.io/en/latest/user/input/#input) are also
+  [SNVPhyl](https://snvphyl.readthedocs.io/en/latest/user/input/#input) are also
   commonly used alternatives for Salmonella genomes.
 
 - Determine the polymorphic positions in the sample by analyzing the k-mer
@@ -293,7 +293,7 @@ The allele sequences of the samples can be retrieved by:
   [RASTk](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322359/) are also used.
 - Some allele callers, such as [chewBBACA](https://github.com/B-UMMI/chewBBACA),
   provide locus-specific alignments in an automated manner, being a good option
-  to determine the allelic profile of your samples.
+  to determine the allelic profile of  samples.
 
 It is important to note that nowadays there are several platforms which can
 automatically do all this analysis. One of the more commonly used for Salmonella
