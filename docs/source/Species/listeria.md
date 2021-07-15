@@ -301,64 +301,12 @@ combining multiple analyses approaches might maximize the resolution of your
 analyses (eg. [Chen et al. 2017](https://aem.asm.org/content/83/15/e00633-17)).
 
 ### Getting SNPs
-How to detect SNPs is described earlier. Briefly, there are three different approaches.
-
-- Perform de novo genome assembly of each sample (check above), and then align
-  their genomic sequences. Studies involved in L. monocytogenes analysis use
-  very often [SPAdes](https://cab.spbu.ru/software/spades/), [CLC Genomic
-  Workbench](https://digitalinsights.qiagen.com/products-overview/discovery-insights-portfolio/analysis-and-visualization/qiagen-clc-genomics-workbench/)
-  or [Ridom SeqSphere+](https://www.ridom.de/seqsphere/) to obtain the assembly,
-  and
-  [progressiveMAUVE](http://darlinglab.org/mauve/user-guide/progressivemauve.html),
-  [BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279690/) or
-  [MUSCLE](http://www.drive5.com/muscle/) to align the genomes. This
-  multi-sequence alignment is the input for phylogenetic and clustering analysis
-  (see sections on phylogeny and clustering). If instead of genome analysis,
-  only the SNPs in the genes are of interest, alignments can be  performed with
-  eg. Roary or Panaroo for pangenome. 
-
-- Use a reference genome where the reads of all the samples will be mapped, and
-  then use a variant-calling pipeline to determine the polymorphic positions.
-  Studies involved in L. monocytogenes analysis use mostly
-  [BWA](https://github.com/lh3/bwa) and
-  [Bowtie](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml) for read
-  mapping, and [GATK](https://gatk.broadinstitute.org/hc/en-us) and
-  [VarScan](https://github.com/dkoboldt/varscan) for variant-calling. Of note,
-  many of them also use the [CFSAN
-  SNP](https://snp-pipeline.readthedocs.io/en/latest/) pipeline for both
-  processes.
-
-- Determine the polymorphic positions in the sample by analyzing the k-mer
-  pattern using
-  [kSNP](https://academic.oup.com/bioinformatics/article/31/17/2877/183216). For
-  this approach either the genome assembly, or the cleaned genomic reads are
-  needed. This is the less frequently used approach for L. monocytogenes.
-
-Each of these approaches  will provide information about the genetic variability
-in the dataset. This information can then be used to perform SNP-based
-clustering and phylogenetic analysis. 
-
-### Getting alleles and allele differences
-The allele sequences in the samples at hand can be retrieved by:
-
-- Replacing the nucleotide of the reference genome by the observed alternative allele, and then retrieve the sequence of each gene of interest considering the genome annotation of the reference.
-Obtaining the de novo genome assembly of each sample, and:
-### Choosing a reference genome
-The allele sequences in the samples at hand can be retrieved by:
-Replacing the nucleotide of the reference genome by the observed alternative allele (check previous question), and then retrieve the sequence of each gene of interest considering the genome annotation of the reference.
-Obtaining the de novo genome assembly of each sample, and:
-Perform the respective genome annotation. Prokka is a commonly used program for L. monocytogenes genome annotation. BLAST or MUSCLE can be used to align the predicted genes to the set of genes of interest and identify homology relations. Alternatively, a less commonly used approach in the study of L. monocytogenes genomes, is the use of a program like eggNOG mapper to perform functional annotation.
-Use BLAST and MUSCLE to align a set of genes of interest on the genome assembly and identify the respective homologs.
-Some allele callers, such as chewBBACA, provide locus-specific alignments in an automated manner, being a good option to determine the allelic profile of samples.
-It is important to note that nowadays there are several platforms which can automatically do all this analysis.. An example of such a platform for L. monocytogenes is BIGSdb, where upon submittal of the sequences of interest or the genome assembly an automatic analysis is done and results can be retrieved, including the allele-based typing .
-
-### Getting SNPs
 How to detect SNPs is described earlier. 
 
 Briefly, there are three different approaches. Briefly, there are three
 different approaches.
 
-- Perform de novo genome assembly of each sample (check above), and then align
+- Perform de novo genome assembly of each sample, and then align
   their genomic sequences. Studies involved in L. monocytogenes analysis use
   very often [SPAdes](https://cab.spbu.ru/software/spades/), [CLC Genomic
   Workbench](https://digitalinsights.qiagen.com/products-overview/discovery-insights-portfolio/analysis-and-visualization/qiagen-clc-genomics-workbench/)
