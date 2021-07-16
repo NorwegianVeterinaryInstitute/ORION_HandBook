@@ -42,6 +42,8 @@ One Health Sequencing for Surveillance HandBook
    :caption: Single isolate analysis
 
    Typing/MLST.md
+   Typing/cgMLST.md
+   Typing/serotype.md
    Typing/virulence_amr.md
 
 .. toctree::
