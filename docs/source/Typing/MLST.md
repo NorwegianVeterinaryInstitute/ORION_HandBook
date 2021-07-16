@@ -91,7 +91,9 @@ There are many tools for doing MLST from both reads and assemblies available. It
 is important to realize that even though they might use the same schema, they
 might not give the same results. [A review of various MLST tools and their
 results can be found in this
-paper.](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000124)
+paper.](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000124).
+A brief overview of MLST and cgMLST tools are given on the [xMLST tools
+page](typing_tools.md).
 
 
 
