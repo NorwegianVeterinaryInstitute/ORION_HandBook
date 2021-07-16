@@ -163,18 +163,16 @@ genome assembler for STEC is [SPAdes](https://cab.spbu.ru/software/spades/)
 It performs very well and is freely available. There are command-line pipelines,
 such as INNUca, which incorporate these programs and provide the opportunity to
 automatically perform all the analyses from quality control to genome assembly. 
-
 If a platform with predefined pipelines (and that usually does not require
 bioinformatics skills) is preferred,
-[Enterobase[(https://enterobase.readthedocs.io/en/latest/) and
-[INNUENDO](https://innuendo.readthedocs.io/en/latest/) are available options for
-E. coli. As for read mapping, [BWA[(http://bio-bwa.sourceforge.net) is a
+[Enterobase[(https://enterobase.readthedocs.io/en/latest/) is available for 
+E. coli. As for read mapping, [BWA](http://bio-bwa.sourceforge.net) is a
 commonly used approach ([Holmes et al.
 2015](https://jcm.asm.org/content/53/11/3565), [Iramiot et al.
 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0231852),
 [Parsons et al. 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828450/),
 [Dallman et al.
-2021[(https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000544?crawler=true)).
+2021](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000544?crawler=true)).
 However, as mentioned before, these represent commonly used approaches, and not
 recommendations. Thus, other methodologies, pipelines or even platforms may be
 used.
@@ -193,7 +191,7 @@ This reference can be picked from the samples (after genome assembly), or from a
 public database.  .[Enterobase[(https://enterobase.readthedocs.io/en/latest/) is
 a good site for choosing a reference for this species.
 
-### serotyping
+### Serotyping
 Besides the wet-lab approach for serotype determination of STEC samples, in
 silico approaches using WGS data can also be performed ([Joensen et al.
 2015](https://jcm.asm.org/content/53/8/2410), [Ingle et al.
@@ -215,7 +213,7 @@ Analysis of SNPs is a frequently used approach for the analysis of STEC samples
 
 How to detect SNPs is described earlier. Briefly, there are three different approaches.
 
-- Perform de novo genome assembly of each sample (check above), and then align
+- Perform de novo genome assembly of each sample and then align
   their genomic sequences. 
 - Use a reference genome where the reads of all the samples will be mapped, and
   then use a variant-calling pipeline to determine the polymorphic positions.
@@ -245,7 +243,7 @@ The allele sequences of the samples can be retrieved by:
   to determine the allelic profile of samples. 
 
 It is important to note that nowadays there are several platforms which can
-automatically do all this analysis. One of the more commonly used for Salmonella
+automatically do all this analysis. One of the more commonly used for E.coli 
 is [Enterobase](https://enterobase.readthedocs.io/en/latest/index.html), and
 also [Bionumerics](https://www.applied-maths.com/bionumerics). These platforms
 provide assembly, serotyping and allele calling. Several of these platforms are
