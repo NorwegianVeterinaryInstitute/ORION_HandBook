@@ -38,8 +38,9 @@ characterize _L. monocytogenes_ isolates, it has gradually been replaced by
 molecular typing methods that provide enhanced discriminatory power and
 therefore represent a more suitable approach for epidemiological studies (see
 eg. [Datta and Burall
-2018](https://www.sciencedirect.com/science/article/abs/pii/S0740002017303118)(not
-OA), for an overview of the methods that have been employed for _L. monocytogenes_
+2018](https://www.sciencedirect.com/science/article/abs/pii/S0740002017303118)- not
+open access and [Matle et al. (2020)](http://www.scielo.org.za/pdf/ojvr/v87n1/13.pdf), 
+for an overview of the methods that have been employed for _L. monocytogenes_
 analyses).
 
 ## Typing methods
