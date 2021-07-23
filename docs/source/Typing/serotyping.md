@@ -39,7 +39,13 @@ Whole genome based serotyping can be done in different ways:
 - By specific genes identification, by either mapping or BLAST searches towards serotype determinants       
 
 
-## ePCR or in-silico PCR
+## ePCR or _in-silico_ PCR
 
 When marker genes are associated to at set specific antigens are defined, it is possible to determine serogroups 
-based on the presence/ absence of the PCR amplification pattern of a combination of specific gene markers (eg. [Doumith et al. 2004](https://jcm.asm.org/content/42/8/3819)). PCR based serotyping can be bioinformatically emulated (ePCR, in silico PCR), and serotypes can thus be inferred from whole genome sequencing data. In such cases presence / absence of genes can be detected using blast in conjunction with a set of rules determining when to consider a match presence or not (Eg. as performed on assemblies in [LisSero](https://github.com/MDU-PHL/LisSero) for ePCR serotyping of Listeria monocytogenes, or In Silico PCR for fliC and filB alleles of the H antigens for Salmonella serotyping with assemblies in [SeqSero1](https://jcm.asm.org/content/53/5/1685)). 
+based on the presence/ absence of the PCR amplification pattern of a combination of specific gene markers (eg. 
+[Doumith et al. 2004](https://jcm.asm.org/content/42/8/3819)). PCR based serotyping can be bioinformatically emulated 
+(ePCR, in silico PCR), and serotypes can thus be inferred from whole genome sequencing data. In such cases presence / 
+absence of genes can be detected using blast in conjunction with a set of rules determining when to consider a match 
+presence or not (Eg. as performed on assemblies in [LisSero](https://github.com/MDU-PHL/LisSero) for ePCR serotyping of 
+_Listeria monocytogenes_, or _In Silico_ PCR for fliC and filB alleles of the H antigens for _Salmonella_ serotyping 
+with assemblies in [SeqSero1](https://jcm.asm.org/content/53/5/1685). 
