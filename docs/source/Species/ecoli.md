@@ -72,7 +72,7 @@ STEC molecular typing is an evolving field, constantly seeking for the best typi
     As for other bacteria, MLST methods based on 7 locus have been developed for
   _E. coli_. Two protocols have been established; one specifically developed for
   STEC (aspC, clpX, fadD, icdA, lysP, mdh, and uidA;
-  http://shigatox.net/new/tools/ecmlst.html) and one developed for a more
+  [STEC center](http://shigatox.net/new/tools/ecmlst.html)) and one developed for a more
   general approach for _E. coli_ (adk, fumC, gyrB, icd, mdh, recA and purA; [Wirth
   et al.
   2006](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2958.2006.05172.x)).
@@ -108,9 +108,9 @@ to find the bacterial source of infection, and possibly reduces the time that it
 takes. Indeed, WGS analysis has proven to be an effective way to determine the
 genetic clustering of STEC isolates, as well as the source of infections
 ([Parsons et al. 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828450/),
-[Jenkins et al. 2019[(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352002/),
+[Jenkins et al. 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352002/),
 [Nouws et al. 2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7466227/),
-[Joensen et al. 2014])(https://pubmed.ncbi.nlm.nih.gov/24574290/), [Chattaway et
+[Joensen et al. 2014](https://pubmed.ncbi.nlm.nih.gov/24574290/), [Chattaway et
 al. 2016](https://pubmed.ncbi.nlm.nih.gov/26973632/)). For instance, in England
 and Denmark WGS-based STEC surveillance has been implemented with success
 ([Parsons et al. 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828450/),
