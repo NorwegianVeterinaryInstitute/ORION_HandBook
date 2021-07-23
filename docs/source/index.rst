@@ -92,7 +92,7 @@ Surveillance" <https://onehealthejp.eu/jrp-beone/>`__ project.
 The ORION project, launched in 2018, aimed at establishing and strengthening
 inter-institutional collaboration and transdisciplinary knowledge transfer in
 the area of surveillance data integration and interpretation, along the One
-Health (OH) objective of improving health and well-being. The BeONE project,
+Health (OH) objective of improving health and well-being. The BeOne project,
 launched in 2020, aims at developing an integrated surveillance dashboard in
 which molecular and epidemiological data for foodborne pathogens can be
 interactively analysed, visualised and interpreted by the relevant experts
