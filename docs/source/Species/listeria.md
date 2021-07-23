@@ -43,6 +43,7 @@ OA), for an overview of the methods that have been employed for _L. monocytogene
 analyses).
 
 ## Typing methods
+
 _L. monocytogenes_ molecular typing is a constantly evolving field. An ideal
 typing method presents not only a high discriminatory power, but also high
 reproducibility and the possibility of automation. Nowadays, different
@@ -160,6 +161,7 @@ techniques can be applied for _L. monocytogenes_ molecular typing, namely:
   developed countries.
 
 ## “One Health” surveillance and WGS of _L. monocytogenes_
+
 The identification of infection sources is essential for outbreak resolution.
 Hence, an integrated analysis of clinical, food and veterinary samples relying
 on the concept of One Health is the key to achieve a good surveillance system.
@@ -198,6 +200,7 @@ technology for PFGE is already significant and progressing fast.
 ## WGS lab protocol
 
 ### DNA extraction
+
 Before DNA extraction, _L. monocytogenes_ is cultured in the laboratory (usually
 liquid media). For proper growth, these bacteria need a medium containing the
 seven amino acids for which they are
@@ -213,6 +216,7 @@ used for _L. monocytogenes_. However, commonly used kits include DNeasy Blood an
 Tissue kit (Qiagen) or Wizard Genomic purification kit (Promega). 
 
 ### Sequencing technology
+
 There is not a prefered WGS technology to sequence _L. monocytogenes_. Similar to
 other fields, Illumina paired-end reads represent the most commonly used
 strategy. Due to the number of samples that can be handled at a single run and
@@ -225,6 +229,7 @@ or complete genome assemblies.
 ## Bioinformatics protocol
 
 ### Mapping or assembly
+
 The first step to perform when receiving the sequencing data of your samples, is
 to evaluate the sequencing quality and perform trimming and cleaning of the
 reads (see [Data preprocessing](../Pipelines/data_preprocessing.md)). 
@@ -270,6 +275,7 @@ read mapping can be used. In this case, [Ridom
 SeqSphere+](https://www.ridom.de/seqsphere/) is the most commonly used one. 
 
 ### Choosing a reference genome
+
 Should an analysis require the use of a reference genome, the choice of the
 reference genome is a crucial step. Analyses relying on read-mapping approaches
 might be strongly influenced by reference choice, as the genetic distance
@@ -306,6 +312,7 @@ combining multiple analyses approaches might maximize the resolution of your
 analyses (eg. [Chen et al. 2017](https://aem.asm.org/content/83/15/e00633-17)).
 
 ### Getting SNPs
+
 How to detect SNPs is described earlier. 
 
 Briefly, there are three different approaches. 
@@ -346,6 +353,7 @@ in the dataset. This information can then be used to perform SNP-based
 clustering and phylogenetic analysis.
 
 ### Getting alleles and allele differences
+
 The allele sequences in the samples at hand can be retrieved by:
 
 - Replacing the nucleotide of the reference genome by the observed alternative
@@ -381,6 +389,7 @@ automatically do all this analysis. Several of these are mentioned in the
 
 
 ### Allele-based typing
+
 Allele-based typing consists of retrieving clustering information considering
 the different alleles present in a population for a given set of genes (e.g. the
 core genome). With the advent of WGS, the 7-loci based MLST approach was broadened to the use
@@ -417,6 +426,7 @@ be done outside a platform with software such as
 [MentaLiST](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5857373/). 
 
 ### SNP-based typing
+
 A SNP-based approach relies on the comparison of SNPs in a population. This
 strategy can be seen as an alternative to the allele-based approach, but many
 studies actually perform both of them and assess the overlap of the results. For
@@ -430,6 +440,7 @@ available pipelines for SNP-based typing are:
 - [PHEnix](https://github.com/phe-bioinformatics/PHEnix) (The Public Health England SNP calling pipeline)
 
 ### Outbreak definition
+
 As defined by the [World Health Organization](http://www.emro.who.int/health-topics/disease-outbreaks/index.html), “a disease outbreak is the occurrence of cases of disease in excess of what 
 would normally be expected in a defined community, geographical area or season”. 
 For foodborne diseases, outbreaks can be defined as two or more cases linked to the same 
@@ -468,6 +479,7 @@ therefore it is good practice to access the sensitivity and specificity of the
 workflow when evaluating which threshold could be appropriate.
 
 ### Viruence and AMR
+
 Several genes are important for _Listeria_ ability to cause infection and are
 medically relevant, such as internalins (inlA, inlB, inlF, or inlJ, essential
 for adhesion and invasion) or the prfA-regulated virulence gene cluster (pVGC)
