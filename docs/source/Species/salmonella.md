@@ -1,4 +1,4 @@
-# _Salmonella: analysis
+# _Salmonella_ analysis
 
 Gram-negative bacteria of the genus _Salmonella_ are a major cause of foodborne
 illness. Two _Salmonella_ species have been identified, namely, _Salmonella
