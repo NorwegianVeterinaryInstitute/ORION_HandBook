@@ -168,7 +168,7 @@ is to evaluate the sequencing quality and perform trimming and cleaning of the r
 
 The cleaned sequence data can then be used for downstream analysis following one
 of two approaches (or both in parallel, check [Data
-production][../Pipelines/data_production.md]): 
+production](../Pipelines/data_production.md)): 
 - _De novo_ genome assembly of the sample(s),
 - Read mapping of each sample on a reference sequence (obtained from a database
   or by de novo genome assembly of one of your sample)
