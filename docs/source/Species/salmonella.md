@@ -5,7 +5,7 @@ illness. Two _Salmonella_ species have been identified, namely, _Salmonella
 enterica_ and _Salmonella bongori_. Despite only harboring two species, this genus
 can be divided into several subspecies and then further to different serotypes.
 Isolates are often reported by the name of the genus followed by the name of the
-serotype, without mentioning the species or subspecies name [Eng et al.
+serotype, without mentioning the species or subspecies name ([Eng et al.
 2015](https://www.tandfonline.com/doi/full/10.1080/21553769.2015.1051243)).
 Moreover, _Salmonella_ isolates are usually classified into typhoidal and
 non-typhoidal _Salmonella_, according to their role as causative agents of typhoid
