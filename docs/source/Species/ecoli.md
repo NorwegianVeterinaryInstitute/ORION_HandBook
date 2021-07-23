@@ -115,8 +115,8 @@ al. 2016](https://pubmed.ncbi.nlm.nih.gov/26973632/)). For instance, in England
 and Denmark WGS-based STEC surveillance has been implemented with success
 ([Parsons et al. 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828450/),
 [Dallman et al.
-2021](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000544?crawler=true),
-however this has mainly focused on STEC from patients. Nevertheless, WGS-based
+2021](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000544?crawler=true).
+However, this has mainly focused on STEC from patients. Nevertheless, WGS-based
 STEC surveillance at the EU level has been proposed to be delayed until the
 technological transition has been made for listeriosis ([ECDC
 roadmap](https://www.ecdc.europa.eu/en/publications-data/ecdc-roadmap-integration-molecular-typing-and-genomic-typing-european-level)).
