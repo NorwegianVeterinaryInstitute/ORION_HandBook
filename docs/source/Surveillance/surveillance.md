@@ -1,5 +1,7 @@
 # Challenges for One Health surveillance
 
+## Foodborne diseases
+
 Foodborne diseases (FBDs) represent an epidemiological scenario in which 
 pathogens and humans contact through contaminated food or water. FBDs affect 
 600 million people every year, representing an important burden for human health 
@@ -15,6 +17,9 @@ control strategies reducing future human or even animal illness. Moreover, infor
 regarding virulence potential or drug resistance may be crucial for public health decision-making 
 on the allocation of resources during outbreaks.
 
+
+## WGS and One Health surveillance
+
 As described in this handbook, WGS technologies represent the most discriminatory pathogen typing 
 method (thus far), thus providing the highest surveillance resolution. For example, the application 
 of WGS for listeriosis surveillance has increased the number of detected outbreaks, but decreased 
@@ -26,6 +31,8 @@ of pathogens and their characteristics, but also interchange their data is a key
 management. In this regard, WGS represents an important advance as WGS data can be easily shared and 
 compared between laboratories at national and international levels.
 
+### Organizational perspective
+
 The existence of an integrated system for FBDs surveillance requires the implementation of different 
 strategies which may be hampered at different stages. For instance, as reported by 
 [ECDC (2015)](https://www.ecdc.europa.eu/en/publications-data/expert-opinion-introduction-next-generation-typing-methods-food-and-waterborne), 
@@ -36,6 +43,8 @@ surveilling infrastructures needs to be made. For example, the implementation of
 requires a technological transition which is not affordable in many countries. Also, resources and funding 
 opportunities are unequal between different sectors (Human health, Animal Health, Environmental Health and 
 Food Safety).
+
+### Scientific perspective
 
 From a scientific perspective, WGS-based surveillance systems require multi-tasked teams with different 
 scientific backgrounds for proper data analysis, including specialized microbiologists and bioinformaticians 
@@ -51,12 +60,16 @@ the implementation of such systems, such as the need for high computing power to
 can be stored and shared between partners. Good political strategies for investment have the power to overcome these 
 issues. Noteworthy, data protection should always be guaranteed, and robust anonymization strategies implemented. 
 
+### Cultural barriers
+
 Ultimately, even if all the above-mentioned barriers for the implementation of a proper WGS-based surveillance system 
 are overcome, cultural barriers may also be an issue. Besides the language barrier in international cooperation, and 
 the usual resistance to change, cross-sectoral collaboration may be difficult to implement. Actions promoting the 
 concept of One Health, and showing the relevance of this integrated perspective where human, animal and environmental 
 health are connected, may contribute to raise the awareness of politicians, scientists, health practitioners, and 
 ultimately all the citizens and surpass some of the above-mentioned obstacles.
+
+### WGS-based One Health surveillance: future perspectives
 
 WGS is gradually being integrated in the surveillance system of developed countries. The possibility of connecting WGS 
 data with data obtained from previous technologies allows a gradual transition, where data from the past is not lost because 
