@@ -45,7 +45,7 @@ Long Reads (CLR) or Circular Consensus Sequencing (CCS)) the Pacbio reads can be
 corrected or not. The raw pacbio sequences can be converted into fastq or fasta
 files. When converted to fastq, the quality scores are marked with the
 exclamation mark: “!”, which is similar to “0”. CLR reads can easily be
-converted to fastq using the program bam2fastx, but with low quality scores.
+converted to fastq using the program [bam2fastx](https://github.com/PacificBiosciences/bam2fastx), but with low quality scores.
 These reads can best be used in combination with Illumina reads to generate a
 hybrid assembly. CCS reads are demultiplexed and can be filtered using the
 number of passes using the SMRT portal software. More passes gives a better
