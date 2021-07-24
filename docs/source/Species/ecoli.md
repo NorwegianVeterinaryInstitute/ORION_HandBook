@@ -352,7 +352,6 @@ broad-spectrum cephalosporins, carbapenems aminoglycosides, and
 2018](https://pubmed.ncbi.nlm.nih.gov/30003866/)). For this reason, monitoring
 of virulence- and antimicrobial resistance-related genes is of great relevance
 to determine the best way of action in the presence of a case of infection or
-even an outbreak. As mentioned in the [Virulome and
-Resistome" section](../Typing/virulence_amr.md), where more details can be found, this is performed by
+even an outbreak. As mentioned in the [Virulence and AMR detection section](../Typing/virulence_amr.md), where more details can be found, this is performed by
 comparing the genome to a database comprising a set of genes of interest.
 Examples of predefined resistome databases are mentioned in the same section.
