@@ -396,7 +396,6 @@ considered a global threat ([Marchello et al.
 al. 2015](https://www.tandfonline.com/doi/full/10.1080/21553769.2015.1051243)).
 For this reason, monitoring of virulence- and antimicrobial resistance-related
 genes is of great relevance to determine the best way of action in the presence
-of a case of infection or even an outbreak. As mentioned in the [Virulome and
-Resistome section](../Typing/virulence_amr.md), where more details can be found, this is performed by
+of a case of infection or even an outbreak. As mentioned in the [Virulence and AMR detection section](../Typing/virulence_amr.md), where more details can be found, this is performed by
 comparing the genome to a database comprising a set of genes of interest.
 Examples of predefined resistome databases are mentioned in the same section.
