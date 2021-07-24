@@ -69,7 +69,7 @@ concept of One Health, and showing the relevance of this integrated perspective 
 health are connected, may contribute to raise the awareness of politicians, scientists, health practitioners, and 
 ultimately all the citizens and surpass some of the above-mentioned obstacles.
 
-### WGS-based One Health surveillance: future perspectives
+## WGS-based One Health surveillance: future perspectives
 
 WGS is gradually being integrated in the surveillance system of developed countries. The possibility of connecting WGS 
 data with data obtained from previous technologies allows a gradual transition, where data from the past is not lost because 
