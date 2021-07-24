@@ -27,12 +27,12 @@ alleles or DNA sequences have been developed (eg. [Beaubrun et al. 2012](https:/
 brought a higher discriminatory power for genetic clustering without losing the ability to link genomic information 
 to previously available knowledge. This has led to the implementation of a gradual technological transition and to 
 the need of using WGS data for serotyping. Some studies have compared traditional serotyping with WGS-based serotyping 
-(eg:  [Salmonella](https://www.frontiersin.org/articles/10.3389/fmicb.2019.02554/full), 
-[Escherichia coli](https://www.frontiersin.org/articles/10.3389/fmicb.2016.00644/full), 
-[Listeria monocytogenes](https://www.sciencedirect.com/science/article/pii/S0168165616313487)).
+(eg:  [_Salmonella_](https://www.frontiersin.org/articles/10.3389/fmicb.2019.02554/full), 
+[_Escherichia coli_](https://www.frontiersin.org/articles/10.3389/fmicb.2016.00644/full), 
+[_Listeria monocytogenes_](https://www.sciencedirect.com/science/article/pii/S0168165616313487)).
 
 
-Whole genome based serotyping can be done in different ways:
+Whole-genome based serotyping can be done in different ways:
 
 - By emulating laboratory methods such as presence/absence DNA-fragments detection PCR
 - By detecting alleles within a set of antigen-genes loci (serotyping performed <As MLST> see, MLST method description)
