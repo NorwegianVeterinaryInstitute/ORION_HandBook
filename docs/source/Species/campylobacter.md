@@ -399,7 +399,6 @@ contribute to increase the list of relevant genes for this species
 al.
 2021](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246571)).
 For this reason, it is important to determine the presence of medically
-important genes/variations in the isolates. As mentioned in the [“Virulome and
-Resistome" section](../Typing/virulence_amr.md), where more details can be found, this is performed by
+important genes/variations in the isolates. As mentioned in the [Virulence and AMR detection section](../Typing/virulence_amr.md), where more details can be found, this is performed by
 comparing the genome to a database comprising a set of genes of interest.
 Examples of predefined resistome databases are mentioned in the same section. 
