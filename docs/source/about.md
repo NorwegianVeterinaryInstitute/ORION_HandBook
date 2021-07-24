@@ -58,8 +58,7 @@ This handbook consists of various sections.
 
 **_Sections of the handbook_** - Blue boxes describe species-agnostic processes, while the purple 
 ones depend on which biological agent is being analysed.
-` `  
-` `
+
 
 **Sequencing Technologies** - The focus for this section is on describing the available sequencing 
 technologies, highlighting their differences and consequent impact on WGS data analysis.
