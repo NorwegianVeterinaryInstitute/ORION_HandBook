@@ -500,7 +500,7 @@ al. 2017](https://www.liebertpub.com/doi/10.1089/fpd.2016.2248), [Kevenk et al.
 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/jfs.12208)). For this
 reason, monitorization of virulence- and antimicrobial resistance-related genes
 is of extreme relevance to determine the best way of action in presence of a
-case of infection or even an outbreak. As mentioned in the [“Virulence and AMR detection"
+case of infection or even an outbreak. As mentioned in the [Virulence and AMR detection
 section](../Typing/virulence_amr.md), 
 where more details can be found, this is performed by comparing the genome to a database 
 comprising a set of genes of interest. Examples of predefined resistome databases are 
