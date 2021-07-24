@@ -29,13 +29,13 @@ Through its WP1, the **BeOne project** targets the typing and nomenclature issue
 that exist within WGS-based pathogen surveillance and outbreak detection. The goals of this WP 
 can be summarized as:
 
-- establishing the current state of the art within genomics methods for WGS‐based typing
+- establishing the current state of the art within genomics methods for WGS‐based typing;
 - providing a strain dataset to capture the genomic diversity within the populations of four 
   main pathogens: _Salmonella enterica, Escherichia coli (STEC), Listeria monocytogenes_ and
-  _Campylobacter jejuni_
+  _Campylobacter jejuni_;
 - assessing cluster agreement between different WGS-based typing approaches to ensure the 
   comparability between distinct methodologies to reinforce and promote a global surveillance 
-  and control of infectious diseases
+  and control of infectious diseases.
 
 
 The work in these pages springs out ORION’s WP2 and BeOne’s WP1 and focuses on being an inventory 
@@ -47,7 +47,7 @@ focus on the methodologies used foodborne diseases and the current state of One 
 The underlying technologies within this field is a moving target. It is
 thus important to keep this handbook updated with new information.
 Contributions to this handbook are very welcome, please see the 
-[Contributing](../Contributing/contributing.md) document for more information.
+[Contributing](Contributing/contributing.md) document for more information.
 
 
 ## Overview of the handbook
@@ -56,8 +56,10 @@ This handbook consists of various sections.
 
 ![](Sections.png)
 
-**Components of the handbook** - Blue boxes describe species-agnostic processes, while the purple 
+**_Sections of the handbook_** - Blue boxes describe species-agnostic processes, while the purple 
 ones depend on which biological agent is being analysed.
+
+
 
 
 **Sequencing Technologies** - The focus for this section is on describing the available sequencing 
@@ -74,7 +76,7 @@ which can be used to perform an integrated analysis of several samples, obtainin
 
 **Compute infrastructure** - The focus for this section is on exploring the options and the requirements for 
 establishing possible infrastructures for using NGS methods for surveillance purposes. This section spans 
-from storage and compute infrastructures and data management to workflow managers and currently available 
+from storage, compute infrastructures and data management to workflow managers and currently available 
 platforms for automated analysis.
 
 **Species analysis** - This section is focused on four bacterial pathogens: _S. enterica, E. coli (STEC), 
