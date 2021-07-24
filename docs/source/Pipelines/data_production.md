@@ -1,6 +1,7 @@
 # Data Production
 
 ## Reference-based vs _de novo_ genome assembly
+
 Once data has been preprocessed, the reads can be analysed further. To this end,
 we need to “solve the puzzle” and understand to which genomic region a read may
 correspond. This usually proceeds via one of two pathways: via mapping to a
@@ -14,6 +15,7 @@ artificial inflation of allele differences between isolates.
 ## Assembly and annotation
 
 ### What is an assembly
+
 After sequencing, the genome is available in the form of sequenced reads, and
 these can be used to create an assembly of the genome. An assembly is a
 reconstruction of the genome, in that the actual genome being sequenced is in
@@ -39,6 +41,7 @@ might be. There would then be scaffolds present in the fasta file. Please note,
 some assemblers have a default setting for the minimum gap in a scaffold length.
 
 ### Estimating genome coverage
+
 For assembly, it is important to have reads covering all bases, and in
 sufficient quantity. In order to assess if this is the case, it is possible to
 calculate the approximate coverage of the sequenced genome before an assembly is
@@ -63,6 +66,7 @@ or so since for most de Bruijn graph assemblers (for instance SPAdes), higher
 coverage can complicate and break apart the assembly graph.
 
 ### How does the assembly process work
+
 There are two main types of methods in use today for assembly. The two types are
 Overlap-Layout-Consensus (OLC), and de Bruijn-based methods ([check this
 paper](https://academic.oup.com/bfg/article/11/1/25/191455)). OLC methods are
@@ -114,6 +118,7 @@ repetitive regions) may have a great impact on the performance, as will also
 sequencing errors.
 
 ### Assumptions made in the assembly process
+
 There are certain assumptions that are made when performing assemblies. The main
 assumptions are:
 
@@ -141,6 +146,7 @@ issues can be alleviated by good QC analysis and trimming during data
 preprocessing.
 
 ### The influence of read length
+
 Read length is a determining factor on the outcome of an assembly process. This
 is due to the fact that in an assembly process it is not possible to resolve
 repeats that are longer than the read length. This is exemplified in the
@@ -152,6 +158,7 @@ This is the main reason why long read sequencing has been gaining ground the
 last years, longer reads give assemblies with fewer contigs. For microbial genomes it is not uncommon for long read data to result in fully closed genomes.
 
 ### Some commonly used assembly programs
+
 The amount of sequencing assembly tools increased drastically with the advent of second generation sequencing instruments. The first assemblers that were available were primarily Overlap-Layout-Consensus tools, such as [Newbler](https://en.wikipedia.org/wiki/Newbler) and [Celera](http://wgs-assembler.sourceforge.net/wiki/index.php), both now discontinued. These were used for Sanger sequencing and for sequences from 454 machines, which were generally 400-1000 bp long. With the advent of Illumina sequencing, whose first reads were 36 bp long, de Bruijn based methods came to the forefront. This development was started by the [velvet software package](https://en.wikipedia.org/wiki/Velvet_assembler), which uses a fixed k-mer size for assembly. After the release of velvet in 2008, many different assemblers were created and got varying levels of use (for an early review, [see this paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0017915). In 2012 the program [SPAdes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3342519/)  was released, this tool uses different k-mer sizes (and other tricks too), which means that it frequently produces more contiguous assemblies than velvet does. This program gradually took over as the main assembler for microbial data.
 
 For short read data, there are today four tools in common use, three of which involve SPAdes in some way. The first is naturally SPAdes itself. Then there is the [software package shovill](https://github.com/tseemann/shovill) that uses SPAdes as its assembly component. Shovill does downsampling of the data to avoid overloading the assembly graph, and also includes trimming, so it is a good choice for a one-stop-shop assembler. It is also known to be fast, which increases its usefulness for bulk analysis. [The tool Unicycler](https://github.com/rrwick/Unicycler) also uses SPAdes in its internals, and works as a SPAdes optimizer when only used on Illumina data. Unicycler is also a hybrid assembler, and can thus be used in cases where both long and short read data is available. Last but not least, there is [SKESA](https://github.com/ncbi/SKESA) which was created by the NCBI. This assembler has as its goal to be a bit conservative and rather break up at repeats to avoid mis-assemblies, and to be fast. 
@@ -162,6 +169,7 @@ For more on what tools are in use, [see this
 paper](https://www.frontiersin.org/articles/10.3389/fcimb.2020.527102/full).
 
 ### Assembly quality evaluation
+
 Once a genome has been assembled, the assembly has to be evaluated to see how good it is. It is common to evaluate this on three different features:
 
 **Completeness**: Completeness shows to what extent the entirety of the genome has been captured in the assembly. This can be difficult to quantify, since each new genome is a novel entity unto itself. However, this can be estimated by examining to what extent genes that so far seem universally present in a specific type of genome can be recovered from the assembly. This can be done with tools such as [CheckM](https://ecogenomics.github.io/CheckM/) or [BUSCO](https://busco.ezlab.org). The latter gives an estimate of how many of a set of expected genes are either found in a complete form, a fragmented form, or not found at all. 
@@ -197,6 +205,7 @@ comparison between the reads and the genome assembled from those reads (as done
 by [REAPR](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-5-r47) or the nuc-suite of tools). 
 
 ### Genome annotation 
+
 DNA or genome annotation is the process of identifying the location of functional regions in DNA / genomes sequences ([Wikipedia](https://en.wikipedia.org/wiki/DNA_annotation)) and subsequently designating a function to this region. Functional regions can consist of both coding regions and non-coding regions, and they can be identified using a variety of tools that are trained to detect  rRNA, tRNA, non-coding RNA, protein coding genes, CRISPR regions and more. The input for this process is a fasta file containing the DNA sequence and which the annotation tools use to identify the location of various functional regions. That information can be stored inside a General Feature Format ([GFF](https://en.wikipedia.org/wiki/General_feature_format)) file or in a Genbank / EMBL / DDBJ format file. The former only contains information on the location of functional regions, but does not contain the DNA sequence nor the translation of protein coding genes. A Genbank file (or EMBL / DDBJ) contains the complete genome sequence, as well as the location of the coding regions with the translation of those regions when applicable (e.g. Protein coding genes).
 Specialized algorithms exist to predict the presence of each type of functional region. This can happen in one of two main ways: either through _de novo_ gene prediction, or through homology searches. Both of these methods have one thing in common: they both presuppose the availability of already annotated genes that may be present in the genome that is being examined. With the amount of sequencing done today, such a data set is often available. However, in situations when new species, or possibly even new genuses are being examined, this can be an issue.
 
@@ -204,7 +213,7 @@ In either case, the data that is available is then used to predict the functiona
 
 Once the various types of genomic features have been identified, they have to be assigned a function. For some types of regions the functional assignment is baked into the finding tool. For instance, for finding tRNAs, the fact that the found regions are tRNAs are a given since that is what was searched for. Functional assignment is predominantly an issue when it comes to assigning a function to proteins. If homology searches were used for gene prediction, the gene function is frequently then “lifted” from the search onto the found gene. If _de novo_ methods have been used, this functional assignment is then a separate step, commonly involving homology searches using blast. In either case, this highlights the need for a well curated and a well selected database for these searches. 
 
-For command line prokaryotic genome annotation, the most commonly used tool today is likely [PROKKA](https://github.com/tseemann/prokka). This tool uses prodigal for gene prediction, along with other specialist tools for finding rRNAs, tRNAs and other genomic features. For functional assignment, this tool does several different kinds of searches in a hierarchical manner. First a core set of curated and included with the program databases is searched using blast. If a match is found, then the function is lifted over. If the user wants to, it is possible to add their own core database to this set of annotated databases. Next, for the genes who did not gain a function through this step, a different kind of search using profiles is done, using [HMMER3](https://github.com/EddyRivasLab/hmmer). This program allows for more distant searches than blast. In addition, the PROKKA](https://github.com/tseemann/prokka) program allows a user to supply their own annotated proteins via the “-proteins” option. 
+For command line prokaryotic genome annotation, the most commonly used tool today is likely [PROKKA](https://github.com/tseemann/prokka). This tool uses prodigal for gene prediction, along with other specialist tools for finding rRNAs, tRNAs and other genomic features. For functional assignment, this tool does several different kinds of searches in a hierarchical manner. First a core set of curated and included with the program databases is searched using blast. If a match is found, then the function is lifted over. If the user wants to, it is possible to add their own core database to this set of annotated databases. Next, for the genes who did not gain a function through this step, a different kind of search using profiles is done, using [HMMER3](https://github.com/EddyRivasLab/hmmer). This program allows for more distant searches than blast. In addition, the [PROKKA](https://github.com/tseemann/prokka) program allows a user to supply their own annotated proteins via the “-proteins” option. 
 
 Another commonly used tool is the web based [RAST](https://rast.nmpdr.org/) system. RAST has as its core a set of subsystems, which are functionally related proteins, and these proteins have a “FIGfam” associated with them, which is a gene family which have been curated by human experts in the [FIG group](http://www.thefig.info/). When doing genome annotation, RAST starts out by annotating some specialist types of genes first. Then, it uses GLIMMER do do ab initio gene prediction, these are then used to find the 30 most closely phylogenetically related genomes. In addition, k-mer searches are done towards all of the subsystems in RAST to find genes that seem to be present in the genomes. These subsystems, together with the subsystems in the 30 most related genomes are then used to train a GLIMMER model, and the genome is then searched with this model. Genes that are not annotated in this process are blast-ed against the 30 most related genomes and annotated that way.  
 
@@ -214,6 +223,7 @@ Genome annotation is a complex business, and many methods and tools exist. Only 
 ## Sequence read mapping
 
 ### How mapping works
+
 Mapping is used for many different purposes, such as contamination removal, SNP
 calling, and for finding specific genes such as through MLST typing and
 serotyping. Mapping is the process by which reads are placed onto a reference
@@ -309,7 +319,7 @@ MLST and cgMLST data is available.
 
 As an alternative (or if a good genome assembly is not yet available for the
 species that is being studied), genome assembly of the samples at hand can be
-done (see [_de novo_ genome assembly section](##Assembly-and-annotation)), and one of these can be selected as
+done (see [_de novo_ genome assembly section](#Assembly-and-annotation)), and one of these can be selected as
 a reference. This genome should preferably be the one that appears as the most
 complete, i.e high N50, few contigs, etc. Fast clustering, for instance using
 [popPUNK](https://poppunk.readthedocs.io/en/latest/) can be done to figure out
@@ -317,7 +327,7 @@ which ones of the samples are at hand would be “equally related”, i.e. a
 centroid in the similarity space of the samples at hand.
 
 ## BLAST - sequence search
-Basic Local Alignment Search Tool ([BLAST](https://en.wikipedia.org/wiki/BLAST_(biotechnology))) is a method (and a program) that allows searching in sequence databases. These databases can contain whole-genome sequences, a set of genes or proteins, or any other DNA sequences of interest. The method takes in one or several query sequences (e.g. the predicted protein-coding genes of a genome assembly, check [_de novo_ genome assembly section](##Assembly-and-annotation)), and tries to align them in the sequences of the provided database (e.g. the nucleotide sequence database of NCBI). When it finds corresponding matches (similar sequences), it reports the name of the match, the respective percentage of identity, length of the alignment, query coverage, e-value, and other important scores. It is worth noting that these matches may be partial, both on the query side and the database side. That is, if searching with a 100 bp query sequence, it is not given that the matching region will cover the entire 100 bp query sequence. This is important when using it to search for genes. Therefore, it is important to post-process the results to be able to infer homology relationships from the alignment. The BLAST tool enables the user to set criteria on the results, such as lower values for e-value, query coverage, etc, which will reduce the number of reported hits. BLAST can be used to align nucleotide to nucleotide sequences (BLASTn), protein to protein (BLASTp), protein to nucleotide (tBLASTn) or nucleotide to protein (BLASTx). 
+Basic Local Alignment Search Tool ([BLAST](https://en.wikipedia.org/wiki/BLAST_(biotechnology))) is a method (and a program) that allows searching in sequence databases. These databases can contain whole-genome sequences, a set of genes or proteins, or any other DNA sequences of interest. The method takes in one or several query sequences (e.g. the predicted protein-coding genes of a genome assembly, check [_de novo_ genome assembly section](#Assembly-and-annotation)), and tries to align them in the sequences of the provided database (e.g. the nucleotide sequence database of NCBI). When it finds corresponding matches (similar sequences), it reports the name of the match, the respective percentage of identity, length of the alignment, query coverage, e-value, and other important scores. It is worth noting that these matches may be partial, both on the query side and the database side. That is, if searching with a 100 bp query sequence, it is not given that the matching region will cover the entire 100 bp query sequence. This is important when using it to search for genes. Therefore, it is important to post-process the results to be able to infer homology relationships from the alignment. The BLAST tool enables the user to set criteria on the results, such as lower values for e-value, query coverage, etc, which will reduce the number of reported hits. BLAST can be used to align nucleotide to nucleotide sequences (BLASTn), protein to protein (BLASTp), protein to nucleotide (tBLASTn) or nucleotide to protein (BLASTx). 
 
 BLAST is commonly available online as a tool on sites offering access to sequence data. The most well known site is the [NCBI website](https://blast.ncbi.nlm.nih.gov/Blast.cgi). BLAST can also be downloaded and installed as a [command line tool on Windows, Linux and Mac](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download). For local BLAST a database has to be generated beforehand. This database can be any set of sequences/genome(s) of interest. Public databases (e.g. non-redundant database or uniprot database), are available for download in this [ftp](https://ftp.ncbi.nlm.nih.gov/blast/db/).
 
