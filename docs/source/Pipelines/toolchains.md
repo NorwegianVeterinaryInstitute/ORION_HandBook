@@ -14,7 +14,7 @@ map. Such “products” can then be used to obtain typing data, which is needed
 the final analysis under surveillance or outbreak scenarios. These steps are
 illustrated in the figure below.
 
-![](20200924_NGS_analysis_flow_chart.png)
+![](20200924_NGS_analysis_flow_chart.png)  
 Flowchart showing a standardized WGS bioinformatic analysis workflow. The standardized workflow can be divided into four sections: Quality control, Data preprocessing, Data production, and Data analysis. Boxes with dotted lines are optional in the workflows presented. Solid and dotted lines are used for clarity and both indicate possible analysis pathways. 
 
 The first part of the process is to ensure that the quality of the reads is
