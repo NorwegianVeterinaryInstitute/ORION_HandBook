@@ -1,6 +1,6 @@
 # MLST 
-MLST (multi locus sequence typing) was first developed [in 1998 for N.
-meningitidis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC19708/). The idea is
+MLST (multi-locus sequence typing) was first developed [in 1998 for _N.
+meningitidis_](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC19708/). The idea is
 to select a set of loci in the genome, and get the alleles in each genome for
 these loci. Typing is then done by seeing what isolates have which combination
 of alleles for each locus.
@@ -91,7 +91,7 @@ There are many tools for doing MLST from both reads and assemblies available. It
 is important to realize that even though they might use the same schema, they
 might not give the same results. [A review of various MLST tools and their
 results can be found in this
-paper.](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000124).
+paper](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000124).
 Due to this review no extensive examination of tools is given here. Some
 communities lean towards using certain tools, if so, these are mentioned in the
 Species specific sections.

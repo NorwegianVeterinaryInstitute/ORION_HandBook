@@ -8,7 +8,8 @@
 - Jeevan Karloss (NVI/NIPH)
 - Mohammed Umaer Naseer (NIPH)
 - Vitor Borges (INSA) 
-- Verónica De Pinho Mixão (INSA)
+- Verónica de Pinho Mixão (INSA)
+- Miguel Pinto (INSA)
 
 
 ## Contributors

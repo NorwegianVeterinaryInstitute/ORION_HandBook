@@ -1,17 +1,17 @@
-# Escherichia coli analysis
+# _Escherichia coli_ analysis
 
-Escherichia coli are gram-negative bacteria which may reside in the intestinal
+_Escherichia coli_ are gram-negative bacteria which may reside in the intestinal
 tract of most warm-blooded animals contributing to a healthy microbiota.
 However, some of these bacteria have a pathogenic behavior, and may be
-transmitted by contaminated water or food. E. coli are divided into six
-different pathotypes, from which phage-encoded Shiga toxin-producing E. coli
-(STEC) (also known as Verocytotoxin-producing E. coli (VTEC)) are the ones most
+transmitted by contaminated water or food. _E. coli_ are divided into six
+different pathotypes, from which phage-encoded Shiga toxin-producing _E. coli_
+(STEC) (also known as Verocytotoxin-producing _E. coli_ (VTEC)) are the ones most
 commonly associated with foodborne outbreaks
 ([CDC](https://www.cdc.gov/ecoli/general/index.html)). Indeed, Shiga toxins
 (Stx) are thought to be the key virulence factors for STEC infections ([Gyles,
 2007](https://pubmed.ncbi.nlm.nih.gov/17085726/)). STEC represents the third
-most relevant human foodborne bacterial pathogen, just behind Campylobacter and
-Salmonella ([EFSA (2019)](https://www.efsa.europa.eu/en/efsajournal/pub/6406)).
+most relevant human foodborne bacterial pathogen, just behind _Campylobacter_ and
+_Salmonella_ ([EFSA (2019)](https://www.efsa.europa.eu/en/efsajournal/pub/6406)).
 [Amesquita-Lopez et al.
 (2018)](https://www.sciencedirect.com/science/article/pii/S1684118217301445#bib1)
 revises the possible routes of STEC transmission, classification, virulence
@@ -19,7 +19,7 @@ factors and antimicrobial resistance.
 
 Considering the relevance of STEC for human health, different methods have been
 applied in order to determine their diversity and associate these features to
-pathogenic traits.  E. coli serotyping is based on somatic surface (O-antigens)
+pathogenic traits.  _E. coli_ serotyping is based on somatic surface (O-antigens)
 and flagellum (H-antigens) antigens, and so far more than 400 STEC serotypes
 have been identified ([Amesquita-Lopez
 2018](https://www.sciencedirect.com/science/article/pii/S1684118217301445#bib1)).
@@ -41,10 +41,11 @@ studies. Therefore, molecular typing methods have been developed and are also
 used to assess STEC diversity.
 
 ## Typing methods
+
 STEC molecular typing is an evolving field, constantly seeking for the best typing method. A good typing method is not only highly discriminatory, but also reproducible and automated. STEC molecular typing can be performed through:
 
-- Pulsed Field Gel Electrophoresis (PFGE)   
-  PFGE is a fragment length restriction analysis that has long been considered
+- _Pulsed Field Gel Electrophoresis (PFGE)_   
+    PFGE is a fragment length restriction analysis that has long been considered
   the most discriminatory typing method for STEC in the pre-WGS era
   ([Amesquita-Lopez
   2018](https://www.sciencedirect.com/science/article/pii/S1684118217301445#bib1)).
@@ -56,8 +57,9 @@ STEC molecular typing is an evolving field, constantly seeking for the best typi
   outbreak infection’s sources ([Amesquita-Lopez
   2018](https://www.sciencedirect.com/science/article/pii/S1684118217301445#bib1)).
 
-- MLVA (Multiple locus variable tandem repeat analysis)   
-  Multiple Locus Variable Number of Tandem Repeats Analysis is a PCR-based
+
+- _MLVA (Multiple locus variable tandem repeat analysis)_   
+    Multiple Locus Variable Number of Tandem Repeats Analysis is a PCR-based
   typing method, which is the second major typing tool used by the PulseNet
   network (before WGS). This method is fast and might also be able to
   differentiate fast-evolving bacteria with a similar PFGE profile. Therefore,
@@ -65,19 +67,21 @@ STEC molecular typing is an evolving field, constantly seeking for the best typi
   resource during outbreaks ([Parsons et al.
   2016](https://pubmed.ncbi.nlm.nih.gov/27148176/)).
 
-- MLST   
-  As for other bacteria, MLST methods based on 7 locus have been developed for
-  E. coli. Two protocols have been established; one specifically developed for
+
+- _MLST (Multi-Locus Sequence Typing)_   
+    As for other bacteria, MLST methods based on 7 locus have been developed for
+  _E. coli_. Two protocols have been established; one specifically developed for
   STEC (aspC, clpX, fadD, icdA, lysP, mdh, and uidA;
-  http://shigatox.net/new/tools/ecmlst.html) and one developed for a more
-  general approach for E. coli (adk, fumC, gyrB, icd, mdh, recA and purA; [Wirth
+  [STEC center](http://shigatox.net/new/tools/ecmlst.html)) and one developed for a more
+  general approach for _E. coli_ (adk, fumC, gyrB, icd, mdh, recA and purA; [Wirth
   et al.
   2006](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2958.2006.05172.x)).
   MLST can provide faster results when compared to PFGE, and it is highly
   reproducible.
 
-- WGS  
-  With the advent of NGS technologies, WGS was shown to be useful for STEC
+
+- _WGS (Whole-Genome Sequencing)_   
+    With the advent of NGS technologies, WGS was shown to be useful for STEC
   outbreak investigation ([Parsons et al.
   2016](https://pubmed.ncbi.nlm.nih.gov/27148176/)). By providing information at
   the genomic level, WGS allows not only a highly discriminatory typing (cgMLST,
@@ -93,6 +97,7 @@ STEC molecular typing is an evolving field, constantly seeking for the best typi
   efforts to implement WGS as a routine tool to replace PFGE and MLVA. 
 
 ## “One Health” surveillance and WGS of STEC
+
 The identification of infection sources is essential for outbreak monitoring.
 Hence, an integrated analysis of clinical, food and veterinary samples relying
 on the concept of One Health is the key to achieve a good surveillance system.
@@ -103,24 +108,25 @@ to find the bacterial source of infection, and possibly reduces the time that it
 takes. Indeed, WGS analysis has proven to be an effective way to determine the
 genetic clustering of STEC isolates, as well as the source of infections
 ([Parsons et al. 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828450/),
-[Jenkins et al. 2019[(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352002/),
+[Jenkins et al. 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352002/),
 [Nouws et al. 2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7466227/),
-[Joensen et al. 2014])(https://pubmed.ncbi.nlm.nih.gov/24574290/), [Chattaway et
+[Joensen et al. 2014](https://pubmed.ncbi.nlm.nih.gov/24574290/), [Chattaway et
 al. 2016](https://pubmed.ncbi.nlm.nih.gov/26973632/)). For instance, in England
 and Denmark WGS-based STEC surveillance has been implemented with success
 ([Parsons et al. 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828450/),
 [Dallman et al.
-2021)[(https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000544?crawler=true),
-however this has mainly focused on STEC from patients. Nevertheless, WGS-based
+2021](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000544?crawler=true).
+However, this has mainly focused on STEC from patients. Nevertheless, WGS-based
 STEC surveillance at the EU level has been proposed to be delayed until the
 technological transition has been made for listeriosis ([ECDC
-roadmap[(https://www.ecdc.europa.eu/en/publications-data/ecdc-roadmap-integration-molecular-typing-and-genomic-typing-european-level)).
+roadmap](https://www.ecdc.europa.eu/en/publications-data/ecdc-roadmap-integration-molecular-typing-and-genomic-typing-european-level)).
 
 ## WGS lab protocol
 
 ### DNA extraction
+
 Before DNA extraction, STEC is cultured in the laboratory. Commonly used media
-for STEC include tryptic soy broth, E. coli broth and buffered peptone water
+for STEC include tryptic soy broth, _E. coli_ broth and buffered peptone water
 ([Amezquita-Lopes et al.
 2018](https://www.sciencedirect.com/science/article/pii/S1684118217301445#bib1))
 as well as more specific growth media. Regarding DNA extraction, there is not a
@@ -128,6 +134,7 @@ standard protocol or kit that is used, but a protocol directed towards
 Gram-negative bacteria will be recommended.
 
 ### Sequencing technology
+
 There is not a prefered WGS technology to sequence STEC. Similar to other
 fields, Illumina paired-end reads represent the most commonly used strategy. Due
 to the number of samples that can be handled at a single run and the possible
@@ -137,22 +144,23 @@ majority of the labs.
 ## Bioinformatics protocol
 
 ### Mapping or assembly
+
 The first step to perform when receiving the sequencing data , is to evaluate
 the sequencing quality and perform trimming and cleaning of the reads (see [Data
 preprocessing](../Pipelines/data_preprocessing.md)). 
 
 The cleaned sequence data can then be used for downstream analysis following one
 of two approaches (or both in parallel, check [Data
-production][../Pipelines/data_production.md]): 
-- De novo genome assembly of the sample(s),
+production](../Pipelines/data_production.md)): 
+- _De novo_ genome assembly of the sample(s),
 - Read mapping of each sample on a reference sequence (obtained from a database
-  or by de novo genome assembly of one of your samples.
+  or by _de novo genome_ assembly of one of your samples).
 
 It is important to note that both approaches have advantages and disadvantages.
 The decision on which of them to follow should be made according to what is more
 appropriate for the data at hand, and the purpose of the analyses. De novo
 genome assembly of all sequenced isolates followed by their annotation seems to
-be a common approach in studies including STEC genomes. A commonly used de novo
+be a common approach in studies including STEC genomes. A commonly used _de novo_
 genome assembler for STEC is [SPAdes](https://cab.spbu.ru/software/spades/)
 ([Iramiot et al.
 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0231852),
@@ -161,12 +169,12 @@ genome assembler for STEC is [SPAdes](https://cab.spbu.ru/software/spades/)
 [Sonda et al.
 2018](https://aricjournal.biomedcentral.com/articles/10.1186/s13756-018-0361-x)).
 It performs very well and is freely available. There are command-line pipelines,
-such as INNUca, which incorporate these programs and provide the opportunity to
+such as [INNUca](https://github.com/B-UMMI/INNUca), which incorporate these programs and provide the opportunity to
 automatically perform all the analyses from quality control to genome assembly. 
 If a platform with predefined pipelines (and that usually does not require
 bioinformatics skills) is preferred,
-[Enterobase[(https://enterobase.readthedocs.io/en/latest/) is available for 
-E. coli. As for read mapping, [BWA](http://bio-bwa.sourceforge.net) is a
+[Enterobase](https://enterobase.readthedocs.io/en/latest/) is available for 
+_E. coli_. As for read mapping, [BWA](http://bio-bwa.sourceforge.net) is a
 commonly used approach ([Holmes et al.
 2015](https://jcm.asm.org/content/53/11/3565), [Iramiot et al.
 2020](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0231852),
@@ -179,6 +187,7 @@ used.
 
 
 ### Choosing a reference genome
+
 Should an analysis require the use of a reference genome, the choice of the
 reference genome is a crucial step. Analyses relying on read-mapping approaches
 might be strongly influenced by reference choice, as the genetic distance
@@ -188,10 +197,11 @@ downstream steps, namely SNPs/INDELs calling ([Pightling et al.
 [Pightling et al.
 2015](https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-015-1689-4)).
 This reference can be picked from the samples (after genome assembly), or from a
-public database.  .[Enterobase[(https://enterobase.readthedocs.io/en/latest/) is
+public database. [Enterobase](https://enterobase.readthedocs.io/en/latest/) is
 a good site for choosing a reference for this species.
 
 ### Serotyping
+
 Besides the wet-lab approach for serotype determination of STEC samples, in
 silico approaches using WGS data can also be performed ([Joensen et al.
 2015](https://jcm.asm.org/content/53/8/2410), [Ingle et al.
@@ -201,19 +211,20 @@ without the need of de novo genome assembly, by comparing the genomic reads
 directly to the database ([Ingle et al.
 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5343136/)).
 [SeroTypeFinder](https://cge.cbs.dtu.dk/services/SerotypeFinder/) is another
-alternative for in silico determination of E. coli serotype, requiring
+alternative for in silico determination of _E. coli_ serotype, requiring
 sequencing reads or genome assembly as input.
 [Bionumerics](https://www.applied-maths.com/bionumerics) (using the database
 from SeroTypeFinder), [Enterobase](https://enterobase.readthedocs.io/en/latest/)
 is an examploe of of a platform where this function is available.
 
 ### Getting SNPs
+
 Analysis of SNPs is a frequently used approach for the analysis of STEC samples
 [(Parsons et al. 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4828450/)). 
 
 How to detect SNPs is described earlier. Briefly, there are three different approaches.
 
-- Perform de novo genome assembly of each sample and then align
+- Perform _de novo_ genome assembly of each sample and then align
   their genomic sequences. 
 - Use a reference genome where the reads of all the samples will be mapped, and
   then use a variant-calling pipeline to determine the polymorphic positions.
@@ -236,14 +247,14 @@ The allele sequences of the samples can be retrieved by:
 - Replacing the nucleotide of the reference genome by the observed alternative
   allele, and then retrieve the sequence of each gene
   of interest considering the genome annotation of the reference.
-- Obtaining the de novo genome assembly of each sample, and performing the
+- Obtaining the _de novo_ genome assembly of each sample, and performing the
   respective genome annotation. [Prokka](https://github.com/tseemann/prokka) is acommonly used program for STEC.
 - Some allele callers, such as [chewBBACA](https://github.com/B-UMMI/chewBBACA),
   provide locus-specific alignments in an automated manner, being a good option
   to determine the allelic profile of samples. 
 
 It is important to note that nowadays there are several platforms which can
-automatically do all this analysis. One of the more commonly used for E.coli 
+automatically do all this analysis. One of the more commonly used for _E.coli_ 
 is [Enterobase](https://enterobase.readthedocs.io/en/latest/index.html), and
 also [Bionumerics](https://www.applied-maths.com/bionumerics). These platforms
 provide assembly, serotyping and allele calling. Several of these platforms are
@@ -251,17 +262,14 @@ mentioned in the [xMLST](../Clustering/xMLST.md) section.
 
 
 ### Allele based typing
+
 Allele-based typing consists of retrieving clustering information considering
 the different alleles present in a population for a given set of genes (e.g. the
-core genome). Therefore, if the tool that is being used for allele finding does
-not automatically update its background database itself, it is paramount that a
-new database is downloaded before starting the analysis. 
-
-With the advent of WGS, the 7-loci based MLST approach was broadened to the use
+core genome). With the advent of WGS, the 7-loci based MLST approach was broadened to the use
 of a cgMLST or a wgMLST approach. In this context, there is a public cgMLST
 scheme which has been used in STEC analysis considering an allele-based
 approach. This scheme comprises [2,513
-loci[(https://www.cgmlst.org/ncs/schema/5064703/) and is available in the most
+loci](https://www.cgmlst.org/ncs/schema/5064703/) and is available in the most
 commonly used platforms, such as
 [EnteroBase](https://enterobase.readthedocs.io/en/latest/pipelines/salmonella-statistics.html)
 and [Ridom SeqSphere+](https://www.ridom.de/seqsphere/). Noteworthy, although
@@ -270,6 +278,7 @@ independent, and therefore there may be some nomenclature incompatibilities
 between the different platforms. 
 
 ### SNP based typing
+
 A SNP-based approach relies on the comparison of SNPs in a population. This
 strategy can be seen as an alternative to the allele-based approach, but many
 studies actually perform both of them and assess the overlap of the results.
@@ -288,14 +297,15 @@ analysis with [SnapperDB](https://pubmed.ncbi.nlm.nih.gov/29659710/).
 
 Examples of other available pipelines for SNP-based typing are: 
 
-- Center for Food Safety and Applied Nutrition
-  ([CFSAN](https://snp-pipeline.readthedocs.io/en/latest/)) HqSNPs pipeline
-- [Lyve-SET](https://github.com/lskatz/Lyve-SET) pipeline HqSNPs typing 
-- [SNV-Phy](https://snvphyl.readthedocs.io/en/latest/)l (Canadian Public Health
-  Agency)  
+- Center for Food Safety and Applied Nutrition [(CFSAN)](https://snp-pipeline.readthedocs.io/en/latest/) HqSNPs pipeline
+- [Lyve-SET](https://github.com/lskatz/Lyve-SET) pipeline for HqSNPs typing 
+- [SNV-Phyl](https://snvphyl.readthedocs.io/en/latest/) (Canadian Public Health Agency)  
+- [PHEnix](https://github.com/phe-bioinformatics/PHEnix) (The Public Health England SNP calling pipeline)
 
 ### Outbreak definition
-As defined by the World Health Organization, “a disease outbreak is the
+
+As defined by the [World Health Organization](http://www.emro.who.int/health-topics/disease-outbreaks/index.html)
+, “a disease outbreak is the
 occurrence of cases of disease in excess of what would normally be expected in a
 defined community, geographical area or season” . WGS data provides a high
 discriminatory power allowing clustering of different isolates (from different
@@ -304,7 +314,7 @@ their genomic similarity. This contributes not only to an earlier detection of
 outbreaks and determination of contamination sources, but also to the detection
 of more outbreaks, as has been reported by
 [PulseNet](https://www.cdc.gov/listeria/surveillance/whole-genome-sequencing.html)
-network for Listeria. It is difficult to establish a clear cluster outbreak
+network for _Listeria_. It is difficult to establish a clear cluster outbreak
 definition, a threshold at which we decide whether two isolates belong to the
 same genetic cluster, thus linking two cases of infection. Previous studies have
 shown that outbreak-related isolates differ in up to five SNPs in the whole
@@ -316,12 +326,13 @@ outbreak-related cluster ([Dallman et al.
 
 
 ### Virulence and AMR
-Several genes are important for E. coli ability to cause infection and are
+
+Several genes are important for _E. coli_ ability to cause infection and are
 medically relevant and many of these are associated to different pathogroups.
 Relevant virulence-associated genes for STEC are [different stx
 subtypes](http://www.fao.org/3/CA0032EN/ca0032en.pdf) (stx1a, stx2a, stx2d) and
 other virulence associated genes such as eae and aggR (ref) while Extra
-intestinal E. coli (ExPEC) other virulence genes such as pap, fimH, sfa, iha,
+intestinal _E. coli_ (ExPEC) other virulence genes such as pap, fimH, sfa, iha,
 hlyA, cnf1 or sat are of importance (eg. [Hung et al.
 2019](https://www.sciencedirect.com/science/article/pii/S168411821830433X?via%3Dihub),
 [Wang et al.
@@ -341,7 +352,6 @@ broad-spectrum cephalosporins, carbapenems aminoglycosides, and
 2018](https://pubmed.ncbi.nlm.nih.gov/30003866/)). For this reason, monitoring
 of virulence- and antimicrobial resistance-related genes is of great relevance
 to determine the best way of action in the presence of a case of infection or
-even an outbreak. As mentioned in the “Virulome and
-Resistome'' section, where more details can be found, this is performed by
+even an outbreak. As mentioned in the [Virulence and AMR detection section](../Typing/virulence_amr.md), where more details can be found, this is performed by
 comparing the genome to a database comprising a set of genes of interest.
 Examples of predefined resistome databases are mentioned in the same section.
