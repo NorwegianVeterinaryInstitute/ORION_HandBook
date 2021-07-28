@@ -7,8 +7,7 @@ tools do both, while some are specific for either.
 
 ### BIGSdb software and database
 The Bacterial Isolate Genome Sequence
-[(BIGSdb)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-595)
-] is a software that offers a large range of pathogen population analyses.
+[(BIGSdb)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-595) is a software that offers a large range of pathogen population analyses.
 BIGSdb is hosted by [PubMLST](https://pubmlst.org/), a website that allows
 access to curated open-access databases of many microbial species (Jolley et al
 2018).  PubMLST also serves as nomenclature server for both MLST and cgMLST.

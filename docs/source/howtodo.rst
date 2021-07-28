@@ -1,7 +1,7 @@
 
 **Contributing**
 =================
-The ORION NGS surveillance handbook project is an open documentation project, and we welcome all contributions to this handbook.
+The ORION / BeOne NGS surveillance handbook project is an open documentation project, and we welcome all contributions to this handbook.
 
 **Contributor Agreement**
 --------------------------

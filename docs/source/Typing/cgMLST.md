@@ -1,12 +1,12 @@
 # cgMLST
 
 Core genome multi-locus sequence typing is an extension of the original
-[seven-loci MLST method]([Maiden et al.
+seven-loci MLST method ([Maiden et al.
 2013](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3980634/), [Lüth and al.
 2018](https://www.sciencedirect.com/science/article/pii/S092422441730540X)).
 Conceptually speaking cgMLST works in the same way as MLST, however, many more
 genes/loci are being used. For instance, one popular set of genes that is used
-as a schema for Escherichia coli consists of 2,513 genes. As for 7-gene MLST,
+as a schema for _Escherichia coli_ consists of 2,513 genes. As for 7-gene MLST,
 there are different sources for the schemas. Schemas are defined as a set of
 loci/genes and their respective alleles. There are also different tools in use
 for finding the alleles which might not always produce perfectly comparable
@@ -77,7 +77,7 @@ software compares the sequencing data for an isolate, either in the form of
 reads or an assembly, to a set of alleles. If an allele is located in the
 sequencing data, it is recorded as found in that isolate. Similarly to MLST,
 there are two main approaches to finding cgMLST alleles, either based on using
-[BLAST] on an assembly, or using the reads directly somehow against an allele
+BLAST on an assembly, or using the reads directly somehow against an allele
 database. Another variable is whether the tool is available as a stand-alone
 installable tool, or whether it is web-based. The [xMLST tools](mlst_typing.md)
 page contains information about several commonly used tools. 
@@ -126,7 +126,7 @@ loci might be flagged as missing while they would have been found during
 reanalysis at a later stage when the database had been augmented. This, because
 the nomenclature allele database has been populated with increasingly divergent
 alleles, as illustrated in  [Deneke et
-al.(2021)](https://journals.asm.org/doi/10.1128/JCM.01037-19).
+al. (2021)](https://journals.asm.org/doi/10.1128/JCM.01037-19).
 
 ### Read based methods
 MLST callers (eg. reviewed in [Page and al.
