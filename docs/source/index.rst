@@ -43,7 +43,7 @@ One Health Sequencing for Surveillance HandBook
 
    Typing/MLST.md
    Typing/cgMLST.md
-   Typing/serotype.md
+   Typing/serotyping.md
    Typing/virulence_amr.md
 
 .. toctree::
