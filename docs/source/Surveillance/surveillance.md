@@ -46,7 +46,7 @@ requires a technological transition which is not affordable in many countries. A
 opportunities are unequal between different sectors (Human health, Animal Health, Environmental Health and 
 Food Safety).
 
-### Scientific perspective
+### Scientific and technical perspective
 
 From a scientific perspective, WGS-based surveillance systems require multi-tasked teams with different 
 scientific backgrounds for proper data analysis, including specialized microbiologists and bioinformaticians 
@@ -66,10 +66,11 @@ issues. Noteworthy, data protection should always be guaranteed, and robust anon
 
 Ultimately, even if all the above-mentioned barriers for the implementation of a proper WGS-based surveillance system 
 are overcome, cultural barriers may also be an issue ([WHO 2018](https://apps.who.int/iris/bitstream/handle/10665/272430/9789241513869-eng.pdf?sequence=1&isAllowed=y)). Besides the language barrier in international cooperation, and 
-the usual resistance to change, cross-sectoral collaboration may be difficult to implement. Actions promoting the 
-concept of One Health, and showing the relevance of this integrated perspective where human, animal and environmental 
-health are connected, may contribute to raise the awareness of politicians, scientists, health practitioners, and 
-ultimately all the citizens and surpass some of the above-mentioned obstacles.
+the usual resistance to change, cross-sectoral collaboration may be difficult to implement. As stressed by several 
+international entities during the last years, aActions promoting the concept of One Health, and showing the relevance 
+of this integrated perspective where human, animal and environmental health are connected, may contribute to raise the 
+awareness of politicians, scientists, health practitioners, and ultimately all the citizens and surpass some of the 
+above-mentioned obstacles ([ECDC, 2017](https://www.ecdc.europa.eu/sites/portal/files/documents/One-Health-preparedness-24-May-2018.pdf)).
 
 ## Future perspectives
 
