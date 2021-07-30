@@ -514,7 +514,7 @@ is, if a BLAST search is done between the set of genes from genome A towards a
 database comprising the genes from genome B, and vice-versa, and genes A1 and B1
 are the best hit of each other in both cases, they are RBHs. 
 
-### ePCR or in-silico PCR 
+### ePCR or insilico PCR 
 ePRC aims at emulating the process of PCR using WGS data. This is done by
 searching for a set of specific primers in a genome, and then examining the
 lengths and directionality to ensure that the result would be a valid PCR

@@ -48,7 +48,7 @@ monocytogenes_](https://www.sciencedirect.com/science/article/pii/S0168165616313
 Whole-genome based serotyping can be done in different ways:
 
 - By emulating laboratory methods such as presence/absence DNA-fragments
-  detection PCR (see [ePCR section](../Pipelines/data_production.md#ePCR-in-silico-PCR))
+  detection PCR (see [ePCR section](../Pipelines/data_production.md#ePCR-or-insilico-PCR))
 - By detecting alleles within a set of antigen-genes loci (serotyping performed
   similarly as MLST finding, see [MLST method description](../Typing/MLST.md))
 - By specific genes identification, by either mapping or BLAST searches towards
