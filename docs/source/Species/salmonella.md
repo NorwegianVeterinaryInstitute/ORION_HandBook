@@ -35,7 +35,7 @@ investigation.
 
 _Salmonella_ molecular typing can be performed through:
 
-- _Pulsed Field Gel Electrophoresis (PFGE)_  
+- **Pulsed Field Gel Electrophoresis (PFGE)** -  
     PFGE is a fragment length restriction analysis that has long been considered
   as one of the “gold-standards” for _Salmonella_ typing, together with
   serotyping, due to its relatively high discriminatory power. This was until
@@ -44,7 +44,7 @@ _Salmonella_ molecular typing can be performed through:
   by public health authorities and food regulators for outbreak investigations.
 
 
-- _MLVA (Multiple locus variable tandem repeat analysis)_   
+- **MLVA (Multiple locus variable tandem repeat analysis)** -   
     Multiple Locus Variable Number of Tandem Repeats Analysis is a PCR-based
   typing method, which is a major typing tool used by the
   [PulseNet](https://www.cdc.gov/pulsenet/index.html) network. This method is
@@ -57,7 +57,7 @@ _Salmonella_ molecular typing can be performed through:
   scheme.
 
 
-- _MLST (Multi-locus Sequence Typing)_  
+- **MLST (Multi-locus Sequence Typing)** -  
     As for other bacteria, a MLST method based on seven housekeeping genes (aroC,
   dnaN, hemD, hisD, thrA, sucA, and purE) has been developed for _Salmonella_
   ([Achtman et al. 2012](https://doi.org/10.1371/journal.ppat.1002776)). MLST
@@ -66,7 +66,7 @@ _Salmonella_ molecular typing can be performed through:
   serotyping.
 
 
-- _Microarrays_   
+- **Microarrays** -   
     The _Salmonella_ genoserotyping array (SGSA) is a microarray developed as an
   alternative to the usual serotyping method. This method presents very good
   results for the 57 most commonly reported serotypes, but fails for many
@@ -75,7 +75,7 @@ _Salmonella_ molecular typing can be performed through:
   v2](https://pubmed.ncbi.nlm.nih.gov/30513098/).
   
 
-- _CRISPR_   
+- **CRISPR** -   
     This method uses the diversity of spacers present at CRISPR loci to
   distinguish bacterial strains ([Fabre et al.
   2012](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0036995)).
@@ -89,7 +89,7 @@ _Salmonella_ molecular typing can be performed through:
   an expensive non-standardized protocol.
   
 
-- _WGS (Whole-Genome Sequencing)_   
+- **WGS (Whole-Genome Sequencing)** -   
     With the advent of NGS technologies, WGS technology has led to the improvement
   of small salmonellosis outbreak investigation ([Kubota et al.
   2019](https://journals.sagepub.com/doi/pdf/10.1177/0033354919881650)). By

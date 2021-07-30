@@ -50,7 +50,7 @@ typing method presents not only a high discriminatory power, but also high
 reproducibility and the possibility of automation. Nowadays, different
 techniques can be applied for _L. monocytogenes_ molecular typing, namely:
 
-- _Pulsed Field Gel Electrophoresis (PFGE)_   
+- **Pulsed Field Gel Electrophoresis (PFGE)** -   
     PFGE is a fragment length restriction analysis ([Dalmasso et al.
   2014](https://pubmed.ncbi.nlm.nih.gov/24792548/)) that has long been considered 
   as the “gold-standard” for _L. monocytogenes_ typing due to its high
@@ -69,7 +69,7 @@ techniques can be applied for _L. monocytogenes_ molecular typing, namely:
   outbreaks.
 
 
-- _MLVA (Multiple locus variable tandem repeat analysis)_  
+- **MLVA (Multiple locus variable tandem repeat analysis)** -  
     Given the drawbacks of PFGE, other typing methods started being considered as
   good alternatives or at least complements to PFGE analysis. MLVA represents
   another method of DNA fingerprinting. This method has the advantage of
@@ -87,7 +87,7 @@ techniques can be applied for _L. monocytogenes_ molecular typing, namely:
   MLVA performance to PFGE and MLST. 
 
 
-- _Multiplex-PCR for classifying 5 serogroups_  
+- **Multiplex-PCR for classifying 5 serogroups** -  
     Consisting of the amplification of 5 different genes (lmo0737, lmo1118,
   ORF2110, ORF2819 and prs), this method was developed in order to facilitate
   serotyping discrimination by quickly classifying _L. monocytogenes_ into 5
@@ -99,7 +99,7 @@ techniques can be applied for _L. monocytogenes_ molecular typing, namely:
   which makes it less suitable for outbreak detection and investigation.
 
 
-- _MLST (Multi-Locus Sequence Tying)_  
+- **MLST (Multi-Locus Sequence Tying)** -  
     DNA sequencing allows unambiguous identification of genetic differences by
   direct comparison of allele sequences between samples, and sequencing
   information can be easily shared between laboratories. Therefore, DNA
@@ -116,7 +116,7 @@ techniques can be applied for _L. monocytogenes_ molecular typing, namely:
   which cannot be multiplexed.
 
 
-- _Ribosomal multi-locus typing (rMLST)_  
+- **Ribosomal multi-locus typing (rMLST)** -  
     rMLST has also been employed for strain characterisation ([Jolley et al.
   2012](https://www.microbiologyresearch.org/content/journal/micro/10.1099/mic.0.055459-0)).
   This typing method has recently been employed for WGS data quality control of
@@ -124,7 +124,7 @@ techniques can be applied for _L. monocytogenes_ molecular typing, namely:
   of sequencing data ([Low et al. 2019](https://peerj.com/articles/6995/)).
 
 
-- _MVLST (Multi-virulence-locus sequence typing)_  
+- **MVLST (Multi-virulence-locus sequence typing)** -  
     Similar to MLST, but considering a set of virulence (prfA, inlB, and inlC) and
   virulence-related genes (dal, lisR, and clpP), which has been shown to
   accurately differentiate epidemic clones (see [Lomonaco et al.
@@ -133,7 +133,7 @@ techniques can be applied for _L. monocytogenes_ molecular typing, namely:
   2017b](https://www.frontiersin.org/articles/10.3389/fpubh.2017.00241/full)).
   
   
-- _WGS (Whole-Genome Sequencing)_   
+- **WGS (Whole-Genome Sequencing)** -   
     With the advent of NGS technologies, WGS technology has led to the improvement
   of small listeriosis outbreak investigation and is currently being regarded as
   the new “gold-standard” in the analysis of _L. monocytogenes_ ([Nadon et al.
