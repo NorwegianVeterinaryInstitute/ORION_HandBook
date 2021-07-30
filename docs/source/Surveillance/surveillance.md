@@ -29,7 +29,8 @@ of pathogens and their characteristics, but also interchange their data is a key
 management. In this regard, WGS represents an important advance as WGS data can be easily shared and 
 compared between laboratories at national and international levels. Nevertheless, WGS implementation
 is challenging and many things need to be taken into consideration. In this section we do a brief
-overview of the challenges raised by the 
+overview of the challenges associated to WGS implementation in the surveillance of foodborne diseases which
+were raised by the 
 [WHO in 2018](https://apps.who.int/iris/bitstream/handle/10665/272430/9789241513869-eng.pdf?sequence=1&isAllowed=y) 
 regarding this subject.
 
