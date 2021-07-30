@@ -6,7 +6,7 @@ pathogens and humans contact through contaminated food or water. FBDs affect
 ([WHO](https://www.who.int/news-room/fact-sheets/detail/food-safety)). Proper 
 management of FBDs requires a good understanding of the disease, a fast detection 
 and a proper response 
-([WHO, 2018](https://www.who.int/foodsafety/publications/foodborne_disease/wgs_landscape/en/)).
+([WHO 2018](https://www.who.int/foodsafety/publications/foodborne_disease/wgs_landscape/en/)).
 Therefore, good surveillance systems able to track the circulation of pathogens and monitor 
 their medically relevant features, such as the resistome or the virulome, are 
 essential for disease control. Such systems could, for example, allow the early detection 
@@ -67,10 +67,10 @@ issues. Noteworthy, data protection should always be guaranteed, and robust anon
 Ultimately, even if all the above-mentioned barriers for the implementation of a proper WGS-based surveillance system 
 are overcome, cultural barriers may also be an issue ([WHO 2018](https://apps.who.int/iris/bitstream/handle/10665/272430/9789241513869-eng.pdf?sequence=1&isAllowed=y)). Besides the language barrier in international cooperation, and 
 the usual resistance to change, cross-sectoral collaboration may be difficult to implement. As stressed by several 
-international entities during the last years, aActions promoting the concept of One Health, and showing the relevance 
+international entities during the last years, actions promoting the concept of One Health, and showing the relevance 
 of this integrated perspective where human, animal and environmental health are connected, may contribute to raise the 
 awareness of politicians, scientists, health practitioners, and ultimately all the citizens and surpass some of the 
-above-mentioned obstacles ([ECDC, 2017](https://www.ecdc.europa.eu/sites/portal/files/documents/One-Health-preparedness-24-May-2018.pdf)).
+above-mentioned obstacles ([ECDC 2017](https://www.ecdc.europa.eu/sites/portal/files/documents/One-Health-preparedness-24-May-2018.pdf)).
 
 ## Future perspectives
 
