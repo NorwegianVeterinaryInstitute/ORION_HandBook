@@ -44,7 +44,7 @@ used to assess STEC diversity.
 
 STEC molecular typing is an evolving field, constantly seeking for the best typing method. A good typing method is not only highly discriminatory, but also reproducible and automated. STEC molecular typing can be performed through:
 
-- _Pulsed Field Gel Electrophoresis (PFGE)_   
+- **Pulsed Field Gel Electrophoresis (PFGE)** -   
     PFGE is a fragment length restriction analysis that has long been considered
   the most discriminatory typing method for STEC in the pre-WGS era
   ([Amesquita-Lopez
@@ -58,7 +58,7 @@ STEC molecular typing is an evolving field, constantly seeking for the best typi
   2018](https://www.sciencedirect.com/science/article/pii/S1684118217301445#bib1)).
 
 
-- _MLVA (Multiple locus variable tandem repeat analysis)_   
+- **MLVA (Multiple locus variable tandem repeat analysis)** -    
     Multiple Locus Variable Number of Tandem Repeats Analysis is a PCR-based
   typing method, which is the second major typing tool used by the PulseNet
   network (before WGS). This method is fast and might also be able to
@@ -68,7 +68,7 @@ STEC molecular typing is an evolving field, constantly seeking for the best typi
   2016](https://pubmed.ncbi.nlm.nih.gov/27148176/)).
 
 
-- _MLST (Multi-Locus Sequence Typing)_   
+- **MLST (Multi-Locus Sequence Typing)** -   
     As for other bacteria, MLST methods based on 7 locus have been developed for
   _E. coli_. Two protocols have been established; one specifically developed for
   STEC (aspC, clpX, fadD, icdA, lysP, mdh, and uidA;
@@ -80,7 +80,7 @@ STEC molecular typing is an evolving field, constantly seeking for the best typi
   reproducible.
 
 
-- _WGS (Whole-Genome Sequencing)_   
+- **WGS (Whole-Genome Sequencing)** -   
     With the advent of NGS technologies, WGS was shown to be useful for STEC
   outbreak investigation ([Parsons et al.
   2016](https://pubmed.ncbi.nlm.nih.gov/27148176/)). By providing information at
