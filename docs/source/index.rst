@@ -43,7 +43,7 @@ One Health Sequencing for Surveillance HandBook
 
    Typing/MLST.md
    Typing/cgMLST.md
-   Typing/serotype.md
+   Typing/serotyping.md
    Typing/virulence_amr.md
 
 .. toctree::
@@ -71,6 +71,13 @@ One Health Sequencing for Surveillance HandBook
    Species/campylobacter.md
    Species/salmonella.md
    Species/listeria.md
+
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Surveillance
+   
+   Surveillance/surveillance.md
 
 .. toctree::
    :maxdepth: 2

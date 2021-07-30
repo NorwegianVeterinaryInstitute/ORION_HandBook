@@ -50,11 +50,11 @@ typing method presents not only a high discriminatory power, but also high
 reproducibility and the possibility of automation. Nowadays, different
 techniques can be applied for _L. monocytogenes_ molecular typing, namely:
 
-- _Pulsed Field Gel Electrophoresis (PFGE)_   
-    PFGE is a fragment length restriction analysis ([Dalmasso et al.
-  2014](https://pubmed.ncbi.nlm.nih.gov/24792548/)) that has long been considered 
-  as the “gold-standard” for _L. monocytogenes_ typing due to its high
-  discriminatory power in the pre-WGS era. This method has been used by
+- **Pulsed Field Gel Electrophoresis (PFGE)** - PFGE is a fragment length
+  restriction analysis ([Dalmasso et al.
+  2014](https://pubmed.ncbi.nlm.nih.gov/24792548/)) that has long been
+  considered as the “gold-standard” for _L. monocytogenes_ typing due to its
+  high discriminatory power in the pre-WGS era. This method has been used by
   [PulseNet](https://www.cdc.gov/pulsenet/index.html) to connect cases of
   disease through the comparison of their DNA fingerprints, and consequently
   identify potential outbreaks. Despite its robustness, PFGE is time-consuming,
@@ -62,96 +62,98 @@ techniques can be applied for _L. monocytogenes_ molecular typing, namely:
   2018](https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2018.23.33.1700798))
   and lacks discriminatory power for outbreak delineation. Nevertheless, despite
   these disadvantages, PFGE still represented the best compromise between time
-  and discriminatory power in _L. monocytogenes_ molecular typing until the advent
-  of NGS technologies. It was thus being considered as the “gold-standard”
-  typing method for _L. monocytogenes_ for many years, and played an important
-  role in _L. monocytogenes_ surveillance and in the resolution of multiple
-  outbreaks.
+  and discriminatory power in _L. monocytogenes_ molecular typing until the
+  advent of NGS technologies. It was thus being considered as the
+  “gold-standard”typing method for _L. monocytogenes_ for many years, and played
+  an important role in _L. monocytogenes_ surveillance and in the resolution of
+  multiple outbreaks.
 
 
-- _MLVA (Multiple locus variable tandem repeat analysis)_  
-    Given the drawbacks of PFGE, other typing methods started being considered as
-  good alternatives or at least complements to PFGE analysis. MLVA represents
-  another method of DNA fingerprinting. This method has the advantage of
-  detecting fast-evolving bacterial strains among isolates which may look the
-  same with PFGE. However, it requires highly trained technicians and does not
-  have a standardized protocol for multiple pathogens. This is why it is not
-  used as a routine typing method, but rather as a complementary method to PFGE
-  by [PulseNet](https://www.cdc.gov/pulsenet/index.html) for some
-  microorganisms, but not _L. monocytogenes_. For this reason, it does not
-  represent a standard method for surveillance of _Listeria_, but it is used by
-  the scientific community to explore the diversity of these bacteria (e.g.
-  [Saleh-Lakha et al. 2013](https://aem.asm.org/content/79/20/6472), [Lunestad
-  et al. 2013](https://pubmed.ncbi.nlm.nih.gov/23218175/)). [Chenal-Francisque
-  et al. (2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3716049/) compares
-  MLVA performance to PFGE and MLST. 
+- **MLVA (Multiple locus variable tandem repeat analysis)** - Given the
+  drawbacks of PFGE, other typing methods started being considered as good
+  alternatives or at least complements to PFGE analysis. MLVA represents another
+  method of DNA fingerprinting. This method has the advantage of detecting
+  fast-evolving bacterial strains among isolates which may look the same with
+  PFGE. However, it requires highly trained technicians and does not have a
+  standardized protocol for multiple pathogens. This is why it is not used as a
+  routine typing method, but rather as a complementary method to PFGE by
+  [PulseNet](https://www.cdc.gov/pulsenet/index.html) for some microorganisms,
+  but not _L. monocytogenes_. For this reason, it does not represent a standard
+  method for surveillance of _Listeria_, but it is used by the scientific
+  community to explore the diversity of these bacteria (e.g. [Saleh-Lakha et al.
+  2013](https://aem.asm.org/content/79/20/6472), [Lunestad et al.
+  2013](https://pubmed.ncbi.nlm.nih.gov/23218175/)). [Chenal-Francisque et al.
+  (2013)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3716049/) compares MLVA
+  performance to PFGE and MLST. 
 
 
-- _Multiplex-PCR for classifying 5 serogroups_  
-    Consisting of the amplification of 5 different genes (lmo0737, lmo1118,
-  ORF2110, ORF2819 and prs), this method was developed in order to facilitate
-  serotyping discrimination by quickly classifying _L. monocytogenes_ into 5
-  serogroups ([Borucki and Call 2003](https://jcm.asm.org/content/41/12/5537),
-  [Doumith et al.
-  2004](https://journals.asm.org/doi/10.1128/JCM.42.8.3819-3822.2004), [Matle et
-  al. 2020](http://www.scielo.org.za/pdf/ojvr/v87n1/13.pdf)). Nevertheless,
-  despite being a quick method to implement, it has low discriminatory power,
-  which makes it less suitable for outbreak detection and investigation.
-
-
-- _MLST (Multi-Locus Sequence Tying)_  
-    DNA sequencing allows unambiguous identification of genetic differences by
-  direct comparison of allele sequences between samples, and sequencing
-  information can be easily shared between laboratories. Therefore, DNA
-  sequencing provides a robust solution for molecular typing. In this context, a
-  7-gene MLST (housekeeping genes) method was developed for _L. monocytogenes_
-  ([Salcedo et al. 2003](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC149676/),
+- **Multiplex-PCR for classifying 5 serogroups** - Consisting of the
+  amplification of 5 different genes (lmo0737, lmo1118, ORF2110, ORF2819 and
+  prs), this method was developed in order to facilitate serotyping
+  discrimination by quickly classifying _L. monocytogenes_ into 5 serogroups
+  ([Borucki and Call 2003](https://jcm.asm.org/content/41/12/5537), [Doumith et
+  al. 2004](https://journals.asm.org/doi/10.1128/JCM.42.8.3819-3822.2004),
   [Matle et al. 2020](http://www.scielo.org.za/pdf/ojvr/v87n1/13.pdf)).
-  Sequence types (ST) represent unique combinations of the MLST alleles. Clonal
-  complexes (CC) are groups of ST differing by no more than one allele to
-  another isolate belonging to the same CC ([Ragon et al.
+  Nevertheless, despite being a quick method to implement, it has low
+  discriminatory power, which makes it less suitable for outbreak detection and
+  investigation.
+
+
+- **MLST (Multi-Locus Sequence Tying)** - DNA sequencing allows unambiguous
+  identification of genetic differences by direct comparison of allele sequences
+  between samples, and sequencing information can be easily shared between
+  laboratories. Therefore, DNA sequencing provides a robust solution for
+  molecular typing. In this context, a 7-gene MLST (housekeeping genes) method
+  was developed for _L. monocytogenes_ ([Salcedo et al.
+  2003](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC149676/), [Matle et al.
+  2020](http://www.scielo.org.za/pdf/ojvr/v87n1/13.pdf)). Sequence types (ST)
+  represent unique combinations of the MLST alleles. Clonal complexes (CC) are
+  groups of ST differing by no more than one allele to another isolate belonging
+  to the same CC ([Ragon et al.
   2008](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1000146),
   [Henri et al. 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5007763/)). A
   significant drawback of this method is that it requires multiple PCR reactions
   which cannot be multiplexed.
 
 
-- _Ribosomal multi-locus typing (rMLST)_  
-    rMLST has also been employed for strain characterisation ([Jolley et al.
+- **Ribosomal multi-locus typing (rMLST)** - rMLST has also been employed for
+  strain characterisation ([Jolley et al.
   2012](https://www.microbiologyresearch.org/content/journal/micro/10.1099/mic.0.055459-0)).
   This typing method has recently been employed for WGS data quality control of
   _L. monocytogenes_ to detect potential intra-species contamination (admixture)
   of sequencing data ([Low et al. 2019](https://peerj.com/articles/6995/)).
 
 
-- _MVLST (Multi-virulence-locus sequence typing)_  
-    Similar to MLST, but considering a set of virulence (prfA, inlB, and inlC) and
-  virulence-related genes (dal, lisR, and clpP), which has been shown to
-  accurately differentiate epidemic clones (see [Lomonaco et al.
+- **MVLST (Multi-virulence-locus sequence typing)** - Similar to MLST, but
+  considering a set of virulence (prfA, inlB, and inlC) and virulence-related
+  genes (dal, lisR, and clpP), which has been shown to accurately differentiate
+  epidemic clones (see [Lomonaco et al.
   2013](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3558006/), [Cantinelli et
   al. 2013](https://jcm.asm.org/content/jcm/51/11/3770.full.pdf), [Burall et al.
   2017b](https://www.frontiersin.org/articles/10.3389/fpubh.2017.00241/full)).
   
   
-- _WGS (Whole-Genome Sequencing)_   
-    With the advent of NGS technologies, WGS technology has led to the improvement
-  of small listeriosis outbreak investigation and is currently being regarded as
-  the new “gold-standard” in the analysis of _L. monocytogenes_ ([Nadon et al.
+- **WGS (Whole-Genome Sequencing)** - With the advent of NGS technologies, WGS
+  technology has led to the improvement of small listeriosis outbreak
+  investigation and is currently being regarded as the new “gold-standard” in
+  the analysis of _L. monocytogenes_ ([Nadon et al.
   2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5479977/pdf/eurosurv-22-30544.pdf)).
   By providing information at the genomic level, WGS allows not only a highly
   discriminatory typing (cgMLST, wgMLST and SNP-typing), but also to establish
-  backward compatibility with previously mentioned molecular typing methods, such as
-  the 7-genes MLST, Multiplex-PCR, rMLST and MVLST, which, for this reason, will
-  tend to continue to be used. Furthermore, it allows the analysis of specific
-  genes, such as virulence factors and antimicrobial resistance genes. Genetic
-  clustering using WGS can be performed on any distance measure (eg. issued from
-  allelic differences detected using cgMLST typing) or evolutionary-model based
-  clustering (ie. phylogenetics) relying on variants/SNPs detection.
+  backward compatibility with previously mentioned molecular typing methods,
+  such as the 7-genes MLST, Multiplex-PCR, rMLST and MVLST, which, for this
+  reason, will tend to continue to be used. Furthermore, it allows the analysis
+  of specific genes, such as virulence factors and antimicrobial resistance
+  genes. Genetic clustering using WGS can be performed on any distance measure
+  (eg. issued from allelic differences detected using cgMLST typing) or
+  evolutionary-model based clustering (ie. phylogenetics) relying on
+  variants/SNPs detection.
   [PulseNet](https://www.cdc.gov/pulsenet/pathogens/wgs.html) has been
   implementing WGS for _Listeria_ surveillance and outbreak monitoring. Their
-  results have shown that [using WGS increases the number of outbreaks detected, and
-  earlier outbreak detection facilitates timely action, thus
-  limiting the extent of outbreaks](https://www.cdc.gov/listeria/surveillance/whole-genome-sequencing.html).
+  results have shown that [using WGS increases the number of outbreaks detected,
+  and earlier outbreak detection facilitates timely action, thus limiting the
+  extent of
+  outbreaks](https://www.cdc.gov/listeria/surveillance/whole-genome-sequencing.html).
   Similar studies in the EU have confirmed those findings ([Nielsen et al.
   2017](https://efsa.onlinelibrary.wiley.com/doi/10.2903/sp.efsa.2017.EN-1151),
   [Van Walle et al. 2018](https://pubmed.ncbi.nlm.nih.gov/30131096/), [Moura et
