@@ -151,10 +151,9 @@ preprocessing.
 Read length is a determining factor on the outcome of an assembly process. This
 is due to the fact that in an assembly process it is not possible to resolve
 repeats that are longer than the read length. This is exemplified in the
-[section about paired-end
-sequencing](../Seq_tech/sequencing_tech.md#Paired-end%20sequencing). This is
-also known as Ukkonen’s condition, and for a deep dive into that, [please read
-this
+[section about paired-end sequencing](../Seq_tech/sequencing_tech.md#Paired-end-sequencing). 
+This is also known as Ukkonen’s condition, and for a deep dive into
+that, [please read this
 blogpost](https://liorpachter.wordpress.com/2013/10/08/ukkonens-condition-for-assembly/).
 This is the main reason why long read sequencing has been gaining ground the
 last years, longer reads give assemblies with fewer contigs. For microbial
