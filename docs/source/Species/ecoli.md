@@ -44,10 +44,9 @@ used to assess STEC diversity.
 
 STEC molecular typing is an evolving field, constantly seeking for the best typing method. A good typing method is not only highly discriminatory, but also reproducible and automated. STEC molecular typing can be performed through:
 
-- **Pulsed Field Gel Electrophoresis (PFGE)** -   
-    PFGE is a fragment length restriction analysis that has long been considered
-  the most discriminatory typing method for STEC in the pre-WGS era
-  ([Amesquita-Lopez
+- **Pulsed Field Gel Electrophoresis (PFGE)** - PFGE is a fragment length
+  restriction analysis that has long been considered the most discriminatory
+  typing method for STEC in the pre-WGS era ([Amesquita-Lopez
   2018](https://www.sciencedirect.com/science/article/pii/S1684118217301445#bib1)).
   This is currently the “gold-standard” for
   [PulseNet](https://www.cdc.gov/pulsenet/index.html) network, and has been used
@@ -58,31 +57,28 @@ STEC molecular typing is an evolving field, constantly seeking for the best typi
   2018](https://www.sciencedirect.com/science/article/pii/S1684118217301445#bib1)).
 
 
-- **MLVA (Multiple locus variable tandem repeat analysis)** -    
-    Multiple Locus Variable Number of Tandem Repeats Analysis is a PCR-based
-  typing method, which is the second major typing tool used by the PulseNet
-  network (before WGS). This method is fast and might also be able to
-  differentiate fast-evolving bacteria with a similar PFGE profile. Therefore,
-  MLVA has been used to complement PFGE results, thus providing a useful
-  resource during outbreaks ([Parsons et al.
-  2016](https://pubmed.ncbi.nlm.nih.gov/27148176/)).
+- **MLVA (Multiple locus variable tandem repeat analysis)** - Multiple Locus
+  Variable Number of Tandem Repeats Analysis is a PCR-based typing method, which
+  is the second major typing tool used by the PulseNet network (before WGS).
+  This method is fast and might also be able to differentiate fast-evolving
+  bacteria with a similar PFGE profile. Therefore, MLVA has been used to
+  complement PFGE results, thus providing a useful resource during outbreaks
+  ([Parsons et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27148176/)).
 
 
-- **MLST (Multi-Locus Sequence Typing)** -   
-    As for other bacteria, MLST methods based on 7 locus have been developed for
-  _E. coli_. Two protocols have been established; one specifically developed for
-  STEC (aspC, clpX, fadD, icdA, lysP, mdh, and uidA;
-  [STEC center](http://shigatox.net/new/tools/ecmlst.html)) and one developed for a more
-  general approach for _E. coli_ (adk, fumC, gyrB, icd, mdh, recA and purA; [Wirth
-  et al.
+- **MLST (Multi-Locus Sequence Typing)** - As for other bacteria, MLST methods
+  based on 7 locus have been developed for _E. coli_. Two protocols have been
+  established; one specifically developed for STEC (aspC, clpX, fadD, icdA,
+  lysP, mdh, and uidA; [STEC center](http://shigatox.net/new/tools/ecmlst.html))
+  and one developed for a more general approach for _E. coli_ (adk, fumC, gyrB,
+  icd, mdh, recA and purA; [Wirth et al.
   2006](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2958.2006.05172.x)).
   MLST can provide faster results when compared to PFGE, and it is highly
   reproducible.
 
 
-- **WGS (Whole-Genome Sequencing)** -   
-    With the advent of NGS technologies, WGS was shown to be useful for STEC
-  outbreak investigation ([Parsons et al.
+- **WGS (Whole-Genome Sequencing)** - With the advent of NGS technologies, WGS
+  was shown to be useful for STEC outbreak investigation ([Parsons et al.
   2016](https://pubmed.ncbi.nlm.nih.gov/27148176/)). By providing information at
   the genomic level, WGS allows not only a highly discriminatory typing (cgMLST,
   wgMLST and SNP-typing), but also to establish the backward compatibility with

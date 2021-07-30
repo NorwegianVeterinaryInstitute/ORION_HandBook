@@ -46,28 +46,27 @@ molecular typing is a constantly evolving field always seeking for better
 technologies. Nowadays, different techniques can be applied for _Campylobacter_
 molecular typing, namely:
 
-- **Pulsed Field Gel Electrophoresis (PFGE)** -   
-    PFGE is a fragment length restriction analysis that has long been considered
-  the most discriminatory typing method for _Campylobacter_ in the pre-WGS era
-  ([Sabat et al.
+- **Pulsed Field Gel Electrophoresis (PFGE)** - PFGE is a fragment length
+  restriction analysis that has long been considered the most discriminatory
+  typing method for _Campylobacter_ in the pre-WGS era ([Sabat et al.
   2013](https://www.eurosurveillance.org/content/10.2807/ese.18.04.20380-en),
   [Frazão et al. 2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7203312/)).
   This is currently the “gold-standard” for
   [PulseNet](https://www.cdc.gov/pulsenet/index.html) network, and has been used
   by public health authorities and food regulators for outbreak investigations.
 
-- **MLVA (Multiple locus variable tandem repeat analysis)** -   
-    Multiple Locus Variable Number of Tandem Repeats Analysis is a PCR-based
-  typing method, which is another typing tool used by the
+- **MLVA (Multiple locus variable tandem repeat analysis)** - Multiple Locus
+  Variable Number of Tandem Repeats Analysis is a PCR-based typing method, which
+  is another typing tool used by the
   [PulseNet](https://www.cdc.gov/pulsenet/pathogens/mlva.html) network (before
   WGS). This method is able to differentiate fast-evolving bacteria even if they
   look similar with PFGE. Therefore, MLVA is usually performed as a complement
   to PFGE results, thus providing a useful resource during outbreaks
   ([Techaruvichit et al. 2015](https://pubmed.ncbi.nlm.nih.gov/26025899/)).
 
-- **MLST (Multi-Locus Sequence Typing)** -   
-    As for other bacteria, a MLST method based on 7-locus (asp, gnl, glt, gly,
-  pgm, tkt, and unc) has been developed for _Campylobacter_ ([Dingle et al.
+- **MLST (Multi-Locus Sequence Typing)** - As for other bacteria, a MLST method
+  based on 7-locus (asp, gnl, glt, gly, pgm, tkt, and unc) has been developed
+  for _Campylobacter_ ([Dingle et al.
   2001](https://pubmed.ncbi.nlm.nih.gov/11136741/)). MLST can provide faster
   results compared to PFGE, and it is highly reproducible. However, it shows
   lower discriminatory power than PFGE and MLVA ([Sabat et al.
@@ -76,15 +75,15 @@ molecular typing, namely:
   [Frazão et al. 2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7203312/)),
   and therefore it was suggested that it should be used as a complement to PFGE
   ([Frazão et al. 2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7203312/)).
-  A big advantage of MLST analysis for _Campylobacter_ in comparison for instance
-  to PFGE, is the existence of a curated database with common nomenclature which
-  allows the comparison of results between studies
-  ([PubMLST](http://pubmlst.org/campylobacter/)),
-  which has made this technique being widely used in epidemiological studies.
+  A big advantage of MLST analysis for _Campylobacter_ in comparison for
+  instance to PFGE, is the existence of a curated database with common
+  nomenclature which allows the comparison of results between studies
+  ([PubMLST](http://pubmlst.org/campylobacter/)), which has made this technique
+  being widely used in epidemiological studies.
 
-- **Sequencing of the short variable region (SVR) of the flaA gene** -  
-    This method relies on the analysis of the genetic sequence of flaA in
-  comparison with the alleles present in
+- **Sequencing of the short variable region (SVR) of the flaA gene** - This
+  method relies on the analysis of the genetic sequence of flaA in comparison
+  with the alleles present in
   [PubMLST](https://pubmlst.org/organisms/campylobacter-jejunicoli), and has
   been described as a fast, discriminatory and reproducible tool to discriminate
   among _Campylobacter_ isolates. This technique is useful in combination with
@@ -96,10 +95,9 @@ molecular typing, namely:
   _Campylobacter_ typing in epidemiology ([Frazão et al.
   2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7203312/)).
 
-- **CRISPR** -  
-    High-resolution DNA melt curve analysis (HRMA) of the CRISPR region can be
-  used to differentiate among _Campylobacter_ isolates ([Price et al.
-  2007](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1907115/#fn1)). This
+- **CRISPR** - High-resolution DNA melt curve analysis (HRMA) of the CRISPR
+  region can be used to differentiate among _Campylobacter_ isolates ([Price et
+  al. 2007](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1907115/#fn1)). This
   technique has been shown to be less discriminatory than PFGE, MLST or even SVR
   of the flaA gene ([Frazão et al.
   2020](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7203312/)). Nevertheless,
@@ -107,10 +105,9 @@ molecular typing, namely:
   technique has proven to be useful for epidemiological studies ([Kovanen et al.
   2014](https://sfamjournals.onlinelibrary.wiley.com/doi/full/10.1111/jam.12503)).
 
-- **WGS (Whole-Genome Sequencing)** -  
-    With the advent of NGS technologies, WGS was proven to be useful for
-  _Campylobacter_ outbreak investigation ([Joensen et al.
-  2020](https://wwwnc.cdc.gov/eid/article/26/3/19-0947_article)). The
+- **WGS (Whole-Genome Sequencing)** - With the advent of NGS technologies, WGS
+  was proven to be useful for _Campylobacter_ outbreak investigation ([Joensen
+  et al. 2020](https://wwwnc.cdc.gov/eid/article/26/3/19-0947_article)). The
   _Campylobacter_ genome size is approximately 1.8Mb with ~1,800 genes. By
   providing information at the genomic level, WGS allows not only a highly
   discriminatory typing (cgMLST, wgMLST and SNP-typing), but also to establish
