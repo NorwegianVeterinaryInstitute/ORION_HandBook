@@ -1,7 +1,5 @@
 # Challenges for One Health surveillance
 
-## Foodborne diseases
-
 Foodborne diseases (FBDs) represent an epidemiological scenario in which 
 pathogens and humans contact through contaminated food or water. FBDs affect 
 600 million people every year, representing an important burden for human health 
@@ -29,15 +27,18 @@ leading to these results is WGS highest ability to identify the sources of infec
 an integrated system where the clinical and the food and water sectors not only surveil for the presence 
 of pathogens and their characteristics, but also interchange their data is a key to the proper FBDs 
 management. In this regard, WGS represents an important advance as WGS data can be easily shared and 
-compared between laboratories at national and international levels.
+compared between laboratories at national and international levels. Nevertheless, WGS implementation
+is challenging and many things need to be taken into consideration. In this section we do a brief
+overview of the challenges raised by the WHO
+([WHO 2018](https://apps.who.int/iris/bitstream/handle/10665/272430/9789241513869-eng.pdf?sequence=1&isAllowed=y).
 
 ### Organizational perspective
 
 The existence of an integrated system for FBDs surveillance requires the implementation of different 
 strategies which may be hampered at different stages. For instance, as reported by 
-[ECDC (2015)](https://www.ecdc.europa.eu/en/publications-data/expert-opinion-introduction-next-generation-typing-methods-food-and-waterborne), 
+[WHO (2018)](https://apps.who.int/iris/bitstream/handle/10665/272430/9789241513869-eng.pdf?sequence=1&isAllowed=y), 
 from an organizational perspective, public authorities need to work on the implementation of adequate
-legislation and regulation that forces the clinical and the food and water sectors to perform continuous 
+legislation and regulation that encourages the clinical and the food and water sectors to perform continuous 
 FBDs surveillance and to report their results. However, to demand such a protocol, investment in proper 
 surveilling infrastructures needs to be made. For example, the implementation of WGS-based surveillance 
 requires a technological transition which is not affordable in many countries. Also, resources and funding 
@@ -48,7 +49,7 @@ Food Safety).
 
 From a scientific perspective, WGS-based surveillance systems require multi-tasked teams with different 
 scientific backgrounds for proper data analysis, including specialized microbiologists and bioinformaticians 
-([ECDC (2015)](https://www.ecdc.europa.eu/en/publications-data/expert-opinion-introduction-next-generation-typing-methods-food-and-waterborne)). 
+([WHO 2018](https://apps.who.int/iris/bitstream/handle/10665/272430/9789241513869-eng.pdf?sequence=1&isAllowed=y)). 
 Hence, investment (not only financial but also of time) in training highly skilled technicians to integrate 
 the different teams is crucial for proper data analysis and interpretation of the results. Furthermore, there 
 is a need to guarantee inter-laboratory data integration and comparability of results. For example, efforts should 
@@ -63,7 +64,7 @@ issues. Noteworthy, data protection should always be guaranteed, and robust anon
 ### Cultural barriers
 
 Ultimately, even if all the above-mentioned barriers for the implementation of a proper WGS-based surveillance system 
-are overcome, cultural barriers may also be an issue. Besides the language barrier in international cooperation, and 
+are overcome, cultural barriers may also be an issue ([WHO 2018](https://apps.who.int/iris/bitstream/handle/10665/272430/9789241513869-eng.pdf?sequence=1&isAllowed=y)). Besides the language barrier in international cooperation, and 
 the usual resistance to change, cross-sectoral collaboration may be difficult to implement. Actions promoting the 
 concept of One Health, and showing the relevance of this integrated perspective where human, animal and environmental 
 health are connected, may contribute to raise the awareness of politicians, scientists, health practitioners, and 
