@@ -73,6 +73,12 @@ One Health Sequencing for Surveillance HandBook
    Species/listeria.md
 
 .. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Surveillance
+   Surveillance/surveillance.md
+
+.. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Contributing
