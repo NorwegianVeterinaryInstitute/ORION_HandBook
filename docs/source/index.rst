@@ -52,6 +52,7 @@ One Health Sequencing for Surveillance HandBook
    :caption: Cluster analysis
 
    Clustering/xMLST.md
+   Clustering/clustering.md
    Clustering/phylogeny.md
 
 .. toctree::
