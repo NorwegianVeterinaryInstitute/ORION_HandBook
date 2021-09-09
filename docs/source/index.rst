@@ -53,6 +53,7 @@ One Health Sequencing for Surveillance HandBook
 
    Clustering/xMLST.md
    Clustering/clustering.md
+   Clustering/variantcalling.md
    Clustering/phylogeny.md
 
 .. toctree::
