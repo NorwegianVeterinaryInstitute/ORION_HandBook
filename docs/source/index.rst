@@ -60,6 +60,7 @@ One Health Sequencing for Surveillance HandBook
    :caption: Compute Infrastructure
 
    Compute/storage_compute.md
+   Compute/workflows.md
    Compute/DMAPs.md
 
 .. toctree::
