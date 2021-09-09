@@ -57,7 +57,7 @@ One Health Sequencing for Surveillance HandBook
    Clustering/phylogeny.md
 
 .. toctree::
-   :maxdepth: 2 
+   :maxdepth: 3 
    :hidden:
    :caption: Compute Infrastructure
 
