@@ -440,7 +440,13 @@ for each nucleotide change) than simpler models are not always necessary to
 provide better phylogenetic reconstruction (see eg. [Kelchner and Thomas
 2007](https://moodle.umontpellier.fr/pluginfile.php/923225/mod_resource/content/1/Kelchner~2007-TREE.pdf)).
 
-Interpreting phylogenetic trees requires having an idea of how confident we are in the different lineages obtained during phylogenetic analysis. Support attributed to the groups by resampling techniques (eg. bootstrapping) are frequently used in ML methods. Confidence is assessed directly from the posterior for Bayesian phylogenetic methods. Moreover, robustness of trees inferred by different methods, might be an additional indicator of the strength of the phylogenetic signal.  
+Interpreting phylogenetic trees requires having an idea of how confident we are
+in the different lineages obtained during phylogenetic analysis. Support
+attributed to the groups by resampling techniques (eg. bootstrapping) are
+frequently used in ML methods. Confidence is assessed directly from the
+posterior for Bayesian phylogenetic methods. Moreover, robustness of trees
+inferred by different methods, might be an additional indicator of the strength
+of the phylogenetic signal.  
 
 ### Which method should I choose? 
 
@@ -534,9 +540,9 @@ and Rosenfeld
 Clades can be evaluated using Bootstrapping, as mentioned elsewhere in this
 handbook.
 
-## Workflow for MSA/WGA/MSA-SNP methods
+### Workflow for MSA/WGA/MSA-SNP methods
 
-### Obtaining a multiple alignment (MA: MSA/WGA/MA-SNP)
+#### Obtaining a multiple alignment (MA: MSA/WGA/MA-SNP)
 
 One critical assumption is that at each position of the multiple alignment (MA),
 the characters are assumed to have evolved from a common ancestor (homology) and
@@ -594,7 +600,7 @@ either
   concatenating all the SNPs at all the different coordinates of the reference.
   This can eg. be done with [Snippy](https://github.com/tseemann/snippy).  
 
-### 5.2.2 Ensuring that aligned sequences are orthologous 
+#### Ensuring that aligned sequences are orthologous 
 
 During WGA building, recombinants from homologous regions might be included in
 the alignment. Those regions must be either deleted or masked (hidden) from the
@@ -616,7 +622,7 @@ might be better adapted when working with more distantly related isolates within
 a species (eg. [fastGear](https://mostowylab.com/news/fastgear) [Mostowy etal.
 2017](http://Mostowy2017)).  
 
-### 5.2.3 Defining an evolutionary model of the sequences (Modeling evolution)
+#### Defining an evolutionary model of the sequences (Modeling evolution)
 
 Statistical phylogenetic methods aim at modeling the process of evolution that
 is evidenced by the SNPs seen between taxa. Therefore it is necessary to provide
@@ -634,7 +640,7 @@ rate among sites. Below these are described, as are also several additional
 models which when used in conjunction with the  “minimum evolutionary model” can
 provide a means to increase the realisms of the evolutionary process modeling. 
 
-#### Which evolutionary model should I choose? 
+##### Which evolutionary model should I choose? 
 
 Choosing an evolutionary model might be a daunting task. Therefore, a strategy
 for “choosing” the model, is actually to perform phylogenetic inference with
@@ -651,9 +657,9 @@ This can eg. be explained because you are less likely to have to model multiple
 substitutions events and because the sequence nucleotide frequencies are likely
 to be nearly identical among the isolates unders study. 
 
-#### Nucleotide substitution models
+##### Nucleotide substitution models
 
-##### What is a substitution model: 
+###### What is a substitution model 
 
 Substitutions models are one of the major components of the sequence
 evolutionary model. Substitution models are a statistical description of how
@@ -686,7 +692,7 @@ T -> G), or the occurrence of back mutations (eg: A -> T -> A) or convergence
 footprint in the sequences under comparison. Reversal and multiple substitutions
 are more likely if organisms have diverged a long time ago. 
 
-##### Frequently employed substitution models 
+###### Frequently employed substitution models 
 
 The most frequently employed substitution models belong to a family of models
 called time reversible models (REV). The general time reversible model (GTR) can
@@ -717,3 +723,638 @@ but those are so far not frequently encountered (see eg. [Williams et al.
 2015](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4571574/), [Woodhams et al.,
 2015](https://doi.org/10.1093/sysbio/syv021)) in molecular epidemiology
 phylogenetic inference of bacterial pathogens.
+
+##### Modeling the heterogeneity of substitution rate among sites (Rate variation)
+
+The model of the heterogeneity of substitution rate among sites is the second
+major component of the evolutionary model. 
+
+Not all loci/positions in a MA evolve at the same peace. The rate of nucleotide
+change can be different (heterogenous), for eg. different types of genes, for
+different codon positions in protein sequences (rate 3d > 1st > 2d position) and
+for different parts of proteins such as enzyme active sites. This can be
+implemented with a rate heterogeneity among sites model. 
+
+To specifically define which sites can evolve at different rates, it is possible
+to define groups of sites, for instance genes, codons, or parts of codons that
+may evolve at a different rate, and use those for phylogenetic analysis. This is
+called partitioning [Kapli et al.
+2020](https://www.nature.com/articles/s41576-020-0233-0).  Partitioning has been
+subject to controversy, particularly as it is a challenge to identify
+appropriate partitions _a priori_.  See [Kainer and Lanfear
+(2015)](https://academic.oup.com/mbe/article/32/6/1611/1068429) for a review of
+the effects of partitioning to accommodate variation in substitution rates among
+sites. 
+
+Most often, the heterogeneity of substitution rates among sites is modelled
+without defining a-priory partitions. This is done by assuming that the sites
+can be categorized and attributed to discrete groups (classes) that evolve at
+the same rate. The different classes corresponding to each discrete rate are
+drawn from a gamma distribution (eg. GTR+G4, +G6 +G10), where 4, 6 and 10
+indicate the number of rate classes for a GTR model. Six to 10 classes are
+generally a good approximation for the variability of the rate among sites for
+intraspecific studies ([Jia et al
+2014](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095722)).
+
+However, because assuming that the substitution rate variation follows a gamma
+distribution has no biological basis, but is rather a convenient implementation
+means, the question of how to define those rate categories has been subject to
+discussion in the scientific community, eg.  in [Jia et al.
+2014](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095722)).
+Therefore alternative methods of modeling the heterogeneity rate of substitution
+among sites have been implemented (eg. Free-rate model). 
+
+##### From Strict molecular clock models to models that take into account the variation of the evolutionary rate among lineages and time
+
+###### The molecular clock hypothesis
+
+The molecular clock (strict molecular clock) is an assumption that all the
+lineages under study evolve at an identical rate. The evolutionary rate is then
+proportional to elapsed time since divergence from each MRCA across all
+lineages, although this does not exclude that different parts of the genome
+evolve at different rates, as long as the rate for each part is identical for
+the isolates under study. 
+
+Assuming a molecular clock, allow for example for estimation of evolutionary
+rates, estimating the timing of emergence of a lineage (eg. associated with the
+origin of an outbreak). This can also help eg. to discriminate between
+persistent strains and reintroduction events from a common source, and eg.
+identify practices associated with the appearance of a new strain in a food
+processing environment (eg. [Fagerlund et al.
+2020](https://journals.asm.org/doi/full/10.1128/AEM.00579-20)), which in turn
+can help improve biosecurity measures.  
+
+The molecular clock assumption is usually implicit unless other clock models are
+used.  
+
+Correlating evolution rate and time requires calibration of the molecular clock.
+Tip-dating allows calibration of the molecular clock, it allows rescaling of the
+nodes into calendar time by linking calendar time units to evolutionary rate and
+thus easing epidemiological interpretation (eg. [Volz and Fost
+2017](https://academic.oup.com/ve/article/3/2/vex025/4100592?login=true), [Baele
+et al.
+2018](https://www.sciencedirect.com/science/article/pii/S187962571830066X)).
+Tip-dating is increasingly used for virus outbreak investigation and monitoring
+([Baele et al.
+2018](https://www.sciencedirect.com/science/article/abs/pii/S187962571830066X?via%3Dihub)).
+Time-resolved phylogenies are currently to a lesser extent used for bacterial
+phylogenetics (but see eg. [Fagerlund et al.
+2020](https://journals.asm.org/doi/full/10.1128/AEM.00579-20)), but will likely
+be increasingly common. 
+
+Tip-dating to calibrate a molecular clock model during phylogenetic inference
+(eg. Bayesian inference) is conceptually and methodologically different to
+calibrating/translating evolutionary time into calendar dates posterior to
+phylogenetic reconstruction, from the finished tree. Calibrating methods
+posterior to tree inference include eg. root to tip regression, least-square
+dating. Those two types of methods that produce“time-trees” differ in regard to
+uncertainty treatment ([Duchêne et al. 2016](), reviewed in [Duchêne and Duchêne
+2021](https://link.springer.com/chapter/10.1007/978-3-030-60181-2_10)). 
+
+Note: Data that contain sampling time information are also referred as
+“Time-stamped” and “heterochronous” data.
+
+Moreover, providing estimates of the nodes’ age (time) depend on the position of
+the root ([Duchêne and Duchêne
+2021](https://link.springer.com/chapter/10.1007/978-3-030-60181-2_10) in [Ho
+2020](https://link.springer.com/book/10.1007/978-3-030-60181-2)).
+
+###### Heterotachy: variation of the evolutionary rate over time and among lineages
+
+Assuming an homogeneous evolutionary rate among lineages when this is not true,
+may alter the tree topology reconstruction. Heterotachy appears to be more
+likely the more the lineages are distantly related to each other and can eg.
+result in a phenomena called long-branch attraction. In this case, lineages that
+evolve more rapidly than other will appear as to have diverged since a longer
+evolutionary time than other lineages (overview in eg. [Kapli et al.
+2020](https://www.nature.com/articles/s41576-020-0233-0)). 
+
+Heterotachy is accounted for by using relaxed clock-models. Bayesian inference
+software may offer s choice between several relaxed clock models: the
+(auto)correlated relaxed clock (assumption of molecular-clock more similar the
+more closely related lineages are), uncorrelated relaxed clock and flexible
+local clock ([Ho
+2009](https://royalsocietypublishing.org/doi/abs/10.1098/rsbl.2008.0729),
+[Fourment and Darling 2018](https://peerj.com/articles/5140.pdf)). Some models
+allowing accounting for heterotachy have recently been developed for ML
+phylogenetic inference (eg. see [Crotty et al.
+2020](https://academic.oup.com/sysbio/article/69/2/249/5541793), [heterotachy
+model in IQTree2](http://www.iqtree.org/doc/Complex-Models#heterotachy-models),
+[Minh et al 2020](https://academic.oup.com/mbe/article/37/5/1530/5721363)). 
+
+#### Character based statistical phylogenetic methods. 
+
+#####  Maximum likelihood methods principle
+
+In **ML methods** the likelihood optimality criterion allows for assessing which
+among the trees in the tree space is an “optimal” tree, the tree that is
+considered to best represent the data. The likelihood of the possible trees
+given the data (here, the multiple alignment, MA) and the evolutionary model is
+computed. For each possible tree topology, the likelihood is computed backwards:
+starting from the tips, then through the successive ancestral nodes. Because
+ancestral character states at each position of the MA are unknown, the
+probability of having a specific nucleotide in the MRCA sequence at each site is
+given by the probabilities of change of each nucleotide (REV model) which allow
+to compute the likelihood of the tree. Branch lengths, representing the
+evolutionary distance of each OTU to MRCA, are found by maximizing the
+log-likelihood function that is used to compute the probability of an MA for a
+given tree topology. However, because the set of all possible trees is often
+very large  [ (2n – 5)! / ((n-3)!2n-3) if n>2, possible unrooted trees] given
+the number of isolates under study, it is not computationally possible to
+compute the likelihood for all possible tree topologies. Therefore, heuristics
+methods have been developed to search the set of all possible trees (the tree
+space), in order to find a reasonably good tree (with maximum likelihood). Note
+that there is  no guarantee that the best tree will be found. Heuristics can eg.
+rely on the rapid building of a first tree (NJ distance based tree, parsimony
+tree) followed by tree-rearrangements such as SPR: subtree pruning and grafting
+or simulated annealing, a method apparented to Markov Chain Monte Carlo which
+allows walking through the tree space. 
+
+##### Bayesian inference principle
+
+Bayesian phylogenetics provides a statistical framework for hypothesis testing
+and allow to incorporate a variety of data types into the phylogenetic modelling
+(eg. sampling locations, sampling dates that will allow calibrating an
+evolutionary timeline) and are therefore quite powerful analysis methods.
+Bayesian methods are also often used because they can allow for a more realistic
+modeling of the evolutionary process than ML, allow joint estimation of the
+model parameters and tree topologies (see eg. [Holder and Lewis
+2003](https://www.nature.com/articles/nrg1044)). They are seen as more complex
+to implement than ML methods, are frequently computationally heavier and are so
+far rarely used in molecular epidemiology for routine surveillance of bacterial
+outbreaks. 
+
+Bayesian methods allow estimating the probability distribution of trees and
+model parameters, and provide estimates of the confidence of inferred
+relationships (clades), estimates of the evolutionary hypotheses (the
+evolutionary model distribution) and the data through the posterior (posterior
+probability distribution). Bayesian phylogenetic inference requires
+specification of prior belief on the evolutionary model parameters. Prior
+parameters of the evolutionary models are given in a form of probability
+distributions (see eg. [Ronquist et al. (chap 7) in Lemey et al.
+2009](https://www.cambridge.org/core/books/phylogenetic-handbook/A9D63A454E76A5EBCCF1119B3C56D766))
+of the model components eg. topology, branch lengths, substitutions model. The
+components of the evolutionary model can be complexified by using priors on
+heterogeneity rate among sites, by specifying the distribution of the
+evolutionary rates among lineages, and by specifying distributions around
+sampling time to account for uncertainties. Flat priors, i.e. that do not
+influence too much the posterior are often specified when reconstructing
+phylogenetic trees. 
+
+The posterior probabilities distributions are estimated by searching the model
+“parameter space” (incl. “tree space”) through sampling and updating of the
+model parameters with [Markov Chain Monte Carlo
+(MCMC)](https://towardsdatascience.com/a-zero-math-introduction-to-markov-chain-monte-carlo-methods-dcba889e0c50).
+The idea of exploring the parameter space with MCMC is similar to drawing a high
+resolution map, exploring the map step by step, near a zone of interest while
+minimizing resolution of areas that are not of interest. Zones of interest are
+represented by hills. Mapping a hill with a high resolution requires the number
+of steps that represent the length of the MCMC chain, to be sufficient. When
+mapping resolution cannot further be improved, this corresponds to a stationary
+posterior distribution of the model parameters. Because there might be several
+hills in the map, and that it is difficult to explore other hills by going
+through valleys that represent zones of lower interest, the exploration is
+achieved by exploring the landscape several times (different runs) using random
+starting points (seeds). When the different exploration converges, ie. is
+congruent, the analysis provides similar major clades frequencies and the
+results must be summarized for interpretation. When the evolutionary signal is
+sufficiently strong in the MA, it is possible that the 95% of the posterior
+probability distribution of trees will be represented by one or a limited set of
+trees. Accessing the strength of evidence eg. for clades support or node ages is
+generally provided in the form of a 95% confidence interval. You can look at eg.
+[the BEAST
+documentation](https://beast.community/summarizing_trees#maximum-clade-credibility---mcc-tree)
+to see how to summarize the different trees. 
+
+Note that ML and Bayesian inference differ in how to evaluate clade support,
+which has lead to several discussions on interpreting clade support (see eg.
+[Douady et al.
+2003](https://academic.oup.com/mbe/article/20/2/248/1003367?login=true),
+[Erikson et al. 2003, Svennblad et al.
+2006](https://academic.oup.com/sysbio/article/52/5/665/1681867?login=true)).
+Moreover, it is possible to explore the “model space”, and find the model
+parameters using a special type of MCMC (reversible-jump MCMC, [Huelsenbeck et
+al. 2004](https://academic.oup.com/mbe/article/21/6/1123/1050772), [Bouchkaert
+and Drummond
+2017](https://link.springer.com/article/10.1186/s12862-017-0890-6)). 
+
+A simple principle introduction to Bayesian theorem can be found
+[here](https://towardsdatascience.com/probability-concepts-explained-bayesian-inference-for-parameter-estimation-90e8930e5348)
+, a comprehensive introduction to Bayesian phylogenetic inference can be found
+in [Ronquist et al. (chap 7) in Lemey et al.
+2009](https://www.cambridge.org/core/books/phylogenetic-handbook/A9D63A454E76A5EBCCF1119B3C56D766).
+A set of very good introductory videos can be found at [phyloseminar.org:
+Introduction to Bayesian phylogenetics by Paul Lewis (3a,
+3b)](http://phyloseminar.org/recorded.html)). 
+
+#### Model testing for statistical phylogenetic methods
+
+Model selection affects phylogenetics inference (Posada and Buckley 2004). Model
+testing allows one to choose the model that best fits the data while avoiding
+under or overparameterization. Model testing can be used for **hypothesis
+testing** of alternative scenarios. Evaluating the support of alternative
+phylogenetic models can eg. be used to evaluate which evolutionary mechanism is
+more likely eg. for a specific gene, to examine patterns of trait evolution in
+phylogenies, or to test if the topologies of two alternative phylogenetic trees
+are equally supported ([Lemey et al.
+2009](https://www.cambridge.org/core/books/phylogenetic-handbook/A9D63A454E76A5EBCCF1119B3C56D766),
+and see review in [Irisarri and Zardoya
+2017](https://www.researchgate.net/profile/Iker-Irisarri/publication/258327246_Phylogenetic_Hypothesis_Testing/links/5a0421a50f7e9beb1774e390/Phylogenetic-Hypothesis-Testing.pdf)).
+To go further please have a look at the section: Phylodynamic methods and
+molecular epidemiology.  
+
+##### ML methods
+
+**The Likelihood ratio test (LRT)** allow to compare 2 models that belong to the
+same family (nested models, eg. submodels of GTR family) models. It is possible
+to use a hierarchical approach (hLRT) to successively compare nested models of
+different complexity levels (see eg. [Posada and Buckley
+2004](https://academic.oup.com/sysbio/article/53/5/793/2842928), [Posada
+2008](https://academic.oup.com/mbe/article/25/7/1253/1045159)). The **Akaike
+Information Criterion (AIC)** is a measure that estimates how much the model
+differs from the true evolutionary process. It is most generally employed to
+compare several substitution models at once and does not require models to be
+nested. The best model is the model with lowest AIC. Methods that allow allows
+testing models that include heterogeneity rates across sites have been developed
+(eg. ModelFinder, [Kalyaanamoorthy et al.
+2017](https://www.nature.com/articles/nmeth.4285), implemented in
+[IQ-TREE](http://www.iqtree.org/)). 
+
+##### Bayesian methods 
+
+**Bayesian factor** comparison is a ratio test of the model likelihood which is
+estimated with the posterior probabilities of each tested model given the data
+while setting equal priors on the models: eg. both models are equally probable.
+**Bayesian Information Criterion** (BIC) is a test closely related to AIC that
+uses the estimates of the marginal likelihood of the substitution models. BIC
+can be used to compare all kinds of models, including models used in ML methods.
+The best model is the model with the smallest BIC. The advantages of traditional
+AIC and BIC testing are described in [Posada and Buckley
+(2004)](https://academic.oup.com/sysbio/article/53/5/793/2842928). Model testing
+is not limited to substitution models, and can eg. also be performed for
+molecular clock models, see [Baele and al.
+(2012](https://academic.oup.com/mbe/article/30/2/239/1018357?login=true)) and
+eg. allow testing of models that include invariant sites ([Bouchkaert and
+Drummond 2017](https://link.springer.com/article/10.1186/s12862-017-0890-6)). 
+
+##### Other tests
+
+If you reconstructed a time-tree, evaluating evidence of temporal signal can eg.
+be performed using a clustered-date randomization test (see [Duchêne et al.
+2015](https://academic.oup.com/mbe/article/32/7/1895/1016979) and reviewed in
+[Duchêne and Duchêne
+2020](https://link.springer.com/chapter/10.1007/978-3-030-60181-2_10)) 
+
+#### Evaluating confidence of the different clades
+
+Algorithms used in tree reconstruction assume that relationships between
+organisms are bifurcating (ie. no polytomies - no radiation). Therefore, it is
+important to consider a consensus tree of good possible trees, and evaluate
+branch support (see [Simon 2020 for historical
+review](https://doi.org/10.1093/sysbio/syaa068)). 
+
+##### Bootstrapping: ML and distances methods 
+
+Branch support (confidence in the clades) can be assessed by resampling methods
+(eg. bootstrapping, jackknifing). 
+
+Bootstrapping is random resampling with replacement of the MA  sites followed by
+repeated tree reconstruction ([Felsenstein
+1985](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1558-5646.1985.tb00420.x),
+[Lemoine et al. 2018](https://www.nature.com/articles/s41586-018-0043-0)). It is
+the most commonly used method in ML. Note: it can also be used for estimating
+confidence in clades reconstructed with distance methods.  
+
+##### Bayesian methods
+
+Clade confidence in Bayesian inference can be obtained from the summaries in the
+form of a consensus tree. Bayesian MCMC tree samples are used to derive
+approximate probabilities for each split/clade.  
+
+##### Robustness and the strength of the phylogenetic signal
+
+Comparing phylogenetic trees reconstructed with different methods (eg. distance
+and ML) can also provide an indication of the strength of the signal, and help
+interpretation regarding which clades are not consistent between methods.
+
+#### Direction of evolution: rooted tree vs non rooted tree
+
+To provide a direction of evolution, it is possible to estimate the position of
+the root using a method employing a molecular clock model and using time-stamped
+(tip-dated data, see in [Duchêne and Duchêne
+2020](https://link.springer.com/chapter/10.1007/978-3-030-60181-2_10)). It is
+also possible to use a phylogenetic reconstruction method that allows
+constructing rooted trees (eg. ML using non-reversible substitution models, see
+eg. [Williams et al.
+2015](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4571574/) and Bayesian
+phylogenetics Huelsenbeck et al. 2002). See [Kinene et al.
+(2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7149615/)) for a review of
+the most common tree rooting methods. 
+
+When using phylogenetic methods without a clock model, such as  ML methods using
+time reversible models, unrooted trees are inferred. To improve interpretability
+of unrooted trees in terms of direction of evolution, it is possible to root
+trees. The methods can eg, be outgroup rooting, or midpoint rooting. 
+
+When **rooting using an outgroup**, the root is placed at the midpoint of the
+branch that links the outgroup to the rest of the OTU. The outgroup is composed
+of one or several OTU that are not very closely related to the rest of the
+isolates under study. It is usually preferable to choose an outgroup that is not
+too distantly related, because you would encounter difficulties to align the
+sequences, and probably lose informative sites, which might lead to inference of
+topological errors due to the presence of saturated sites (multiple mutations,
+and reversals at the same site) ([Lemey et al.
+2009](https://www.cambridge.org/core/books/phylogenetic-handbook/A9D63A454E76A5EBCCF1119B3C56D766)).
+For **midpoint rooting**, the root is placed at the middle of the longest branch
+(the longest evolutionary distance between two OTU). Midpoint rooting require
+assumptions that the lineages evolve at identical rates (molecular clock
+hypothesis) and that the tree has a balanced shaped topology ([Kinene et al.
+2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7149615/), see eg. [Anonymous
+2011, University of
+California](http://ib.berkeley.edu/courses/ib200b/lect/ib200b_lect16_Nat_Hallinan_Lindberg_tree_shape2.pdf)
+for tree shapes).
+
+Rooting an unrooted tree with outgroup or midpoint rooting can usually be done
+using phylogenetic tree visualisation software, or programming softwares
+languages with libraries that allow tree manipulating (eg. ape package in R). Be
+aware that some software might incorrectly place the bootstrap support of the
+clades after rooting/re-rooting ([Czech et al.
+2017](https://academic.oup.com/mbe/article/34/6/1535/3077051)).
+
+#### Phylogenetic tree interpreting
+
+Be-aware that the way phylogenetic trees are displayed and annotated can trick
+our mind into misinterpretation (eg. branch rotations, ladderization of unrooted
+trees, [Novick et al.
+2012](https://academic.oup.com/bioscience/article/62/8/757/244348)). It can be
+good to explore the different views with a visualisation software when starting
+phylogenetic tree interpretation. Please see [Baum
+2008](https://www.nature.com/scitable/topicpage/reading-a-phylogenetic-tree-the-meaning-of-41956/),
+[Gregory
+2008](https://evolution-outreach.biomedcentral.com/articles/10.1007/s12052-008-0035-x)
+and [McLennan
+2010](https://evolution-outreach.biomedcentral.com/articles/10.1007/s12052-010-0273-6)
+for an introduction of how to read phylogenetic trees. You can find some example
+of cautious interpretation for bacterial epidemiology in eg. [Pightling et al.
+(2018)](https://www.frontiersin.org/articles/10.3389/fmicb.2018.01482/full) and
+[Fagerlund et al. (2020)](https://aem.asm.org/content/86/14/e00579-20).  
+
+
+### Going further 
+
+**Phenotypic traits inference**  
+The use of phylogenetic methods is not limited to the study of relatedness
+between OTUs. The pathogen lineage structure inferred by phylogenetic analysis
+can be employed to extract the reference population structure that is required
+to correct for lineages effects in bacterial whole genome association studies
+(GWAS, eg. as in [Pyseer, Lees et al.
+2018](https://academic.oup.com/bioinformatics/article/34/24/4310/5047751)).
+Alternatively, the phylogenetic information, in the form of phylogenetic trees,
+can be directly employed by GWAS methods as used in treeWAS ([Collins and
+Didelot
+2018](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005958)).
+Alternatively to GWAS, comparative phylogenetics can be employed to study the
+evolution of some phenotypic traits across organisms that share a common
+evolutionary history ([Hassler et al.
+2020](https://www.tandfonline.com/doi/full/10.1080/01621459.2020.1799812)).
+ 
+**Phylodynamic methods and molecular epidemiology**  
+It is possible to extend the phylogenetic framework to phylodynamic inference,
+which combines the recovery of evolutionary processes through phylogenetic
+inference and joint modeling of population dynamics. This is highly suited to
+study the transmission and the spread of rapidly evolving pathogens ([Baele et
+al, 2017](https://academic.oup.com/sysbio/article/66/1/e47/2670001?login=true),
+[Ingle et al.
+2021](https://www.sciencedirect.com/science/article/pii/S0966842X21000445)).
+Phylodynamics can also be used to estimate population dynamics parameters of
+pathogens such as effective reproduction rates ([Ingle et al.
+2021](https://www.sciencedirect.com/science/article/pii/S0966842X21000445)). 
+
+By incorporating non-genetic data eg. environmental, spatial data in
+phylodynamic analysis, it is possible to test alternative epidemiological
+hypotheses regarding the impact of ecological factors on pathogen evolution and
+spread. This has eg be used to test how dispersal and pathogen demography is
+impacted by temperature ([Baele et al,
+2017](https://academic.oup.com/sysbio/article/66/1/e47/2670001) , [Dellicour et
+al. 2020a](https://www.biorxiv.org/content/10.1101/788059v3), [Dellicour et al.
+2020b](https://www.nature.com/articles/s41467-020-19122-z)) The inference of
+different population dynamics within a phylogenetic framework has so far been
+mostly the focus of virus epidemiology, however, this is likely to become a
+powerful tool also in bacterial epidemiology ([Ingle et al.
+2021](https://www.sciencedirect.com/science/article/pii/S0966842X21000445)).
+
+### Some limitations of phylogenetic and phylogenomic methods
+
+Statistical phylogenetics methods rely heavily on evolutionary models, models
+that may be far from adequate for reflecting the reality of the evolutionary
+mechanisms of the OTU under study (see eg. Simion et al. (Chap 2.1 in
+“Phylogenetics in the Genomic Era: [Scornavacca et al.
+2020](https://hal.archives-ouvertes.fr/hal-02535070)). Assumptions underlying
+the major evolutionary models are presented in a comprehensive overview in
+[Kapli et al. (2020)](https://www.nature.com/articles/s41576-020-0233-0). Not
+being aware that improper use of phylogenetic reconstruction tools and violation
+of hypotheses assumptions can lead to erroneous interpretation of the
+reconstructed trees. 
+
+One major assumption, implicit with phylogenetic inference, is that the split
+between OTU are bifurcating: one ancestor gives rise to two and only two
+lineages (this excludes radiation events) and that lineages do not interact
+after emergence (Lemey 2009). Phylogenetic analysis also forces a tree structure
+even if the relationships supported by the data might better be reflected by a
+network (eg. in case of frequent recombination events in the species you study).
+Indeed, phylogenetic network might be better suited for analyses when
+non-vertical evolution events might be predominant (eg. horizontal gene
+transfer, recombination, gene duplications) (see [Huson and Bryant
+2006](https://academic.oup.com/mbe/article/23/2/254/1118872) and [Wen et al.
+2018](https://academic.oup.com/sysbio/article/67/4/735/4921127)).
+
+In most commonly used phylogenetic inference models, isolates are considered as
+tips. Given the nature of bacterial pathogens, it is possible eg. that frozen
+isolates analysed jointly with contemporary samples, might be representative of
+the ancestral genome. Some authors (eg. [Gavryushkina et al.
+2014](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003919))
+have developed “ancestral trees” reconstruction methods under this assumption. 
+
+Lastly, until recently, one of the limitations of phylogenetic inference for
+surveillance/epidemiology was the need to restart the analyses from scratch,
+when new data become available. This is highly problematic when analyses are
+computationally intensive (eg. Bayesian)  and when detection of potential
+outbreak must occur rapidly. Methods to circumvent this problem have recently
+been developed (eg. [Hu et al.
+2020](https://academic.oup.com/mbe/article/37/2/563/5601619?login=true)). It is
+also now possible to incorporate new data when available to update the posterior
+distribution in Bayesian analyses ([Gill et al.
+2020](https://academic.oup.com/mbe/article/37/6/1832/5758268)), implemented in
+Beast V1).  
+
+
+## Common tools
+
+Tools are diverse and often implemented into species specific pipelines. Please
+see section species specific tools. This list is far from an exhaustive list,
+but it might help you to start with phylogenetic analyses. Note that numerous
+packages for phylogenetic analysis, including phylogenetic inference,
+preparation of input files to eg. BEAST, tree manipulation, estimating
+transmission trees, dating,  visualisation tools are also available in R . Not
+all packages are deposited in R packages list, some might be available through
+[Bioconductor](https://www.bioconductor.org/) or can be fetched on github or
+other repositories.  
+
+### Multiple sequence alignment and whole genome alignment
+
+Depending on the method used, it might be required to extract the genes/colinear
+regions that are common to all genomes under-study) 
+
+**Concatenated core gene alignment**    
+- [Roary](https://github.com/microgenomics/tutorials/blob/master/pangenome.md) ([Page et al. 2015](https://academic.oup.com/bioinformatics/article/31/22/3691/240757))
+- [Panaroo](https://github.com/gtonkinhill/panaroo) ([Tonkin-Hill et al. 2020](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02090-4))
+
+**Whole genome alignment**  
+- [Mauve /progressiveMauve](http://darlinglab.org/mauve/mauve.html) ([Darling et al. 2004](https://pubmed.ncbi.nlm.nih.gov/15231754/), [Darling et al. 2010](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011147))
+- [GPA](https://lambda.informatik.uni-tuebingen.de/gitlab/ahennig/gpa) (based on progressiveMauve), ([Henning et al. 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6612806/))
+- [ParSNP](https://github.com/marbl/parsnp) ([Treangen et al. 2014](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0524-x))
+- [Mugsy](http://mugsy.sourceforge.net/) ([Angiuoli and Salzberg, 2011](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6612806/#btz377-B2)) 
+- [TBA](http://www.bx.psu.edu/miller_lab/) ([Blanchette et al. 2004](https://pubmed.ncbi.nlm.nih.gov/15060014/)) 
+
+**SNPs/variant calling by mapping to reference**
+- [BWA](http://bio-bwa.sourceforge.net/) + [SAMtools](http://www.htslib.org/)
+- [GATK](https://gatk.broadinstitute.org/hc/en-us)  (Broad institute)
+- [Snippy](https://github.com/tseemann/snippy) ([Torsten Seemann](https://twitter.com/torstenseemann))
+- [MUMmer4](https://mummer4.github.io/) ([Marçais et al. 2018](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005944))
+
+
+### Distance matrices from multiple sequence alignments
+
+- [Snp-dists](https://github.com/tseemann/snp-dists) ([Torsten Seemann](https://twitter.com/torstenseemann))
+- [dnadist](https://evolution.gs.washington.edu/phylip/doc/dnadist.html)
+- [EMBOSS distmat](https://www.bioinformatics.nl/cgi-bin/emboss/distmat/)
+- [MEGA11](https://www.megasoftware.net/) ([Tamura et al. 2021](https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msab120/6248099))
+
+### Recombinant detection ( masking in MSA) removal 
+
+- [PhiPack](https://www.maths.otago.ac.nz/~dbryant/software/phimanual.pdf) (Phi test, [Bruen et al. 2006](https://www.ncbi.nlm.nih.gov/pubmed/16489234))
+- [Gubbins](https://sanger-pathogens.github.io/gubbins/) ([Croucher et al. 2015](https://academic.oup.com/nar/article/43/3/e15/2410982))
+- [ClonalFrame](http://xavierdidelot.github.io/clonalframe.html) ([Didelot and Falush 2007](https://www.genetics.org/content/175/3/1251.abstract))
+- [clonalFrameML](https://github.com/xavierdidelot/ClonalFrameML) ([Didelot and Wilson 2015](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004041))
+- [fastGEAR](https://mostowylab.com/news/fastgear) ([Mostowy et al. 2017](https://pubmed.ncbi.nlm.nih.gov/28199698/))
+
+###  Phylogenetic inference softwares
+
+Abbreviations: Maximum Likelihood (ML), Bayesian (B).
+
+Note: identical abbreviations used in different softwares might actually refer
+to different algorithms, including algorithms with the same purpose, eg. ASC and
+fconst that are different in iqtree and RAxML. Please always refer to the
+software manual
+
+- [IQTREE](http://www.iqtree.org/) (ML)
+- [MEGA11](https://www.megasoftware.net/) ([Tamura et al. 2021](https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msab120/6248099)) (ML)
+- [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/) ([Stamatakis 2014](https://academic.oup.com/bioinformatics/article/30/9/1312/238053?login=true)) (ML)
+- [PALM](http://abacus.gene.ucl.ac.uk/software/paml.html) (ML)
+- BEAST exists in two versions that evolve somewhat separately to each other. [BEASTv1](https://beast.community/) and [BEAST2](http://www.beast2.org/)
+- [MrBayes](https://nbisweden.github.io/MrBayes/index.html) 
+- [RevBayes](https://revbayes.github.io/)
+
+For more, there is a lot of programs to explore, see eg. the [wikipedia list of
+phylogenetic
+softwares](https://en.wikipedia.org/wiki/List_of_phylogenetics_software) and the
+[wikipedia list of bayesian phylogenetic
+softwares](https://en.wikipedia.org/wiki/Bayesian_inference_in_phylogeny), the
+most common softwares that are currently used are also provided in [table 10.1
+(Challa and Neelapu
+2019)](https://link.springer.com/chapter/10.1007/978-3-030-19318-8_10).
+
+### Model testing
+
+Model testing is often implemented in phylogenetic softwares. Please refer to
+the documentation. 
+
+- jModelTest ([Posada 2008](https://academic.oup.com/mbe/article/25/7/1253/1045159))
+- ModelFinder ([Kalyaanamoorthy et al. 2017](https://www.nature.com/articles/nmeth.4285)) (implemented in IQTREE)
+- bModelTest ([Bouchkaert and Drummond 2017](https://link.springer.com/article/10.1186/s12862-017-0890-6)) (BEASTv2 package) 
+
+### Time-scaling
+**Correlation methods**  
+- [TempEst](http://tree.bio.ed.ac.uk/software/tempest/) (root-to-tip regression) ([Rambaut et al. 2016](https://academic.oup.com/ve/article/2/1/vew007/1753488))
+- [treeDater](https://github.com/emvolz/treedater) (R package, Likelihood, [Volz and Frost 2017](https://academic.oup.com/ve/article/3/2/vex025/4100592))
+- [TreeTime](https://github.com/neherlab/treetime) (Likelihood, [Sagulenko et al. 2018](https://github.com/neherlab/treetime)) 
+- [Physher](https://github.com/4ment/physher) (Likelihood, [Fourment and Holmes 2014](https://bmcecolevol.biomedcentral.com/articles/10.1186/s12862-014-0163-6))
+- [LSD](http://www.atgc-montpellier.fr/LSD/)  (least-square dating, [To et al. 2016](https://academic.oup.com/sysbio/article/65/1/82/2461506), implemented in IQTree 2.0.3)
+- [MEGA11](https://www.megasoftware.net/) (Several methods: least-square, [Tamura et al. 2012](https://www.pnas.org/content/109/47/19333), [Miura et al. 2020](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007046), see also [Mello 2018](https://academic.oup.com/mbe/article/35/9/2334/5042667))
+- R package [BactDating](https://github.com/xavierdidelot/BactDating) (Partial bayesian, [Didelot et al. 2018](https://academic.oup.com/nar/article/46/22/e134/5089898))
+- Older softwares
+    - r8s (Likelihood, [Sanderson 2003](https://academic.oup.com/bioinformatics/article/19/2/301/372781))
+    - TipDate (Likelihood, [Rambaut 2000](https://academic.oup.com/bioinformatics/article/16/4/395/187233)), might be implemented in PALM
+    
+### Identification of clusters from phylogenetic trees
+
+There has been some research to automatically define clusters based on
+phylogenetic trees, mostly for viruses, but such methods might well be
+transposable to determine clusters for bacteria (see eg.
+[TreeCluster](https://github.com/niemasd/TreeCluster)). 
+
+### Visualisation tools
+
+Visualisation software come in many flavours (desktop, web-interface …).
+Wikipedia presents a good list
+[here](https://en.wikipedia.org/wiki/List_of_phylogenetic_tree_visualization_software).
+
+- [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) (has all the requirements to visualize and annotate, and is easy to use)
+- Diverse libraries in R and python (eg. ggtree in R) ... 
+
+### Online platforms for bacterial phylogenetics and surveillance
+
+There are several online platforms, aiming at facilitating phylogenetic data
+analysis and/or visualisation, metadata integration (epi-data, geography ...) of
+diverse pathogens. Those have proliferated those last years (eg.
+[nextstrain](https://nextstrain.org/),
+[microreact](https://microreact.org/showcase),
+[microbetrace](https://microbetrace.cdc.gov/MicrobeTrace/)) The functionality of
+the platforms are diverse, and can range from simple phylogenetic analysis to
+contact tracing.
+
+
+### Detection of trait association and phylogeny
+
+- R package [treeWAS](https://github.com/caitiecollins/treeWAS) ([Collins and Didelot 2018](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005958))
+- [Hogwash](https://github.com/katiesaund/hogwash) ([Saund and Snitkin 2020](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000469?crawler=true))
+- [Pyseer])(https://pyseer.readthedocs.io/en/master/index.html) (assuming that phylogeny is used as a basis to define clusters)
+- Comparative phylogenetics (eg. [Hassler et al. 2020](https://www.tandfonline.com/doi/full/10.1080/01621459.2020.1799812), [implemented in Beast v1](https://github.com/suchard-group/incomplete_measurements))
+- In ape R package: phylogenetic convergence test test for selection & detect resistance ([Farhat et al. 2013](https://www.nature.com/articles/ng.2747))
+
+
+## Additional resources
+
+While we covered a limited set of phylogenetics inference methods, those most
+frequently used in molecular epidemiology, a large amount of alternative
+approaches to workflows, or methods variants has not been treated in the present
+document. 
+
+Here are some resources that might be useful to explore further the potential of
+use of phylogenetics methods in epidemiology. 
+
+A series of very good series of introductory lectures to statistical
+phylogenetics, by Paul. Lewis, can be found in [phyloseminar.org
+website](http://phyloseminar.org/recorded.html). Moreover, phyloseminar.org also
+gives access to a diverse range of topics about the latest research developments
+in phylogeny, including molecular epidemiology. 
+
+A list of few selected books: 
+- Lemey, P., Salemi, M., & Vandamme, A. (Eds.). (2009). The Phylogenetic
+  Handbook: A Practical Approach to Phylogenetic Analysis and Hypothesis Testing
+  (2nd ed.). Cambridge: Cambridge University Press.
+  [doi:10.1017/CBO9780511819049](https://www.cambridge.org/core/books/phylogenetic-handbook/A9D63A454E76A5EBCCF1119B3C56D766)
+- Robinson, D. Ashley, Edward J. Feil, and Daniel Falush. [Bacterial
+    Population Genetics in Infectious
+    Disease](https://www.wiley.com/en-us/Bacterial+Population+Genetics+in+Infectious+Disease-p-9780470424742).
+    John Wiley & Sons, 2010. 
+- (Online Book). Celine Scornavacca, Frédéric Delsuc, Nicolas Galtier.
+    [Phylogenetics in the Genomic
+    Era.](https://hal.inria.fr/PGE/page/table-of-contents)
+- DeSalle, Rob., and Jeffrey. Rosenfeld. Phylogenomics : A Primer. New York:
+    Garland Science, Taylor & Francis Group, 2013 (first edition) and 2020
+    (second edition)
+
+
+
+
