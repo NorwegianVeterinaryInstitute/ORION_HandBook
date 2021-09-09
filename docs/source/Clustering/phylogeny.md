@@ -533,3 +533,187 @@ and Rosenfeld
 
 Clades can be evaluated using Bootstrapping, as mentioned elsewhere in this
 handbook.
+
+## Workflow for MSA/WGA/MSA-SNP methods
+
+### Obtaining a multiple alignment (MA: MSA/WGA/MA-SNP)
+
+One critical assumption is that at each position of the multiple alignment (MA),
+the characters are assumed to have evolved from a common ancestor (homology) and
+have diverged from the same ancestral sequence (ie. vertically: orthology).
+Depending on the nature (gene, SNPs, collinear regions) of the MA,  different
+preprocessing such as removal of recombination between homologous segments
+methods might be employed prior to phylogenetic reconstruction (see eg. [Kapli
+et al. 2020](https://www.nature.com/articles/s41576-020-0233-0)). There are
+different strategies to obtain a multiple alignment from WGS data based on
+either 
+
+- The set of presumed orthologous genes that are present in all isolates are
+  extracted from genome annotations, and specialized databases (eg. described in
+  [Kapli et al. 2020](https://www.nature.com/articles/s41576-020-0233-0)). A
+  multiple sequence alignment is performed for each gene individually. In
+  bacterial surveillance, alignments of all the genes are generally concatenated
+  in a single MSA/WGA for phylogenetic reconstruction, eg. by exporting the core
+  gene alignment using
+  [Roary](https://github.com/microgenomics/tutorials/blob/master/pangenome.md)
+  ([Page et al.
+  2015](https://academic.oup.com/bioinformatics/article/31/22/3691/240757)).
+  Alternatively, it is possible to reconstruct one phylogenetic tree per gene
+  and “reconcile” the obtained set of phylogenies in a single tree using
+  supertree methods (see eg. [Boussau and Scornavacca
+  2020](https://hal.archives-ouvertes.fr/hal-02535529/document), and [Kapli et
+  al. 2020](https://www.nature.com/articles/s41576-020-0233-0)). 
+
+- Whole genome multiple alignment is a complex computing problem, this due to
+  eg. genome rearrangement ([Henning and Nielselt
+  2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6612806/), [Dewey
+  2019](https://link.springer.com/protocol/10.1007%2F978-1-4939-9074-0_4)). A
+  strategy that is frequently employed is the “hierarchical” multiple alignment
+  of collinear blocks (segments of the compared genomes that do not contain
+  rearrangements)  or a “local” alignment of parts of the genomes that are later
+  merged as multiple alignments ([Darling et al.
+  2004](https://pubmed.ncbi.nlm.nih.gov/15231754/), [Darling et al.
+  2010](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011147)).
+  Whole genome alignment contains information about genome synteny, and
+  typically includes pangenomes. The core MA must be extracted from pangenome
+  WGA for phylogenetic analysis. MSA/WGA can be either directly obtained (eg.
+  [ParSNP](https://github.com/marbl/parsnp), [Treangen et al.
+  2014](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0524-x))
+  or extracted by concatenating the several collinear blocks that were common
+  (core) in all genomes under study (eg. from extracting the core from a WGA
+  alignment file output from Mauve/progressiveMauve aligner ([Darling et al.
+  2004](https://pubmed.ncbi.nlm.nih.gov/15231754/), [Darling et al.
+  2010](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011147))
+  with biopython script or with eg., with harvesttools ([Treangen et al.
+  2014](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0524-x)).
+  
+
+- Multiple SNP alignment can be obtained when an identical reference is used to
+  type SNPs for all isolates under study. The reference serves as a coordinate
+  system, therefore a multiple SNP alignment can be reconstructed by
+  concatenating all the SNPs at all the different coordinates of the reference.
+  This can eg. be done with [Snippy](https://github.com/tseemann/snippy).  
+
+### 5.2.2 Ensuring that aligned sequences are orthologous 
+
+During WGA building, recombinants from homologous regions might be included in
+the alignment. Those regions must be either deleted or masked (hidden) from the
+alignment used in phylogenetic reconstruction because those sites are not
+inherited by vertical descent (non orthologous). The methods developed to detect
+recombinant loci (see eg, [Lai and Loerger
+2018](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2456-z))
+are not universally applicable to all multiple alignments. The methods that use
+sliding window where positional information of SNPs is crucial to detect
+hotspots of SNPs that are then considered as recombinants (eg. Gubbins
+([Croucher et al. 2015](https://academic.oup.com/nar/article/43/3/e15/2410982)),
+ClonalFrameML ([Didelot and Wilson
+2015](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004041)))
+are not applicable for detection of recombinants in MA from concatenated genes
+because the order of genes is arbitrary and intergenic regions are not present.
+Moreover some methods have been developed to work with relatively closely
+related isolates (within lineages), eg. ClonalFrameML and Gubbins. Other methods
+might be better adapted when working with more distantly related isolates within
+a species (eg. [fastGear](https://mostowylab.com/news/fastgear) [Mostowy etal.
+2017](http://Mostowy2017)).  
+
+### 5.2.3 Defining an evolutionary model of the sequences (Modeling evolution)
+
+Statistical phylogenetic methods aim at modeling the process of evolution that
+is evidenced by the SNPs seen between taxa. Therefore it is necessary to provide
+a evolutionary model, which is a representation of the sequence evolutionary
+process: the change in character/nucleotide over time in orthologous sequences
+belonging to two taxa that diverged from a most recent common ancestor (MRCA),
+to perform phylogenetic inference with statistical phylogenetic methods. 
+
+Each evolutionary model is composed of a set of sub-models that represent the
+different components or biological characteristics that are relevant to describe
+the characteristics of the sequence evolution.  A “minimum evolutionary model”
+that might be realistic enough to represent sequence evolution for a set of OTUs
+can be composed of a nucleotide substitution model and a model of heterogeneity
+rate among sites. Below these are described, as are also several additional
+models which when used in conjunction with the  “minimum evolutionary model” can
+provide a means to increase the realisms of the evolutionary process modeling. 
+
+#### Which evolutionary model should I choose? 
+
+Choosing an evolutionary model might be a daunting task. Therefore, a strategy
+for “choosing” the model, is actually to perform phylogenetic inference with
+several models and then evaluate the fit of the model to the data. Fortunately,
+model testing is implemented and automated in several phylogenetic softwares,
+thus this does not require you to manually perform several analyses. 
+
+Generally, when reconstructing phylogenies of isolates that are very closely
+related, you can expect that the best fit evolutionary model will be more simple
+(less parameters) than when you reconstruct phylogeny of distantly related OTU
+([Lemey et al.
+2009](https://books.google.no/books/about/The_Phylogenetic_Handbook.html?id=DeD_lQ-kBPQC&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false)).
+This can eg. be explained because you are less likely to have to model multiple
+substitutions events and because the sequence nucleotide frequencies are likely
+to be nearly identical among the isolates unders study. 
+
+#### Nucleotide substitution models
+
+##### What is a substitution model: 
+
+Substitutions models are one of the major components of the sequence
+evolutionary model. Substitution models are a statistical description of how
+nucleotides evolve from the MRCA to another during sequence evolution; they
+provide the probability of change of each base into another base  (eg. describe
+the probability of A becoming T over time). For amino-acid substitution models
+please see phylogenetic books).
+
+Nucleotide substitutions are usually modeled as a random event (ie. occurring
+randomly at one nucleotide location within your MA). Nucleotide sites are
+assumed to evolve independently of each other. Through phylogenetic inference,
+evolution can be modelled step wise (discrete time) or continuously (continuous
+time, eg. Bayesian methods). Herein we only use “time step” to present the
+general idea of those methods. At each time step, each site evolves or not,
+independently from other sites. At each time step, the nucleotide substitution
+probabilities remain unchanged (time homogeneity assumption). A very good
+introduction on substitution models can be found here: ([Lecture primer by Paul
+Lewis - Part 1](https://www.youtube.com/watch?v=1r4z0YJq580)). 
+
+The relation between an observed nucleotide change and the “true” evolutionary
+distance is not one to one, because some types of base changes may be more
+likely than others. This can be due to a bias in nucleotide composition, or a
+bias in base biochemical properties that favors some types of nucleotide changes
+being more probable than others, thus having less evolutionary weight than other
+changes.  Other reasons of the absence of one to one relationship between
+evolutionary distance and observed nucleotide changes are the occurrence of
+multiple substitutions events, where only the final state is observed (eg: A ->
+T -> G), or the occurrence of back mutations (eg: A -> T -> A) or convergence
+(eg. A -> T and C->T) where sequence evolution did not leave an observable
+footprint in the sequences under comparison. Reversal and multiple substitutions
+are more likely if organisms have diverged a long time ago. 
+
+##### Frequently employed substitution models 
+
+The most frequently employed substitution models belong to a family of models
+called time reversible models (REV). The general time reversible model (GTR) can
+be seen as the most complex (most parameters) of the REV model family. 
+
+The most simple REV model is called the **Jukes and Cantor model (JC69)**.  JC69
+assumes equal probability of change of each nucleotide to one-another and equal
+equilibrium frequencies of each nucleotide, i.e. 0.25 of each. The slightly more
+complex model **Kimura two-parameter mode (K2P or K80)** introduced different
+rates of changes for transitions and transversions, as transitions are more
+frequent than transversion during evolution. The **GTR model** is composed of
+different rates of changes for the different nucleotides and different
+equilibrium nucleotides frequencies (see eg. review in [Arenas
+2015](https://www.frontiersin.org/articles/10.3389/fgene.2015.00319/full)  and a
+figure
+[here](https://www.semanticscholar.org/paper/What%27s-in-a-character-DeSalle/313ab4728900e96d7eaff5c8db8fe30f1f702afb/figure/5)
+for the relations between different REV models.) All GTR models, and submodels
+(nested models) assume that the relative frequencies of each nucleotide are at
+equilibrium. This means that relative nucleotide frequencies do not change in
+the course of evolution (also called stationary).
+
+Note that if a MA-SNP is used it might be necessary to provide the number of
+invariant positions for each nucleotide. This is required to compute the
+relative nucleotide frequencies of the dataset. 
+
+Note: that non-REV models exist. They allow providing a direction of evolution,
+but those are so far not frequently encountered (see eg. [Williams et al.
+2015](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4571574/), [Woodhams et al.,
+2015](https://doi.org/10.1093/sysbio/syv021)) in molecular epidemiology
+phylogenetic inference of bacterial pathogens.
