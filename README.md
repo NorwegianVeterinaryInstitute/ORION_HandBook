@@ -2,7 +2,7 @@
 This is the document repository that forms the basis for the One Health
 Sequencing for Surveillance Handbook.
 
-## license
+## License
 The materials available in this handbook is available under CC-BY license.
 For more information about that, please see the
 [License documentation](docs/source/license.md)
