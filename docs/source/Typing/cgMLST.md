@@ -57,7 +57,7 @@ the same allele. Therefore, the numbering of cgMLST typing might not be
 comparable between laboratories that are keeping local typing databases, even
 for laboratories that use the same scheme, due to possible divergence of allele
 numbering after local database initiation ([Deneke et
-al.2021](https://journals.asm.org/doi/10.1128/JCM.01037-19)), unless local
+al.2021](https://www.frontiersin.org/articles/10.3389/fmicb.2021.649517)), unless local
 databases are in constant synchronisation with nomenclature servers. Therefore
 there is a growing interest in developing hash-based cgMLST. Hash-based cgMLST
 transforms the typed alleles sequences into a hashID (a compressed
@@ -67,7 +67,7 @@ sharing of typing results that are independent of allele numbering and thus
 directly comparable between laboratories without relying on centralised and
 curated nomenclature servers ([Eyre et al.
 2019](https://journals.asm.org/doi/10.1128/JCM.01037-19), [Deneke et
-al.2021](https://journals.asm.org/doi/10.1128/JCM.01037-19)). Thus hash-based
+al.2021](https://www.frontiersin.org/articles/10.3389/fmicb.2021.649517)). Thus hash-based
 cgMLST typing is as such not a new sequence typing method but a new way to allow
 optimization of data exchange.
 
@@ -126,7 +126,7 @@ loci might be flagged as missing while they would have been found during
 reanalysis at a later stage when the database had been augmented. This, because
 the nomenclature allele database has been populated with increasingly divergent
 alleles, as illustrated in  [Deneke et
-al. (2021)](https://journals.asm.org/doi/10.1128/JCM.01037-19).
+al. (2021)](https://www.frontiersin.org/articles/10.3389/fmicb.2021.649517).
 
 ### Read based methods
 MLST callers (eg. reviewed in [Page and al.
